@@ -1,0 +1,17 @@
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\bin\Debug\PM_QLGTDD.exe.config
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\bin\Debug\PM_QLGTDD.exe
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\bin\Debug\PM_QLGTDD.pdb
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\obj\Debug\PM_QLGTDD.frm_Main.resources
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\obj\Debug\PM_QLGTDD.Properties.Resources.resources
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\obj\Debug\PM_QLGTDD.csproj.GenerateResource.cache
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\obj\Debug\PM_QLGTDD.csproj.CoreCompileInputs.cache
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\obj\Debug\PM_QLGTDD.exe
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\obj\Debug\PM_QLGTDD.pdb
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\obj\Debug\PM_QLGTDD.csproj.CopyComplete
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\bin\Debug\ComponentFactory.Krypton.Design.dll
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\bin\Debug\ComponentFactory.Krypton.Docking.dll
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\bin\Debug\ComponentFactory.Krypton.Navigator.dll
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\bin\Debug\ComponentFactory.Krypton.Ribbon.dll
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\bin\Debug\ComponentFactory.Krypton.Workspace.dll
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\obj\Debug\PM_QLGTDD.csprojAssemblyReference.cache
