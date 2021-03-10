@@ -53,6 +53,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -65,16 +66,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DB_QLGTDD.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_QLGTDD.dbml</DependentUpon>
+    </Compile>
     <Compile Include="frm_Main.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_Main.Designer.cs">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="MauSo4a\UF_MauSo4a.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MauSo4a\UF_MauSo4a.Designer.cs">
+      <DependentUpon>UF_MauSo4a.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="DB_QLGTDD.dbml.layout">
+      <DependentUpon>DB_QLGTDD.dbml</DependentUpon>
+    </None>
     <EmbeddedResource Include="frm_Main.resx">
       <DependentUpon>frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MauSo4a\UF_MauSo4a.resx">
+      <DependentUpon>UF_MauSo4a.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -86,6 +104,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="DB_QLGTDD.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DB_QLGTDD.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -152,6 +175,28 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

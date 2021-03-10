@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PM_QLGTDD" Class="DB_QLGTDDDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-RDLUFLH4\SQLEXPRESS;Initial Catalog=PM_QLGTDD;Integrated Security=True" SettingsObjectName="PM_QLGTDD.Properties.Settings" SettingsPropertyName="PM_QLGTDDConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.BIEUMAU" Member="BIEUMAUs">
+    <Type Name="BIEUMAU">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="QUYENSO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HOTEN_NVD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NGAYVIETDON" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ID_LOAIBIEUMAU" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TT_XUAT" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="TT_XOA" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="LOAIBIEUMAU_BIEUMAU" Member="LOAIBIEUMAU" ThisKey="ID_LOAIBIEUMAU" OtherKey="ID_LOAIBIEUMAU" Type="LOAIBIEUMAU" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LOAIBIEUMAU" Member="LOAIBIEUMAUs">
+    <Type Name="LOAIBIEUMAU">
+      <Column Name="ID_LOAIBIEUMAU" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TENBIEUMAU" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Association Name="LOAIBIEUMAU_BIEUMAU" Member="BIEUMAUs" ThisKey="ID_LOAIBIEUMAU" OtherKey="ID_LOAIBIEUMAU" Type="BIEUMAU" />
+    </Type>
+  </Table>
+</Database>

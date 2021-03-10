@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DB_QLGTDD">
+  <DataContextMoniker Name="/DB_QLGTDDDataContext" />
+  <nestedChildShapes>
+    <classShape Id="3a4ae6fd-7ec1-4db8-abad-e41951115038" absoluteBounds="3.5, 1, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/DB_QLGTDDDataContext/BIEUMAU" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6ca3dd33-ac23-47e8-ba38-af74b6f5e8c0" absoluteBounds="3.515, 1.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9d0a1d93-e3bf-40d4-937c-49df40af88ab" absoluteBounds="0.75, 1.5, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/DB_QLGTDDDataContext/LOAIBIEUMAU" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2a71ca4d-06a3-4b2e-8385-502acfcf291c" absoluteBounds="0.765, 1.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 2.09699625651042); (3.5 : 2.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DB_QLGTDDDataContext/LOAIBIEUMAU/LOAIBIEUMAU_BIEUMAU" />
+      <nodes>
+        <classShapeMoniker Id="9d0a1d93-e3bf-40d4-937c-49df40af88ab" />
+        <classShapeMoniker Id="3a4ae6fd-7ec1-4db8-abad-e41951115038" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

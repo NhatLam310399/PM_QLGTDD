@@ -15,3 +15,9 @@ E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\bin\Debug\ComponentFactory.Krypton.Na
 E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\bin\Debug\ComponentFactory.Krypton.Ribbon.dll
 E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\bin\Debug\ComponentFactory.Krypton.Workspace.dll
 E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\obj\Debug\PM_QLGTDD.csprojAssemblyReference.cache
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\obj\Debug\PM_QLGTDD.MauSo4a.UF_MauSo4a.resources
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\bin\Debug\Interop.AcroPDFLib.dll
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\bin\Debug\AxInterop.AcroPDFLib.dll
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\obj\Debug\Interop.AcroPDFLib.dll
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\obj\Debug\AxInterop.AcroPDFLib.dll
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\obj\Debug\PM_QLGTDD.csproj.ResolveComReference.cache

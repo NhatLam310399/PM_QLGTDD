@@ -29,6 +29,7 @@ namespace PM_QLGTDD
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Main));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -72,9 +73,29 @@ namespace PM_QLGTDD
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.axAcroPDF1 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.axAcroPDF2 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.axAcroPDF3 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
@@ -85,236 +106,151 @@ namespace PM_QLGTDD
             this.M04_btn_in = new System.Windows.Forms.Button();
             this.M04_btn_xoa = new System.Windows.Forms.Button();
             this.pnl_container_M04 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel52 = new System.Windows.Forms.TableLayoutPanel();
-            this.label44 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel53 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel33 = new System.Windows.Forms.Panel();
-            this.M04_txt_RSX_loaiCay = new System.Windows.Forms.TableLayoutPanel();
-            this.label45 = new System.Windows.Forms.Label();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.panel34 = new System.Windows.Forms.Panel();
-            this.lya = new System.Windows.Forms.TableLayoutPanel();
-            this.label46 = new System.Windows.Forms.Label();
-            this.M04_txt_RSX_dienTich = new System.Windows.Forms.TextBox();
-            this.panel35 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel56 = new System.Windows.Forms.TableLayoutPanel();
-            this.label47 = new System.Windows.Forms.Label();
-            this.M04_txt_RSX_tuTrong = new System.Windows.Forms.TextBox();
-            this.panel36 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel57 = new System.Windows.Forms.TableLayoutPanel();
-            this.label48 = new System.Windows.Forms.Label();
-            this.M04_txt_RSX_NNKTT = new System.Windows.Forms.TextBox();
-            this.panel37 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel58 = new System.Windows.Forms.TableLayoutPanel();
-            this.label49 = new System.Windows.Forms.Label();
-            this.M04_txt_RSX_NNTT = new System.Windows.Forms.TextBox();
-            this.panel38 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel59 = new System.Windows.Forms.TableLayoutPanel();
-            this.label50 = new System.Windows.Forms.Label();
-            this.M04_txt_RSX_nhanChuyenQuyen = new System.Windows.Forms.TextBox();
-            this.panel39 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel60 = new System.Windows.Forms.TableLayoutPanel();
-            this.label51 = new System.Windows.Forms.Label();
-            this.M04_txt_RSX_nguonVon = new System.Windows.Forms.TextBox();
-            this.panel40 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel61 = new System.Windows.Forms.TableLayoutPanel();
-            this.label52 = new System.Windows.Forms.Label();
-            this.M04_dtp_RSX_HSD = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
-            this.panel41 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel62 = new System.Windows.Forms.TableLayoutPanel();
-            this.label53 = new System.Windows.Forms.Label();
-            this.M04_txt_RSX_soHuuChung = new System.Windows.Forms.TextBox();
-            this.panel42 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel63 = new System.Windows.Forms.TableLayoutPanel();
-            this.label54 = new System.Windows.Forms.Label();
-            this.M04_txt_RSX_soHuuRieng = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.M04_txt_quyenSo = new System.Windows.Forms.TextBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.M04_NSD_txt_so = new System.Windows.Forms.TextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.M04_txt_hoTenNguoiVD = new System.Windows.Forms.TextBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.M04_dtp_NgayVD = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
-            this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.M04_txt_kinhGui = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.M04_NSD_txt_hoTen = new System.Windows.Forms.TextBox();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.M04_NSD_txt_diaChi = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel21 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
-            this.M04_DN_rdb_Loai1 = new System.Windows.Forms.RadioButton();
-            this.M04_DN_rdb_Loai2 = new System.Windows.Forms.RadioButton();
-            this.M04_DN_rdb_Loai1DK = new System.Windows.Forms.Label();
-            this.M04_DN_lbl_Loai1CapCN = new System.Windows.Forms.Label();
-            this.M04_DN_lbl_Loai2DK = new System.Windows.Forms.Label();
-            this.M04_DN_lbl_Loai2CapCN = new System.Windows.Forms.Label();
-            this.tableLayoutPanel23 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel24 = new System.Windows.Forms.TableLayoutPanel();
-            this.label20 = new System.Windows.Forms.Label();
-            this.M04_txt_ThuaDatDK = new System.Windows.Forms.TextBox();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel25 = new System.Windows.Forms.TableLayoutPanel();
-            this.label21 = new System.Windows.Forms.Label();
-            this.M04_txt_thuaDatSo = new System.Windows.Forms.TextBox();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel26 = new System.Windows.Forms.TableLayoutPanel();
-            this.label23 = new System.Windows.Forms.Label();
-            this.M04_txt_toBanDoSo = new System.Windows.Forms.TextBox();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel27 = new System.Windows.Forms.TableLayoutPanel();
-            this.label24 = new System.Windows.Forms.Label();
-            this.M04_txt_diaChiDat = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel28 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel29 = new System.Windows.Forms.TableLayoutPanel();
-            this.label22 = new System.Windows.Forms.Label();
-            this.M04_txt_dtDat = new System.Windows.Forms.TextBox();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel30 = new System.Windows.Forms.TableLayoutPanel();
-            this.label25 = new System.Windows.Forms.Label();
-            this.M04_txt_suDungChung = new System.Windows.Forms.TextBox();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel31 = new System.Windows.Forms.TableLayoutPanel();
-            this.label26 = new System.Windows.Forms.Label();
-            this.M04_txt_suDungRieng = new System.Windows.Forms.TextBox();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel32 = new System.Windows.Forms.TableLayoutPanel();
-            this.label27 = new System.Windows.Forms.Label();
-            this.M04_txt_suDungMD = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel33 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel40 = new System.Windows.Forms.TableLayoutPanel();
-            this.label28 = new System.Windows.Forms.Label();
-            this.M04_dtp_tuThoiDiem = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
-            this.tableLayoutPanel34 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel36 = new System.Windows.Forms.TableLayoutPanel();
-            this.label30 = new System.Windows.Forms.Label();
-            this.M04_txt_nguonGocSD = new System.Windows.Forms.TextBox();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel37 = new System.Windows.Forms.TableLayoutPanel();
-            this.label31 = new System.Windows.Forms.Label();
-            this.M04_txt_sdHanChe = new System.Windows.Forms.TextBox();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel38 = new System.Windows.Forms.TableLayoutPanel();
-            this.label32 = new System.Windows.Forms.Label();
-            this.M04_txt_cua = new System.Windows.Forms.TextBox();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.layout = new System.Windows.Forms.TableLayoutPanel();
-            this.label33 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel35 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel41 = new System.Windows.Forms.TableLayoutPanel();
-            this.label29 = new System.Windows.Forms.Label();
-            this.M04_dtp_thoiGianDeNghi = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
-            this.label34 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel42 = new System.Windows.Forms.TableLayoutPanel();
-            this.label35 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel43 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel44 = new System.Windows.Forms.TableLayoutPanel();
-            this.label36 = new System.Windows.Forms.Label();
-            this.M04_txt_NO_loaiNhaO = new System.Windows.Forms.TextBox();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel45 = new System.Windows.Forms.TableLayoutPanel();
-            this.label37 = new System.Windows.Forms.Label();
-            this.M04_txt_NO_dtXD = new System.Windows.Forms.TextBox();
-            this.panel27 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel46 = new System.Windows.Forms.TableLayoutPanel();
-            this.label38 = new System.Windows.Forms.Label();
-            this.M04_txt_NO_dtSan = new System.Windows.Forms.TextBox();
-            this.panel28 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel47 = new System.Windows.Forms.TableLayoutPanel();
-            this.label39 = new System.Windows.Forms.Label();
-            this.M04_txt_NO_soHuuChung = new System.Windows.Forms.TextBox();
-            this.panel29 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel48 = new System.Windows.Forms.TableLayoutPanel();
-            this.label40 = new System.Windows.Forms.Label();
-            this.M04_txt_NO_soHuuRieng = new System.Windows.Forms.TextBox();
-            this.panel30 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel49 = new System.Windows.Forms.TableLayoutPanel();
-            this.label41 = new System.Windows.Forms.Label();
-            this.M04_txt_NO_ketCau = new System.Windows.Forms.TextBox();
-            this.panel31 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel50 = new System.Windows.Forms.TableLayoutPanel();
-            this.label42 = new System.Windows.Forms.Label();
-            this.M04_txt_NO_soTang = new System.Windows.Forms.TextBox();
-            this.panel32 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel51 = new System.Windows.Forms.TableLayoutPanel();
-            this.label43 = new System.Windows.Forms.Label();
-            this.M04_txt_NO_HSD = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
-            this.tableLayoutPanel64 = new System.Windows.Forms.TableLayoutPanel();
-            this.label55 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel65 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel43 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel66 = new System.Windows.Forms.TableLayoutPanel();
-            this.label56 = new System.Windows.Forms.Label();
-            this.M04_txt_CLN_loaicay = new System.Windows.Forms.TextBox();
-            this.panel44 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel67 = new System.Windows.Forms.TableLayoutPanel();
-            this.label57 = new System.Windows.Forms.Label();
-            this.M04_txt_CLN_dt = new System.Windows.Forms.TextBox();
-            this.panel50 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel73 = new System.Windows.Forms.TableLayoutPanel();
-            this.label63 = new System.Windows.Forms.Label();
-            this.M04_dpt_CLN_HSD = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
-            this.panel51 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel74 = new System.Windows.Forms.TableLayoutPanel();
-            this.label64 = new System.Windows.Forms.Label();
-            this.M04_txt_CLN_soHuuChung = new System.Windows.Forms.TextBox();
-            this.panel52 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel75 = new System.Windows.Forms.TableLayoutPanel();
-            this.label65 = new System.Windows.Forms.Label();
-            this.M04_txt_CLN_soHuuRieng = new System.Windows.Forms.TextBox();
-            this.panel45 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel68 = new System.Windows.Forms.TableLayoutPanel();
-            this.label58 = new System.Windows.Forms.Label();
-            this.textBox38 = new System.Windows.Forms.TextBox();
-            this.panel46 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel69 = new System.Windows.Forms.TableLayoutPanel();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.M04_txt_deNghiKhac = new System.Windows.Forms.TextBox();
-            this.M04_txt_nhuCauGhiNo = new System.Windows.Forms.TextBox();
+            this.filesPDF_mau04 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
+            this.button27 = new System.Windows.Forms.Button();
+            this.button28 = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.axAcroPDF4 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button29 = new System.Windows.Forms.Button();
+            this.button30 = new System.Windows.Forms.Button();
+            this.button31 = new System.Windows.Forms.Button();
+            this.button32 = new System.Windows.Forms.Button();
+            this.button33 = new System.Windows.Forms.Button();
+            this.button34 = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.axAcroPDF5 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button35 = new System.Windows.Forms.Button();
+            this.button36 = new System.Windows.Forms.Button();
+            this.button37 = new System.Windows.Forms.Button();
+            this.button38 = new System.Windows.Forms.Button();
+            this.button39 = new System.Windows.Forms.Button();
+            this.button40 = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.axAcroPDF6 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button41 = new System.Windows.Forms.Button();
+            this.button42 = new System.Windows.Forms.Button();
+            this.button43 = new System.Windows.Forms.Button();
+            this.button44 = new System.Windows.Forms.Button();
+            this.button45 = new System.Windows.Forms.Button();
+            this.button46 = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.axAcroPDF7 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel10 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button47 = new System.Windows.Forms.Button();
+            this.button48 = new System.Windows.Forms.Button();
+            this.button49 = new System.Windows.Forms.Button();
+            this.button50 = new System.Windows.Forms.Button();
+            this.button51 = new System.Windows.Forms.Button();
+            this.button52 = new System.Windows.Forms.Button();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.axAcroPDF8 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel11 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button53 = new System.Windows.Forms.Button();
+            this.button54 = new System.Windows.Forms.Button();
+            this.button55 = new System.Windows.Forms.Button();
+            this.button56 = new System.Windows.Forms.Button();
+            this.button57 = new System.Windows.Forms.Button();
+            this.button58 = new System.Windows.Forms.Button();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.axAcroPDF9 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage12 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel12 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button59 = new System.Windows.Forms.Button();
+            this.button60 = new System.Windows.Forms.Button();
+            this.button61 = new System.Windows.Forms.Button();
+            this.button62 = new System.Windows.Forms.Button();
+            this.button63 = new System.Windows.Forms.Button();
+            this.button64 = new System.Windows.Forms.Button();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.axAcroPDF10 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage13 = new System.Windows.Forms.TabPage();
             this.tabPage14 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel13 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button65 = new System.Windows.Forms.Button();
+            this.button66 = new System.Windows.Forms.Button();
+            this.button67 = new System.Windows.Forms.Button();
+            this.button68 = new System.Windows.Forms.Button();
+            this.button69 = new System.Windows.Forms.Button();
+            this.button70 = new System.Windows.Forms.Button();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.axAcroPDF11 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage15 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel14 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button71 = new System.Windows.Forms.Button();
+            this.button72 = new System.Windows.Forms.Button();
+            this.button73 = new System.Windows.Forms.Button();
+            this.button74 = new System.Windows.Forms.Button();
+            this.button75 = new System.Windows.Forms.Button();
+            this.button76 = new System.Windows.Forms.Button();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.axAcroPDF12 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage16 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel15 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button77 = new System.Windows.Forms.Button();
+            this.button78 = new System.Windows.Forms.Button();
+            this.button79 = new System.Windows.Forms.Button();
+            this.button80 = new System.Windows.Forms.Button();
+            this.button81 = new System.Windows.Forms.Button();
+            this.button82 = new System.Windows.Forms.Button();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.axAcroPDF13 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage17 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel16 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button83 = new System.Windows.Forms.Button();
+            this.button84 = new System.Windows.Forms.Button();
+            this.button85 = new System.Windows.Forms.Button();
+            this.button86 = new System.Windows.Forms.Button();
+            this.button87 = new System.Windows.Forms.Button();
+            this.button88 = new System.Windows.Forms.Button();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.axAcroPDF14 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage18 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel21 = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel17 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button89 = new System.Windows.Forms.Button();
+            this.button90 = new System.Windows.Forms.Button();
+            this.button91 = new System.Windows.Forms.Button();
+            this.button92 = new System.Windows.Forms.Button();
+            this.button93 = new System.Windows.Forms.Button();
+            this.button94 = new System.Windows.Forms.Button();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.axAcroPDF15 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage19 = new System.Windows.Forms.TabPage();
-            this.M04_txt_ndQuyenSD = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel18 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button95 = new System.Windows.Forms.Button();
+            this.button96 = new System.Windows.Forms.Button();
+            this.button97 = new System.Windows.Forms.Button();
+            this.button98 = new System.Windows.Forms.Button();
+            this.button99 = new System.Windows.Forms.Button();
+            this.button100 = new System.Windows.Forms.Button();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.axAcroPDF16 = new AxAcroPDFLib.AxAcroPDF();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -331,120 +267,87 @@ namespace PM_QLGTDD
             this.tableLayoutPanel6.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF1)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
+            this.flowLayoutPanel4.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF2)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            this.tableLayoutPanel9.SuspendLayout();
+            this.flowLayoutPanel5.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF3)).BeginInit();
             this.tabPage5.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             this.pnl_container_M04.SuspendLayout();
-            this.tableLayoutPanel9.SuspendLayout();
-            this.tableLayoutPanel52.SuspendLayout();
-            this.tableLayoutPanel53.SuspendLayout();
-            this.panel33.SuspendLayout();
-            this.M04_txt_RSX_loaiCay.SuspendLayout();
-            this.panel34.SuspendLayout();
-            this.lya.SuspendLayout();
-            this.panel35.SuspendLayout();
-            this.tableLayoutPanel56.SuspendLayout();
-            this.panel36.SuspendLayout();
-            this.tableLayoutPanel57.SuspendLayout();
-            this.panel37.SuspendLayout();
-            this.tableLayoutPanel58.SuspendLayout();
-            this.panel38.SuspendLayout();
-            this.tableLayoutPanel59.SuspendLayout();
-            this.panel39.SuspendLayout();
-            this.tableLayoutPanel60.SuspendLayout();
-            this.panel40.SuspendLayout();
-            this.tableLayoutPanel61.SuspendLayout();
-            this.panel41.SuspendLayout();
-            this.tableLayoutPanel62.SuspendLayout();
-            this.panel42.SuspendLayout();
-            this.tableLayoutPanel63.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.filesPDF_mau04)).BeginInit();
+            this.tabPage6.SuspendLayout();
             this.tableLayoutPanel10.SuspendLayout();
+            this.flowLayoutPanel6.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF4)).BeginInit();
+            this.tabPage7.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
+            this.flowLayoutPanel7.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF5)).BeginInit();
+            this.tabPage8.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
+            this.flowLayoutPanel8.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.tableLayoutPanel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF6)).BeginInit();
+            this.tabPage9.SuspendLayout();
+            this.tableLayoutPanel13.SuspendLayout();
+            this.flowLayoutPanel9.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.tableLayoutPanel15.SuspendLayout();
-            this.tableLayoutPanel16.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.tableLayoutPanel17.SuspendLayout();
-            this.tableLayoutPanel18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF7)).BeginInit();
+            this.tabPage10.SuspendLayout();
+            this.tableLayoutPanel14.SuspendLayout();
+            this.flowLayoutPanel10.SuspendLayout();
             this.panel8.SuspendLayout();
-            this.tableLayoutPanel19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF8)).BeginInit();
+            this.tabPage11.SuspendLayout();
+            this.tableLayoutPanel15.SuspendLayout();
+            this.flowLayoutPanel11.SuspendLayout();
             this.panel9.SuspendLayout();
-            this.tableLayoutPanel20.SuspendLayout();
-            this.tableLayoutPanel21.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF9)).BeginInit();
+            this.tabPage12.SuspendLayout();
+            this.tableLayoutPanel16.SuspendLayout();
+            this.flowLayoutPanel12.SuspendLayout();
             this.panel10.SuspendLayout();
-            this.tableLayoutPanel22.SuspendLayout();
-            this.tableLayoutPanel23.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF10)).BeginInit();
+            this.tabPage14.SuspendLayout();
+            this.tableLayoutPanel17.SuspendLayout();
+            this.flowLayoutPanel13.SuspendLayout();
             this.panel11.SuspendLayout();
-            this.tableLayoutPanel24.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF11)).BeginInit();
+            this.tabPage15.SuspendLayout();
+            this.tableLayoutPanel18.SuspendLayout();
+            this.flowLayoutPanel14.SuspendLayout();
             this.panel12.SuspendLayout();
-            this.tableLayoutPanel25.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF12)).BeginInit();
+            this.tabPage16.SuspendLayout();
+            this.tableLayoutPanel19.SuspendLayout();
+            this.flowLayoutPanel15.SuspendLayout();
             this.panel13.SuspendLayout();
-            this.tableLayoutPanel26.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF13)).BeginInit();
+            this.tabPage17.SuspendLayout();
+            this.tableLayoutPanel20.SuspendLayout();
+            this.flowLayoutPanel16.SuspendLayout();
             this.panel14.SuspendLayout();
-            this.tableLayoutPanel27.SuspendLayout();
-            this.tableLayoutPanel28.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF14)).BeginInit();
+            this.tabPage18.SuspendLayout();
+            this.tableLayoutPanel21.SuspendLayout();
+            this.flowLayoutPanel17.SuspendLayout();
             this.panel15.SuspendLayout();
-            this.tableLayoutPanel29.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF15)).BeginInit();
+            this.tabPage19.SuspendLayout();
+            this.tableLayoutPanel22.SuspendLayout();
+            this.flowLayoutPanel18.SuspendLayout();
             this.panel16.SuspendLayout();
-            this.tableLayoutPanel30.SuspendLayout();
-            this.panel17.SuspendLayout();
-            this.tableLayoutPanel31.SuspendLayout();
-            this.panel18.SuspendLayout();
-            this.tableLayoutPanel32.SuspendLayout();
-            this.tableLayoutPanel33.SuspendLayout();
-            this.panel19.SuspendLayout();
-            this.tableLayoutPanel40.SuspendLayout();
-            this.tableLayoutPanel34.SuspendLayout();
-            this.panel21.SuspendLayout();
-            this.tableLayoutPanel36.SuspendLayout();
-            this.panel22.SuspendLayout();
-            this.tableLayoutPanel37.SuspendLayout();
-            this.panel23.SuspendLayout();
-            this.tableLayoutPanel38.SuspendLayout();
-            this.panel24.SuspendLayout();
-            this.layout.SuspendLayout();
-            this.tableLayoutPanel35.SuspendLayout();
-            this.panel20.SuspendLayout();
-            this.tableLayoutPanel41.SuspendLayout();
-            this.tableLayoutPanel42.SuspendLayout();
-            this.tableLayoutPanel43.SuspendLayout();
-            this.panel25.SuspendLayout();
-            this.tableLayoutPanel44.SuspendLayout();
-            this.panel26.SuspendLayout();
-            this.tableLayoutPanel45.SuspendLayout();
-            this.panel27.SuspendLayout();
-            this.tableLayoutPanel46.SuspendLayout();
-            this.panel28.SuspendLayout();
-            this.tableLayoutPanel47.SuspendLayout();
-            this.panel29.SuspendLayout();
-            this.tableLayoutPanel48.SuspendLayout();
-            this.panel30.SuspendLayout();
-            this.tableLayoutPanel49.SuspendLayout();
-            this.panel31.SuspendLayout();
-            this.tableLayoutPanel50.SuspendLayout();
-            this.panel32.SuspendLayout();
-            this.tableLayoutPanel51.SuspendLayout();
-            this.tableLayoutPanel64.SuspendLayout();
-            this.tableLayoutPanel65.SuspendLayout();
-            this.panel43.SuspendLayout();
-            this.tableLayoutPanel66.SuspendLayout();
-            this.panel44.SuspendLayout();
-            this.tableLayoutPanel67.SuspendLayout();
-            this.panel50.SuspendLayout();
-            this.tableLayoutPanel73.SuspendLayout();
-            this.panel51.SuspendLayout();
-            this.tableLayoutPanel74.SuspendLayout();
-            this.panel52.SuspendLayout();
-            this.tableLayoutPanel75.SuspendLayout();
-            this.panel45.SuspendLayout();
-            this.tableLayoutPanel68.SuspendLayout();
-            this.panel46.SuspendLayout();
-            this.tableLayoutPanel69.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF16)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -580,7 +483,9 @@ namespace PM_QLGTDD
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1345, 781);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
-            this.tabControl1.TabIndex = 1;
+            this.tabControl1.TabIndex = 6;
+            this.tabControl1.Tag = "2";
+            this.tabControl1.Click += new System.EventHandler(this.tabControl1_Click);
             // 
             // tabPage1
             // 
@@ -591,6 +496,7 @@ namespace PM_QLGTDD
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(1337, 732);
             this.tabPage1.TabIndex = 0;
+            this.tabPage1.Tag = "1";
             this.tabPage1.Text = "Danh sách hồ sơ";
             // 
             // tableLayoutPanel4
@@ -944,27 +850,28 @@ namespace PM_QLGTDD
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(1337, 732);
             this.tabPage2.TabIndex = 1;
+            this.tabPage2.Tag = "2";
             this.tabPage2.Text = "Mẫu số 01/ĐK";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.ColumnCount = 3;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel6.Controls.Add(this.flowLayoutPanel2, 1, 1);
             this.tableLayoutPanel6.Controls.Add(this.panel1, 1, 2);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 4;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(1331, 726);
-            this.tableLayoutPanel6.TabIndex = 0;
+            this.tableLayoutPanel6.TabIndex = 2;
             // 
             // flowLayoutPanel2
             // 
@@ -976,10 +883,10 @@ namespace PM_QLGTDD
             this.flowLayoutPanel2.Controls.Add(this.button9);
             this.flowLayoutPanel2.Controls.Add(this.button10);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(66, 14);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(199, 36);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(1197, 58);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(931, 58);
             this.flowLayoutPanel2.TabIndex = 0;
             // 
             // button5
@@ -1118,45 +1025,423 @@ namespace PM_QLGTDD
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
-            this.panel1.Controls.Add(this.tableLayoutPanel7);
+            this.panel1.Controls.Add(this.axAcroPDF1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(66, 72);
+            this.panel1.Location = new System.Drawing.Point(199, 94);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1197, 638);
+            this.panel1.Size = new System.Drawing.Size(931, 595);
             this.panel1.TabIndex = 1;
             // 
-            // tableLayoutPanel7
+            // axAcroPDF1
             // 
-            this.tableLayoutPanel7.ColumnCount = 2;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-            this.tableLayoutPanel7.RowCount = 2;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(1197, 638);
-            this.tableLayoutPanel7.TabIndex = 0;
+            this.axAcroPDF1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF1.Enabled = true;
+            this.axAcroPDF1.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF1.Name = "axAcroPDF1";
+            this.axAcroPDF1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF1.OcxState")));
+            this.axAcroPDF1.Size = new System.Drawing.Size(931, 595);
+            this.axAcroPDF1.TabIndex = 0;
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.tableLayoutPanel7);
             this.tabPage3.Location = new System.Drawing.Point(4, 45);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(1337, 732);
             this.tabPage3.TabIndex = 2;
+            this.tabPage3.Tag = "3";
             this.tabPage3.Text = "Mẫu số 02/ĐK";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.ColumnCount = 3;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel7.Controls.Add(this.flowLayoutPanel4, 1, 1);
+            this.tableLayoutPanel7.Controls.Add(this.panel2, 1, 2);
+            this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 4;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(1337, 732);
+            this.tableLayoutPanel7.TabIndex = 2;
+            // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.flowLayoutPanel4.Controls.Add(this.button11);
+            this.flowLayoutPanel4.Controls.Add(this.button12);
+            this.flowLayoutPanel4.Controls.Add(this.button13);
+            this.flowLayoutPanel4.Controls.Add(this.button14);
+            this.flowLayoutPanel4.Controls.Add(this.button15);
+            this.flowLayoutPanel4.Controls.Add(this.button16);
+            this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(200, 36);
+            this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(935, 58);
+            this.flowLayoutPanel4.TabIndex = 0;
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button11.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.ForeColor = System.Drawing.Color.White;
+            this.button11.Image = global::PM_QLGTDD.Properties.Resources.icons8_pencil_24__1_;
+            this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button11.Location = new System.Drawing.Point(0, 0);
+            this.button11.Margin = new System.Windows.Forms.Padding(0);
+            this.button11.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button11.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(142, 70);
+            this.button11.TabIndex = 1;
+            this.button11.Text = "Nhập";
+            this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button11.UseVisualStyleBackColor = false;
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button12.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.ForeColor = System.Drawing.Color.White;
+            this.button12.Image = global::PM_QLGTDD.Properties.Resources.icons8_save_24;
+            this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button12.Location = new System.Drawing.Point(142, 0);
+            this.button12.Margin = new System.Windows.Forms.Padding(0);
+            this.button12.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button12.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(142, 70);
+            this.button12.TabIndex = 2;
+            this.button12.Text = "Lưu";
+            this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button12.UseVisualStyleBackColor = false;
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button13.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.ForeColor = System.Drawing.Color.White;
+            this.button13.Image = global::PM_QLGTDD.Properties.Resources.f;
+            this.button13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button13.Location = new System.Drawing.Point(284, 0);
+            this.button13.Margin = new System.Windows.Forms.Padding(0);
+            this.button13.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button13.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(142, 70);
+            this.button13.TabIndex = 3;
+            this.button13.Text = "Sửa";
+            this.button13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button13.UseVisualStyleBackColor = false;
+            // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button14.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button14.FlatAppearance.BorderSize = 0;
+            this.button14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.ForeColor = System.Drawing.Color.White;
+            this.button14.Image = global::PM_QLGTDD.Properties.Resources.ey;
+            this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button14.Location = new System.Drawing.Point(426, 0);
+            this.button14.Margin = new System.Windows.Forms.Padding(0);
+            this.button14.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button14.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(142, 70);
+            this.button14.TabIndex = 4;
+            this.button14.Text = "Xem";
+            this.button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button14.UseVisualStyleBackColor = false;
+            // 
+            // button15
+            // 
+            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button15.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button15.FlatAppearance.BorderSize = 0;
+            this.button15.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.ForeColor = System.Drawing.Color.White;
+            this.button15.Image = global::PM_QLGTDD.Properties.Resources.icons8_print_24;
+            this.button15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button15.Location = new System.Drawing.Point(568, 0);
+            this.button15.Margin = new System.Windows.Forms.Padding(0);
+            this.button15.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button15.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(142, 70);
+            this.button15.TabIndex = 5;
+            this.button15.Text = "In";
+            this.button15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button15.UseVisualStyleBackColor = false;
+            // 
+            // button16
+            // 
+            this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button16.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button16.FlatAppearance.BorderSize = 0;
+            this.button16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button16.ForeColor = System.Drawing.Color.White;
+            this.button16.Image = global::PM_QLGTDD.Properties.Resources.icons8_delete_bin_24;
+            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button16.Location = new System.Drawing.Point(710, 0);
+            this.button16.Margin = new System.Windows.Forms.Padding(0);
+            this.button16.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button16.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(142, 70);
+            this.button16.TabIndex = 6;
+            this.button16.Text = "Xóa";
+            this.button16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button16.UseVisualStyleBackColor = false;
+            // 
+            // panel2
+            // 
+            this.panel2.AutoScroll = true;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
+            this.panel2.Controls.Add(this.axAcroPDF2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(200, 94);
+            this.panel2.Margin = new System.Windows.Forms.Padding(0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(935, 600);
+            this.panel2.TabIndex = 1;
+            // 
+            // axAcroPDF2
+            // 
+            this.axAcroPDF2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF2.Enabled = true;
+            this.axAcroPDF2.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF2.Name = "axAcroPDF2";
+            this.axAcroPDF2.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF2.OcxState")));
+            this.axAcroPDF2.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF2.TabIndex = 0;
+            // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.tableLayoutPanel9);
             this.tabPage4.Location = new System.Drawing.Point(4, 45);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(1337, 732);
             this.tabPage4.TabIndex = 3;
+            this.tabPage4.Tag = "4";
             this.tabPage4.Text = "Mẫu số 03/ĐK";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel9
+            // 
+            this.tableLayoutPanel9.ColumnCount = 3;
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel9.Controls.Add(this.flowLayoutPanel5, 1, 1);
+            this.tableLayoutPanel9.Controls.Add(this.panel3, 1, 2);
+            this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
+            this.tableLayoutPanel9.RowCount = 4;
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(1337, 732);
+            this.tableLayoutPanel9.TabIndex = 2;
+            // 
+            // flowLayoutPanel5
+            // 
+            this.flowLayoutPanel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.flowLayoutPanel5.Controls.Add(this.button17);
+            this.flowLayoutPanel5.Controls.Add(this.button18);
+            this.flowLayoutPanel5.Controls.Add(this.button19);
+            this.flowLayoutPanel5.Controls.Add(this.button20);
+            this.flowLayoutPanel5.Controls.Add(this.button21);
+            this.flowLayoutPanel5.Controls.Add(this.button22);
+            this.flowLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(200, 36);
+            this.flowLayoutPanel5.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(935, 58);
+            this.flowLayoutPanel5.TabIndex = 0;
+            // 
+            // button17
+            // 
+            this.button17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button17.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button17.FlatAppearance.BorderSize = 0;
+            this.button17.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button17.ForeColor = System.Drawing.Color.White;
+            this.button17.Image = global::PM_QLGTDD.Properties.Resources.icons8_pencil_24__1_;
+            this.button17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button17.Location = new System.Drawing.Point(0, 0);
+            this.button17.Margin = new System.Windows.Forms.Padding(0);
+            this.button17.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button17.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(142, 70);
+            this.button17.TabIndex = 1;
+            this.button17.Text = "Nhập";
+            this.button17.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button17.UseVisualStyleBackColor = false;
+            // 
+            // button18
+            // 
+            this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button18.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button18.FlatAppearance.BorderSize = 0;
+            this.button18.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button18.ForeColor = System.Drawing.Color.White;
+            this.button18.Image = global::PM_QLGTDD.Properties.Resources.icons8_save_24;
+            this.button18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button18.Location = new System.Drawing.Point(142, 0);
+            this.button18.Margin = new System.Windows.Forms.Padding(0);
+            this.button18.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button18.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(142, 70);
+            this.button18.TabIndex = 2;
+            this.button18.Text = "Lưu";
+            this.button18.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button18.UseVisualStyleBackColor = false;
+            // 
+            // button19
+            // 
+            this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button19.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button19.FlatAppearance.BorderSize = 0;
+            this.button19.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button19.ForeColor = System.Drawing.Color.White;
+            this.button19.Image = global::PM_QLGTDD.Properties.Resources.f;
+            this.button19.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button19.Location = new System.Drawing.Point(284, 0);
+            this.button19.Margin = new System.Windows.Forms.Padding(0);
+            this.button19.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button19.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(142, 70);
+            this.button19.TabIndex = 3;
+            this.button19.Text = "Sửa";
+            this.button19.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button19.UseVisualStyleBackColor = false;
+            // 
+            // button20
+            // 
+            this.button20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button20.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button20.FlatAppearance.BorderSize = 0;
+            this.button20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button20.ForeColor = System.Drawing.Color.White;
+            this.button20.Image = global::PM_QLGTDD.Properties.Resources.ey;
+            this.button20.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button20.Location = new System.Drawing.Point(426, 0);
+            this.button20.Margin = new System.Windows.Forms.Padding(0);
+            this.button20.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button20.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(142, 70);
+            this.button20.TabIndex = 4;
+            this.button20.Text = "Xem";
+            this.button20.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button20.UseVisualStyleBackColor = false;
+            // 
+            // button21
+            // 
+            this.button21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button21.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button21.FlatAppearance.BorderSize = 0;
+            this.button21.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button21.ForeColor = System.Drawing.Color.White;
+            this.button21.Image = global::PM_QLGTDD.Properties.Resources.icons8_print_24;
+            this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button21.Location = new System.Drawing.Point(568, 0);
+            this.button21.Margin = new System.Windows.Forms.Padding(0);
+            this.button21.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button21.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(142, 70);
+            this.button21.TabIndex = 5;
+            this.button21.Text = "In";
+            this.button21.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button21.UseVisualStyleBackColor = false;
+            // 
+            // button22
+            // 
+            this.button22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button22.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button22.FlatAppearance.BorderSize = 0;
+            this.button22.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button22.ForeColor = System.Drawing.Color.White;
+            this.button22.Image = global::PM_QLGTDD.Properties.Resources.icons8_delete_bin_24;
+            this.button22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button22.Location = new System.Drawing.Point(710, 0);
+            this.button22.Margin = new System.Windows.Forms.Padding(0);
+            this.button22.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button22.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(142, 70);
+            this.button22.TabIndex = 6;
+            this.button22.Text = "Xóa";
+            this.button22.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button22.UseVisualStyleBackColor = false;
+            // 
+            // panel3
+            // 
+            this.panel3.AutoScroll = true;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
+            this.panel3.Controls.Add(this.axAcroPDF3);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(200, 94);
+            this.panel3.Margin = new System.Windows.Forms.Padding(0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(935, 600);
+            this.panel3.TabIndex = 1;
+            // 
+            // axAcroPDF3
+            // 
+            this.axAcroPDF3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF3.Enabled = true;
+            this.axAcroPDF3.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF3.Name = "axAcroPDF3";
+            this.axAcroPDF3.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF3.OcxState")));
+            this.axAcroPDF3.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF3.TabIndex = 0;
             // 
             // tabPage5
             // 
@@ -1165,25 +1450,26 @@ namespace PM_QLGTDD
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Size = new System.Drawing.Size(1337, 732);
             this.tabPage5.TabIndex = 4;
+            this.tabPage5.Tag = "5";
             this.tabPage5.Text = "Mẫu số 04/ĐK";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel8
             // 
             this.tableLayoutPanel8.ColumnCount = 3;
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel8.Controls.Add(this.flowLayoutPanel3, 1, 1);
             this.tableLayoutPanel8.Controls.Add(this.pnl_container_M04, 1, 2);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 4;
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel8.Size = new System.Drawing.Size(1337, 732);
             this.tableLayoutPanel8.TabIndex = 1;
             // 
@@ -1197,10 +1483,10 @@ namespace PM_QLGTDD
             this.flowLayoutPanel3.Controls.Add(this.M04_btn_in);
             this.flowLayoutPanel3.Controls.Add(this.M04_btn_xoa);
             this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(66, 14);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(200, 36);
             this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(1203, 58);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(935, 58);
             this.flowLayoutPanel3.TabIndex = 0;
             // 
             // M04_btn_Nhap
@@ -1224,6 +1510,7 @@ namespace PM_QLGTDD
             this.M04_btn_Nhap.Text = "Nhập";
             this.M04_btn_Nhap.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.M04_btn_Nhap.UseVisualStyleBackColor = false;
+            this.M04_btn_Nhap.Click += new System.EventHandler(this.M04_btn_Nhap_Click);
             // 
             // M04_btn_Luu
             // 
@@ -1246,6 +1533,7 @@ namespace PM_QLGTDD
             this.M04_btn_Luu.Text = "Lưu";
             this.M04_btn_Luu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.M04_btn_Luu.UseVisualStyleBackColor = false;
+            this.M04_btn_Luu.Click += new System.EventHandler(this.M04_btn_Luu_Click);
             // 
             // M04_btn_sua
             // 
@@ -1339,2961 +1627,1423 @@ namespace PM_QLGTDD
             // 
             this.pnl_container_M04.AutoScroll = true;
             this.pnl_container_M04.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
-            this.pnl_container_M04.Controls.Add(this.tableLayoutPanel9);
+            this.pnl_container_M04.Controls.Add(this.filesPDF_mau04);
             this.pnl_container_M04.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_container_M04.Location = new System.Drawing.Point(66, 72);
+            this.pnl_container_M04.Location = new System.Drawing.Point(200, 94);
             this.pnl_container_M04.Margin = new System.Windows.Forms.Padding(0);
             this.pnl_container_M04.Name = "pnl_container_M04";
-            this.pnl_container_M04.Size = new System.Drawing.Size(1203, 644);
+            this.pnl_container_M04.Size = new System.Drawing.Size(935, 600);
             this.pnl_container_M04.TabIndex = 1;
             // 
-            // tableLayoutPanel9
-            // 
-            this.tableLayoutPanel9.ColumnCount = 1;
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel52, 0, 11);
-            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel10, 0, 0);
-            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel16, 0, 1);
-            this.tableLayoutPanel9.Controls.Add(this.label12, 0, 2);
-            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel18, 0, 3);
-            this.tableLayoutPanel9.Controls.Add(this.label15, 0, 4);
-            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel21, 0, 5);
-            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel23, 0, 6);
-            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel28, 0, 7);
-            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel34, 0, 8);
-            this.tableLayoutPanel9.Controls.Add(this.label34, 0, 9);
-            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel42, 0, 10);
-            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel64, 0, 12);
-            this.tableLayoutPanel9.Controls.Add(this.panel45, 0, 14);
-            this.tableLayoutPanel9.Controls.Add(this.panel46, 0, 16);
-            this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
-            this.tableLayoutPanel9.Padding = new System.Windows.Forms.Padding(5);
-            this.tableLayoutPanel9.RowCount = 17;
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.5F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.5F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(1182, 1600);
-            this.tableLayoutPanel9.TabIndex = 0;
-            // 
-            // tableLayoutPanel52
-            // 
-            this.tableLayoutPanel52.ColumnCount = 1;
-            this.tableLayoutPanel52.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel52.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel52.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel52.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel52.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel52.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel52.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel52.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel52.Controls.Add(this.label44, 0, 0);
-            this.tableLayoutPanel52.Controls.Add(this.tableLayoutPanel53, 0, 1);
-            this.tableLayoutPanel52.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel52.Location = new System.Drawing.Point(8, 973);
-            this.tableLayoutPanel52.Name = "tableLayoutPanel52";
-            this.tableLayoutPanel52.RowCount = 2;
-            this.tableLayoutPanel52.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel52.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel52.Size = new System.Drawing.Size(1166, 105);
-            this.tableLayoutPanel52.TabIndex = 9;
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label44.Location = new System.Drawing.Point(10, 0);
-            this.label44.Margin = new System.Windows.Forms.Padding(10, 0, 3, 0);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(1153, 21);
-            this.label44.TabIndex = 0;
-            this.label44.Text = "Rừng sản xuất là rừng trồng";
-            // 
-            // tableLayoutPanel53
-            // 
-            this.tableLayoutPanel53.ColumnCount = 10;
-            this.tableLayoutPanel53.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel53.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel53.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel53.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel53.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel53.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel53.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel53.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel53.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel53.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel53.Controls.Add(this.panel33, 0, 0);
-            this.tableLayoutPanel53.Controls.Add(this.panel34, 1, 0);
-            this.tableLayoutPanel53.Controls.Add(this.panel35, 2, 0);
-            this.tableLayoutPanel53.Controls.Add(this.panel36, 3, 0);
-            this.tableLayoutPanel53.Controls.Add(this.panel37, 4, 0);
-            this.tableLayoutPanel53.Controls.Add(this.panel38, 5, 0);
-            this.tableLayoutPanel53.Controls.Add(this.panel39, 6, 0);
-            this.tableLayoutPanel53.Controls.Add(this.panel40, 9, 0);
-            this.tableLayoutPanel53.Controls.Add(this.panel41, 7, 0);
-            this.tableLayoutPanel53.Controls.Add(this.panel42, 8, 0);
-            this.tableLayoutPanel53.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel53.Location = new System.Drawing.Point(0, 21);
-            this.tableLayoutPanel53.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel53.Name = "tableLayoutPanel53";
-            this.tableLayoutPanel53.RowCount = 1;
-            this.tableLayoutPanel53.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel53.Size = new System.Drawing.Size(1166, 84);
-            this.tableLayoutPanel53.TabIndex = 1;
-            // 
-            // panel33
-            // 
-            this.panel33.BackColor = System.Drawing.Color.White;
-            this.panel33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel33.Controls.Add(this.M04_txt_RSX_loaiCay);
-            this.panel33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel33.Location = new System.Drawing.Point(0, 0);
-            this.panel33.Margin = new System.Windows.Forms.Padding(0);
-            this.panel33.Name = "panel33";
-            this.panel33.Size = new System.Drawing.Size(116, 84);
-            this.panel33.TabIndex = 0;
-            // 
-            // M04_txt_RSX_loaiCay
-            // 
-            this.M04_txt_RSX_loaiCay.ColumnCount = 1;
-            this.M04_txt_RSX_loaiCay.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.M04_txt_RSX_loaiCay.Controls.Add(this.label45, 0, 0);
-            this.M04_txt_RSX_loaiCay.Controls.Add(this.textBox25, 0, 2);
-            this.M04_txt_RSX_loaiCay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_RSX_loaiCay.Location = new System.Drawing.Point(0, 0);
-            this.M04_txt_RSX_loaiCay.Margin = new System.Windows.Forms.Padding(0);
-            this.M04_txt_RSX_loaiCay.Name = "M04_txt_RSX_loaiCay";
-            this.M04_txt_RSX_loaiCay.RowCount = 3;
-            this.M04_txt_RSX_loaiCay.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.M04_txt_RSX_loaiCay.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.M04_txt_RSX_loaiCay.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.M04_txt_RSX_loaiCay.Size = new System.Drawing.Size(114, 82);
-            this.M04_txt_RSX_loaiCay.TabIndex = 0;
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label45.Location = new System.Drawing.Point(3, 0);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(99, 24);
-            this.label45.TabIndex = 0;
-            this.label45.Text = "Loại cây chủ yếu";
-            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // textBox25
-            // 
-            this.textBox25.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox25.Location = new System.Drawing.Point(0, 48);
-            this.textBox25.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox25.Multiline = true;
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(114, 34);
-            this.textBox25.TabIndex = 1;
-            // 
-            // panel34
-            // 
-            this.panel34.BackColor = System.Drawing.Color.White;
-            this.panel34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel34.Controls.Add(this.lya);
-            this.panel34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel34.Location = new System.Drawing.Point(116, 0);
-            this.panel34.Margin = new System.Windows.Forms.Padding(0);
-            this.panel34.Name = "panel34";
-            this.panel34.Size = new System.Drawing.Size(116, 84);
-            this.panel34.TabIndex = 0;
-            // 
-            // lya
-            // 
-            this.lya.ColumnCount = 1;
-            this.lya.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.lya.Controls.Add(this.label46, 0, 0);
-            this.lya.Controls.Add(this.M04_txt_RSX_dienTich, 0, 2);
-            this.lya.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lya.Location = new System.Drawing.Point(0, 0);
-            this.lya.Margin = new System.Windows.Forms.Padding(0);
-            this.lya.Name = "lya";
-            this.lya.RowCount = 3;
-            this.lya.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.lya.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.lya.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.lya.Size = new System.Drawing.Size(114, 82);
-            this.lya.TabIndex = 0;
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label46.Location = new System.Drawing.Point(3, 0);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(108, 24);
-            this.label46.TabIndex = 0;
-            this.label46.Text = "Diện tích (m2)";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_RSX_dienTich
-            // 
-            this.M04_txt_RSX_dienTich.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_RSX_dienTich.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_RSX_dienTich.Location = new System.Drawing.Point(0, 48);
-            this.M04_txt_RSX_dienTich.Margin = new System.Windows.Forms.Padding(0);
-            this.M04_txt_RSX_dienTich.Multiline = true;
-            this.M04_txt_RSX_dienTich.Name = "M04_txt_RSX_dienTich";
-            this.M04_txt_RSX_dienTich.Size = new System.Drawing.Size(114, 34);
-            this.M04_txt_RSX_dienTich.TabIndex = 1;
-            // 
-            // panel35
-            // 
-            this.panel35.BackColor = System.Drawing.Color.White;
-            this.panel35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel35.Controls.Add(this.tableLayoutPanel56);
-            this.panel35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel35.Location = new System.Drawing.Point(232, 0);
-            this.panel35.Margin = new System.Windows.Forms.Padding(0);
-            this.panel35.Name = "panel35";
-            this.panel35.Size = new System.Drawing.Size(116, 84);
-            this.panel35.TabIndex = 0;
-            // 
-            // tableLayoutPanel56
-            // 
-            this.tableLayoutPanel56.ColumnCount = 1;
-            this.tableLayoutPanel56.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel56.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel56.Controls.Add(this.label47, 0, 0);
-            this.tableLayoutPanel56.Controls.Add(this.M04_txt_RSX_tuTrong, 0, 1);
-            this.tableLayoutPanel56.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel56.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel56.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel56.Name = "tableLayoutPanel56";
-            this.tableLayoutPanel56.RowCount = 2;
-            this.tableLayoutPanel56.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel56.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel56.Size = new System.Drawing.Size(114, 82);
-            this.tableLayoutPanel56.TabIndex = 0;
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label47.Location = new System.Drawing.Point(3, 0);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(108, 24);
-            this.label47.TabIndex = 0;
-            this.label47.Text = "Tự trồng rừng";
-            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_RSX_tuTrong
-            // 
-            this.M04_txt_RSX_tuTrong.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_RSX_tuTrong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_RSX_tuTrong.Location = new System.Drawing.Point(0, 24);
-            this.M04_txt_RSX_tuTrong.Margin = new System.Windows.Forms.Padding(0);
-            this.M04_txt_RSX_tuTrong.Multiline = true;
-            this.M04_txt_RSX_tuTrong.Name = "M04_txt_RSX_tuTrong";
-            this.M04_txt_RSX_tuTrong.Size = new System.Drawing.Size(114, 58);
-            this.M04_txt_RSX_tuTrong.TabIndex = 1;
-            // 
-            // panel36
-            // 
-            this.panel36.BackColor = System.Drawing.Color.White;
-            this.panel36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel36.Controls.Add(this.tableLayoutPanel57);
-            this.panel36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel36.Location = new System.Drawing.Point(348, 0);
-            this.panel36.Margin = new System.Windows.Forms.Padding(0);
-            this.panel36.Name = "panel36";
-            this.panel36.Size = new System.Drawing.Size(116, 84);
-            this.panel36.TabIndex = 0;
-            // 
-            // tableLayoutPanel57
-            // 
-            this.tableLayoutPanel57.ColumnCount = 1;
-            this.tableLayoutPanel57.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel57.Controls.Add(this.label48, 0, 0);
-            this.tableLayoutPanel57.Controls.Add(this.M04_txt_RSX_NNKTT, 0, 1);
-            this.tableLayoutPanel57.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel57.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel57.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel57.Name = "tableLayoutPanel57";
-            this.tableLayoutPanel57.RowCount = 2;
-            this.tableLayoutPanel57.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel57.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel57.Size = new System.Drawing.Size(114, 82);
-            this.tableLayoutPanel57.TabIndex = 0;
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label48.Location = new System.Drawing.Point(3, 0);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(108, 49);
-            this.label48.TabIndex = 0;
-            this.label48.Text = "Nhà nước giao không thu tiền";
-            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_RSX_NNKTT
-            // 
-            this.M04_txt_RSX_NNKTT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_RSX_NNKTT.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_RSX_NNKTT.Location = new System.Drawing.Point(0, 49);
-            this.M04_txt_RSX_NNKTT.Margin = new System.Windows.Forms.Padding(0);
-            this.M04_txt_RSX_NNKTT.Multiline = true;
-            this.M04_txt_RSX_NNKTT.Name = "M04_txt_RSX_NNKTT";
-            this.M04_txt_RSX_NNKTT.Size = new System.Drawing.Size(114, 33);
-            this.M04_txt_RSX_NNKTT.TabIndex = 1;
-            // 
-            // panel37
-            // 
-            this.panel37.BackColor = System.Drawing.Color.White;
-            this.panel37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel37.Controls.Add(this.tableLayoutPanel58);
-            this.panel37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel37.Location = new System.Drawing.Point(464, 0);
-            this.panel37.Margin = new System.Windows.Forms.Padding(0);
-            this.panel37.Name = "panel37";
-            this.panel37.Size = new System.Drawing.Size(116, 84);
-            this.panel37.TabIndex = 0;
-            // 
-            // tableLayoutPanel58
-            // 
-            this.tableLayoutPanel58.ColumnCount = 1;
-            this.tableLayoutPanel58.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel58.Controls.Add(this.label49, 0, 0);
-            this.tableLayoutPanel58.Controls.Add(this.M04_txt_RSX_NNTT, 0, 1);
-            this.tableLayoutPanel58.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel58.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel58.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel58.Name = "tableLayoutPanel58";
-            this.tableLayoutPanel58.RowCount = 2;
-            this.tableLayoutPanel58.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel58.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel58.Size = new System.Drawing.Size(114, 82);
-            this.tableLayoutPanel58.TabIndex = 0;
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label49.Location = new System.Drawing.Point(3, 0);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(108, 49);
-            this.label49.TabIndex = 0;
-            this.label49.Text = "Nhà nước giao thu tiền";
-            // 
-            // M04_txt_RSX_NNTT
-            // 
-            this.M04_txt_RSX_NNTT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_RSX_NNTT.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_RSX_NNTT.Location = new System.Drawing.Point(0, 49);
-            this.M04_txt_RSX_NNTT.Margin = new System.Windows.Forms.Padding(0);
-            this.M04_txt_RSX_NNTT.Multiline = true;
-            this.M04_txt_RSX_NNTT.Name = "M04_txt_RSX_NNTT";
-            this.M04_txt_RSX_NNTT.Size = new System.Drawing.Size(114, 33);
-            this.M04_txt_RSX_NNTT.TabIndex = 1;
-            // 
-            // panel38
-            // 
-            this.panel38.BackColor = System.Drawing.Color.White;
-            this.panel38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel38.Controls.Add(this.tableLayoutPanel59);
-            this.panel38.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel38.Location = new System.Drawing.Point(580, 0);
-            this.panel38.Margin = new System.Windows.Forms.Padding(0);
-            this.panel38.Name = "panel38";
-            this.panel38.Size = new System.Drawing.Size(116, 84);
-            this.panel38.TabIndex = 0;
-            // 
-            // tableLayoutPanel59
-            // 
-            this.tableLayoutPanel59.ColumnCount = 1;
-            this.tableLayoutPanel59.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel59.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel59.Controls.Add(this.label50, 0, 0);
-            this.tableLayoutPanel59.Controls.Add(this.M04_txt_RSX_nhanChuyenQuyen, 0, 1);
-            this.tableLayoutPanel59.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel59.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel59.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel59.Name = "tableLayoutPanel59";
-            this.tableLayoutPanel59.RowCount = 2;
-            this.tableLayoutPanel59.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel59.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel59.Size = new System.Drawing.Size(114, 82);
-            this.tableLayoutPanel59.TabIndex = 0;
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label50.Location = new System.Drawing.Point(3, 0);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(108, 24);
-            this.label50.TabIndex = 0;
-            this.label50.Text = "Nhận chuyển quyền";
-            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_RSX_nhanChuyenQuyen
-            // 
-            this.M04_txt_RSX_nhanChuyenQuyen.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_RSX_nhanChuyenQuyen.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_RSX_nhanChuyenQuyen.Location = new System.Drawing.Point(0, 24);
-            this.M04_txt_RSX_nhanChuyenQuyen.Margin = new System.Windows.Forms.Padding(0);
-            this.M04_txt_RSX_nhanChuyenQuyen.Multiline = true;
-            this.M04_txt_RSX_nhanChuyenQuyen.Name = "M04_txt_RSX_nhanChuyenQuyen";
-            this.M04_txt_RSX_nhanChuyenQuyen.Size = new System.Drawing.Size(114, 58);
-            this.M04_txt_RSX_nhanChuyenQuyen.TabIndex = 1;
-            // 
-            // panel39
-            // 
-            this.panel39.BackColor = System.Drawing.Color.White;
-            this.panel39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel39.Controls.Add(this.tableLayoutPanel60);
-            this.panel39.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel39.Location = new System.Drawing.Point(696, 0);
-            this.panel39.Margin = new System.Windows.Forms.Padding(0);
-            this.panel39.Name = "panel39";
-            this.panel39.Size = new System.Drawing.Size(116, 84);
-            this.panel39.TabIndex = 0;
-            // 
-            // tableLayoutPanel60
-            // 
-            this.tableLayoutPanel60.ColumnCount = 1;
-            this.tableLayoutPanel60.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel60.Controls.Add(this.label51, 0, 0);
-            this.tableLayoutPanel60.Controls.Add(this.M04_txt_RSX_nguonVon, 0, 1);
-            this.tableLayoutPanel60.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel60.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel60.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel60.Name = "tableLayoutPanel60";
-            this.tableLayoutPanel60.RowCount = 2;
-            this.tableLayoutPanel60.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel60.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel60.Size = new System.Drawing.Size(114, 82);
-            this.tableLayoutPanel60.TabIndex = 0;
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label51.Location = new System.Drawing.Point(3, 0);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(108, 49);
-            this.label51.TabIndex = 0;
-            this.label51.Text = "Nguồn vốn trồng, nhận quyền";
-            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_RSX_nguonVon
-            // 
-            this.M04_txt_RSX_nguonVon.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_RSX_nguonVon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_RSX_nguonVon.Location = new System.Drawing.Point(0, 49);
-            this.M04_txt_RSX_nguonVon.Margin = new System.Windows.Forms.Padding(0);
-            this.M04_txt_RSX_nguonVon.Multiline = true;
-            this.M04_txt_RSX_nguonVon.Name = "M04_txt_RSX_nguonVon";
-            this.M04_txt_RSX_nguonVon.Size = new System.Drawing.Size(114, 33);
-            this.M04_txt_RSX_nguonVon.TabIndex = 1;
-            // 
-            // panel40
-            // 
-            this.panel40.BackColor = System.Drawing.Color.White;
-            this.panel40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel40.Controls.Add(this.tableLayoutPanel61);
-            this.panel40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel40.Location = new System.Drawing.Point(1044, 0);
-            this.panel40.Margin = new System.Windows.Forms.Padding(0);
-            this.panel40.Name = "panel40";
-            this.panel40.Size = new System.Drawing.Size(122, 84);
-            this.panel40.TabIndex = 0;
-            // 
-            // tableLayoutPanel61
-            // 
-            this.tableLayoutPanel61.ColumnCount = 1;
-            this.tableLayoutPanel61.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel61.Controls.Add(this.label52, 0, 0);
-            this.tableLayoutPanel61.Controls.Add(this.M04_dtp_RSX_HSD, 0, 2);
-            this.tableLayoutPanel61.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel61.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel61.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel61.Name = "tableLayoutPanel61";
-            this.tableLayoutPanel61.RowCount = 3;
-            this.tableLayoutPanel61.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel61.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31.70732F));
-            this.tableLayoutPanel61.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.02439F));
-            this.tableLayoutPanel61.Size = new System.Drawing.Size(120, 82);
-            this.tableLayoutPanel61.TabIndex = 0;
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label52.Location = new System.Drawing.Point(3, 0);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(114, 24);
-            this.label52.TabIndex = 0;
-            this.label52.Text = "Thời hạn sử dụng đến";
-            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_dtp_RSX_HSD
-            // 
-            this.M04_dtp_RSX_HSD.CalendarTodayDate = new System.DateTime(2021, 3, 9, 0, 0, 0, 0);
-            this.M04_dtp_RSX_HSD.CustomFormat = "dd/MM/yyyy";
-            this.M04_dtp_RSX_HSD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_dtp_RSX_HSD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.M04_dtp_RSX_HSD.Location = new System.Drawing.Point(3, 52);
-            this.M04_dtp_RSX_HSD.Name = "M04_dtp_RSX_HSD";
-            this.M04_dtp_RSX_HSD.Size = new System.Drawing.Size(114, 27);
-            this.M04_dtp_RSX_HSD.TabIndex = 1;
-            // 
-            // panel41
-            // 
-            this.panel41.BackColor = System.Drawing.Color.White;
-            this.panel41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel41.Controls.Add(this.tableLayoutPanel62);
-            this.panel41.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel41.Location = new System.Drawing.Point(812, 0);
-            this.panel41.Margin = new System.Windows.Forms.Padding(0);
-            this.panel41.Name = "panel41";
-            this.panel41.Size = new System.Drawing.Size(116, 84);
-            this.panel41.TabIndex = 1;
-            // 
-            // tableLayoutPanel62
-            // 
-            this.tableLayoutPanel62.ColumnCount = 1;
-            this.tableLayoutPanel62.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel62.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel62.Controls.Add(this.label53, 0, 0);
-            this.tableLayoutPanel62.Controls.Add(this.M04_txt_RSX_soHuuChung, 0, 1);
-            this.tableLayoutPanel62.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel62.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel62.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel62.Name = "tableLayoutPanel62";
-            this.tableLayoutPanel62.RowCount = 2;
-            this.tableLayoutPanel62.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel62.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel62.Size = new System.Drawing.Size(114, 82);
-            this.tableLayoutPanel62.TabIndex = 0;
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label53.Location = new System.Drawing.Point(3, 0);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(108, 24);
-            this.label53.TabIndex = 0;
-            this.label53.Text = "Sở hữu chung (m2)";
-            this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_RSX_soHuuChung
-            // 
-            this.M04_txt_RSX_soHuuChung.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_RSX_soHuuChung.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_RSX_soHuuChung.Location = new System.Drawing.Point(0, 24);
-            this.M04_txt_RSX_soHuuChung.Margin = new System.Windows.Forms.Padding(0);
-            this.M04_txt_RSX_soHuuChung.Multiline = true;
-            this.M04_txt_RSX_soHuuChung.Name = "M04_txt_RSX_soHuuChung";
-            this.M04_txt_RSX_soHuuChung.Size = new System.Drawing.Size(114, 58);
-            this.M04_txt_RSX_soHuuChung.TabIndex = 1;
-            // 
-            // panel42
-            // 
-            this.panel42.BackColor = System.Drawing.Color.White;
-            this.panel42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel42.Controls.Add(this.tableLayoutPanel63);
-            this.panel42.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel42.Location = new System.Drawing.Point(928, 0);
-            this.panel42.Margin = new System.Windows.Forms.Padding(0);
-            this.panel42.Name = "panel42";
-            this.panel42.Size = new System.Drawing.Size(116, 84);
-            this.panel42.TabIndex = 1;
-            // 
-            // tableLayoutPanel63
-            // 
-            this.tableLayoutPanel63.ColumnCount = 1;
-            this.tableLayoutPanel63.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel63.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel63.Controls.Add(this.label54, 0, 0);
-            this.tableLayoutPanel63.Controls.Add(this.M04_txt_RSX_soHuuRieng, 0, 1);
-            this.tableLayoutPanel63.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel63.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel63.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel63.Name = "tableLayoutPanel63";
-            this.tableLayoutPanel63.RowCount = 2;
-            this.tableLayoutPanel63.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel63.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel63.Size = new System.Drawing.Size(114, 82);
-            this.tableLayoutPanel63.TabIndex = 0;
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label54.Location = new System.Drawing.Point(3, 0);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(108, 24);
-            this.label54.TabIndex = 0;
-            this.label54.Text = "Sở  hữu riêng (m2)";
-            this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_RSX_soHuuRieng
-            // 
-            this.M04_txt_RSX_soHuuRieng.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_RSX_soHuuRieng.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_RSX_soHuuRieng.Location = new System.Drawing.Point(0, 24);
-            this.M04_txt_RSX_soHuuRieng.Margin = new System.Windows.Forms.Padding(0);
-            this.M04_txt_RSX_soHuuRieng.Multiline = true;
-            this.M04_txt_RSX_soHuuRieng.Name = "M04_txt_RSX_soHuuRieng";
-            this.M04_txt_RSX_soHuuRieng.Size = new System.Drawing.Size(114, 58);
-            this.M04_txt_RSX_soHuuRieng.TabIndex = 1;
-            // 
-            // tableLayoutPanel10
-            // 
-            this.tableLayoutPanel10.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel10.ColumnCount = 5;
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.81818F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.181818F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.09091F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.23891F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.85324F));
-            this.tableLayoutPanel10.Controls.Add(this.panel4, 0, 0);
-            this.tableLayoutPanel10.Controls.Add(this.panel5, 1, 0);
-            this.tableLayoutPanel10.Controls.Add(this.panel6, 2, 0);
-            this.tableLayoutPanel10.Controls.Add(this.panel7, 3, 0);
-            this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(8, 5);
-            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(3, 0, 3, 30);
-            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
-            this.tableLayoutPanel10.RowCount = 1;
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(1166, 49);
-            this.tableLayoutPanel10.TabIndex = 0;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.tableLayoutPanel11);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(137, 49);
-            this.panel4.TabIndex = 1;
-            // 
-            // tableLayoutPanel11
-            // 
-            this.tableLayoutPanel11.ColumnCount = 1;
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel11.Controls.Add(this.label7, 0, 0);
-            this.tableLayoutPanel11.Controls.Add(this.M04_txt_quyenSo, 0, 1);
-            this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel11.Name = "tableLayoutPanel11";
-            this.tableLayoutPanel11.RowCount = 2;
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(135, 47);
-            this.tableLayoutPanel11.TabIndex = 1;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(3, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(129, 23);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Quyển số";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_quyenSo
-            // 
-            this.M04_txt_quyenSo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_quyenSo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_quyenSo.Location = new System.Drawing.Point(3, 23);
-            this.M04_txt_quyenSo.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.M04_txt_quyenSo.Multiline = true;
-            this.M04_txt_quyenSo.Name = "M04_txt_quyenSo";
-            this.M04_txt_quyenSo.Size = new System.Drawing.Size(129, 24);
-            this.M04_txt_quyenSo.TabIndex = 1;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.tableLayoutPanel12);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(137, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(95, 49);
-            this.panel5.TabIndex = 2;
-            // 
-            // tableLayoutPanel12
-            // 
-            this.tableLayoutPanel12.ColumnCount = 1;
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel12.Controls.Add(this.label8, 0, 0);
-            this.tableLayoutPanel12.Controls.Add(this.M04_NSD_txt_so, 0, 1);
-            this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel12.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel12.Name = "tableLayoutPanel12";
-            this.tableLayoutPanel12.RowCount = 2;
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(93, 47);
-            this.tableLayoutPanel12.TabIndex = 1;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(3, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(87, 23);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Số";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_NSD_txt_so
-            // 
-            this.M04_NSD_txt_so.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_NSD_txt_so.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_NSD_txt_so.Location = new System.Drawing.Point(3, 23);
-            this.M04_NSD_txt_so.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.M04_NSD_txt_so.Multiline = true;
-            this.M04_NSD_txt_so.Name = "M04_NSD_txt_so";
-            this.M04_NSD_txt_so.Size = new System.Drawing.Size(87, 24);
-            this.M04_NSD_txt_so.TabIndex = 1;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.tableLayoutPanel14);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(232, 0);
-            this.panel6.Margin = new System.Windows.Forms.Padding(0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(222, 49);
-            this.panel6.TabIndex = 3;
-            // 
-            // tableLayoutPanel14
-            // 
-            this.tableLayoutPanel14.ColumnCount = 1;
-            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel14.Controls.Add(this.label9, 0, 0);
-            this.tableLayoutPanel14.Controls.Add(this.M04_txt_hoTenNguoiVD, 0, 1);
-            this.tableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel14.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel14.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel14.Name = "tableLayoutPanel14";
-            this.tableLayoutPanel14.RowCount = 2;
-            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel14.Size = new System.Drawing.Size(220, 47);
-            this.tableLayoutPanel14.TabIndex = 1;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(3, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(214, 23);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Họ, tên người viết đơn";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_hoTenNguoiVD
-            // 
-            this.M04_txt_hoTenNguoiVD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_hoTenNguoiVD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_hoTenNguoiVD.Location = new System.Drawing.Point(3, 23);
-            this.M04_txt_hoTenNguoiVD.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.M04_txt_hoTenNguoiVD.Multiline = true;
-            this.M04_txt_hoTenNguoiVD.Name = "M04_txt_hoTenNguoiVD";
-            this.M04_txt_hoTenNguoiVD.Size = new System.Drawing.Size(214, 24);
-            this.M04_txt_hoTenNguoiVD.TabIndex = 1;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.tableLayoutPanel15);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(454, 0);
-            this.panel7.Margin = new System.Windows.Forms.Padding(0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(119, 49);
-            this.panel7.TabIndex = 4;
-            // 
-            // tableLayoutPanel15
-            // 
-            this.tableLayoutPanel15.ColumnCount = 1;
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel15.Controls.Add(this.label10, 0, 0);
-            this.tableLayoutPanel15.Controls.Add(this.M04_dtp_NgayVD, 0, 1);
-            this.tableLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel15.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel15.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel15.Name = "tableLayoutPanel15";
-            this.tableLayoutPanel15.RowCount = 2;
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(117, 47);
-            this.tableLayoutPanel15.TabIndex = 1;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.White;
-            this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(3, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(111, 23);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Ngày làm đơn";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_dtp_NgayVD
-            // 
-            this.M04_dtp_NgayVD.CalendarTodayDate = new System.DateTime(2021, 3, 9, 0, 0, 0, 0);
-            this.M04_dtp_NgayVD.CustomFormat = "dd/MM/yyyy";
-            this.M04_dtp_NgayVD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_dtp_NgayVD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.M04_dtp_NgayVD.Location = new System.Drawing.Point(0, 23);
-            this.M04_dtp_NgayVD.Margin = new System.Windows.Forms.Padding(0);
-            this.M04_dtp_NgayVD.MinDate = new System.DateTime(2021, 3, 9, 0, 0, 0, 0);
-            this.M04_dtp_NgayVD.Name = "M04_dtp_NgayVD";
-            this.M04_dtp_NgayVD.Size = new System.Drawing.Size(117, 24);
-            this.M04_dtp_NgayVD.TabIndex = 1;
-            // 
-            // tableLayoutPanel16
-            // 
-            this.tableLayoutPanel16.ColumnCount = 1;
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel16.Controls.Add(this.panel3, 0, 0);
-            this.tableLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel16.Location = new System.Drawing.Point(8, 87);
-            this.tableLayoutPanel16.Name = "tableLayoutPanel16";
-            this.tableLayoutPanel16.RowCount = 1;
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel16.Size = new System.Drawing.Size(1166, 121);
-            this.tableLayoutPanel16.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.tableLayoutPanel17);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1166, 121);
-            this.panel3.TabIndex = 0;
-            // 
-            // tableLayoutPanel17
-            // 
-            this.tableLayoutPanel17.ColumnCount = 1;
-            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel17.Controls.Add(this.label11, 0, 0);
-            this.tableLayoutPanel17.Controls.Add(this.M04_txt_kinhGui, 0, 1);
-            this.tableLayoutPanel17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel17.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel17.Name = "tableLayoutPanel17";
-            this.tableLayoutPanel17.RowCount = 2;
-            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel17.Size = new System.Drawing.Size(1164, 119);
-            this.tableLayoutPanel17.TabIndex = 0;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Location = new System.Drawing.Point(3, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(1158, 35);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Kính gửi";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_kinhGui
-            // 
-            this.M04_txt_kinhGui.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_kinhGui.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_kinhGui.Location = new System.Drawing.Point(0, 35);
-            this.M04_txt_kinhGui.Margin = new System.Windows.Forms.Padding(0);
-            this.M04_txt_kinhGui.Multiline = true;
-            this.M04_txt_kinhGui.Name = "M04_txt_kinhGui";
-            this.M04_txt_kinhGui.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.M04_txt_kinhGui.Size = new System.Drawing.Size(1164, 84);
-            this.M04_txt_kinhGui.TabIndex = 1;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(123)))), ((int)(((byte)(73)))));
-            this.label12.Location = new System.Drawing.Point(8, 211);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(1166, 31);
-            this.label12.TabIndex = 2;
-            this.label12.Text = "NGƯỜI SỬ DỤNG ĐẤT, CHỦ SỞ HỮU TÀI SẢN GẮN LIỀN VỚI ĐẤT, NGƯỜI QUẢN LÝ ĐẤT";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // tableLayoutPanel18
-            // 
-            this.tableLayoutPanel18.ColumnCount = 2;
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel18.Controls.Add(this.panel8, 0, 0);
-            this.tableLayoutPanel18.Controls.Add(this.panel9, 1, 0);
-            this.tableLayoutPanel18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel18.Location = new System.Drawing.Point(8, 245);
-            this.tableLayoutPanel18.Name = "tableLayoutPanel18";
-            this.tableLayoutPanel18.RowCount = 1;
-            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 105F));
-            this.tableLayoutPanel18.Size = new System.Drawing.Size(1166, 105);
-            this.tableLayoutPanel18.TabIndex = 3;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.tableLayoutPanel19);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Margin = new System.Windows.Forms.Padding(0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(349, 105);
-            this.panel8.TabIndex = 0;
-            // 
-            // tableLayoutPanel19
-            // 
-            this.tableLayoutPanel19.ColumnCount = 1;
-            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel19.Controls.Add(this.label13, 0, 0);
-            this.tableLayoutPanel19.Controls.Add(this.M04_NSD_txt_hoTen, 0, 1);
-            this.tableLayoutPanel19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel19.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel19.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel19.Name = "tableLayoutPanel19";
-            this.tableLayoutPanel19.RowCount = 2;
-            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel19.Size = new System.Drawing.Size(347, 103);
-            this.tableLayoutPanel19.TabIndex = 0;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label13.Location = new System.Drawing.Point(3, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(341, 30);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "Họ và tên";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_NSD_txt_hoTen
-            // 
-            this.M04_NSD_txt_hoTen.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_NSD_txt_hoTen.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_NSD_txt_hoTen.Location = new System.Drawing.Point(3, 33);
-            this.M04_NSD_txt_hoTen.Multiline = true;
-            this.M04_NSD_txt_hoTen.Name = "M04_NSD_txt_hoTen";
-            this.M04_NSD_txt_hoTen.Size = new System.Drawing.Size(341, 67);
-            this.M04_NSD_txt_hoTen.TabIndex = 1;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.White;
-            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Controls.Add(this.tableLayoutPanel20);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(349, 0);
-            this.panel9.Margin = new System.Windows.Forms.Padding(0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(817, 105);
-            this.panel9.TabIndex = 0;
-            // 
-            // tableLayoutPanel20
-            // 
-            this.tableLayoutPanel20.ColumnCount = 1;
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel20.Controls.Add(this.label14, 0, 0);
-            this.tableLayoutPanel20.Controls.Add(this.M04_NSD_txt_diaChi, 0, 1);
-            this.tableLayoutPanel20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel20.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel20.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
-            this.tableLayoutPanel20.Name = "tableLayoutPanel20";
-            this.tableLayoutPanel20.RowCount = 2;
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel20.Size = new System.Drawing.Size(815, 103);
-            this.tableLayoutPanel20.TabIndex = 0;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label14.Location = new System.Drawing.Point(3, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(809, 30);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "Địa chỉ thường trú";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_NSD_txt_diaChi
-            // 
-            this.M04_NSD_txt_diaChi.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_NSD_txt_diaChi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_NSD_txt_diaChi.Location = new System.Drawing.Point(3, 33);
-            this.M04_NSD_txt_diaChi.Multiline = true;
-            this.M04_NSD_txt_diaChi.Name = "M04_NSD_txt_diaChi";
-            this.M04_NSD_txt_diaChi.Size = new System.Drawing.Size(809, 67);
-            this.M04_NSD_txt_diaChi.TabIndex = 1;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(123)))), ((int)(((byte)(73)))));
-            this.label15.Location = new System.Drawing.Point(8, 353);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(1166, 31);
-            this.label15.TabIndex = 4;
-            this.label15.Text = "ĐỀ NGHỊ";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // tableLayoutPanel21
-            // 
-            this.tableLayoutPanel21.ColumnCount = 1;
-            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel21.Controls.Add(this.panel10, 0, 0);
-            this.tableLayoutPanel21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel21.Location = new System.Drawing.Point(8, 384);
-            this.tableLayoutPanel21.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.tableLayoutPanel21.Name = "tableLayoutPanel21";
-            this.tableLayoutPanel21.RowCount = 1;
-            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel21.Size = new System.Drawing.Size(1166, 111);
-            this.tableLayoutPanel21.TabIndex = 5;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel10.Controls.Add(this.tableLayoutPanel22);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel10.Location = new System.Drawing.Point(0, 5);
-            this.panel10.Margin = new System.Windows.Forms.Padding(0, 5, 0, 30);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1166, 76);
-            this.panel10.TabIndex = 0;
-            // 
-            // tableLayoutPanel22
-            // 
-            this.tableLayoutPanel22.ColumnCount = 3;
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.35043F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.62393F));
-            this.tableLayoutPanel22.Controls.Add(this.M04_DN_rdb_Loai1, 0, 0);
-            this.tableLayoutPanel22.Controls.Add(this.M04_DN_rdb_Loai2, 0, 1);
-            this.tableLayoutPanel22.Controls.Add(this.M04_DN_rdb_Loai1DK, 1, 0);
-            this.tableLayoutPanel22.Controls.Add(this.M04_DN_lbl_Loai1CapCN, 2, 0);
-            this.tableLayoutPanel22.Controls.Add(this.M04_DN_lbl_Loai2DK, 1, 1);
-            this.tableLayoutPanel22.Controls.Add(this.M04_DN_lbl_Loai2CapCN, 2, 1);
-            this.tableLayoutPanel22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel22.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel22.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
-            this.tableLayoutPanel22.Name = "tableLayoutPanel22";
-            this.tableLayoutPanel22.RowCount = 2;
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel22.Size = new System.Drawing.Size(1164, 74);
-            this.tableLayoutPanel22.TabIndex = 0;
-            // 
-            // M04_DN_rdb_Loai1
-            // 
-            this.M04_DN_rdb_Loai1.AutoSize = true;
-            this.M04_DN_rdb_Loai1.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.M04_DN_rdb_Loai1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_DN_rdb_Loai1.Location = new System.Drawing.Point(3, 3);
-            this.M04_DN_rdb_Loai1.Name = "M04_DN_rdb_Loai1";
-            this.M04_DN_rdb_Loai1.Size = new System.Drawing.Size(123, 31);
-            this.M04_DN_rdb_Loai1.TabIndex = 0;
-            this.M04_DN_rdb_Loai1.TabStop = true;
-            this.M04_DN_rdb_Loai1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.M04_DN_rdb_Loai1.UseVisualStyleBackColor = true;
-            // 
-            // M04_DN_rdb_Loai2
-            // 
-            this.M04_DN_rdb_Loai2.AutoSize = true;
-            this.M04_DN_rdb_Loai2.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.M04_DN_rdb_Loai2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_DN_rdb_Loai2.Location = new System.Drawing.Point(3, 40);
-            this.M04_DN_rdb_Loai2.Name = "M04_DN_rdb_Loai2";
-            this.M04_DN_rdb_Loai2.Size = new System.Drawing.Size(123, 31);
-            this.M04_DN_rdb_Loai2.TabIndex = 0;
-            this.M04_DN_rdb_Loai2.TabStop = true;
-            this.M04_DN_rdb_Loai2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.M04_DN_rdb_Loai2.UseVisualStyleBackColor = true;
-            // 
-            // M04_DN_rdb_Loai1DK
-            // 
-            this.M04_DN_rdb_Loai1DK.AutoSize = true;
-            this.M04_DN_rdb_Loai1DK.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_DN_rdb_Loai1DK.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.M04_DN_rdb_Loai1DK.Location = new System.Drawing.Point(132, 0);
-            this.M04_DN_rdb_Loai1DK.Name = "M04_DN_rdb_Loai1DK";
-            this.M04_DN_rdb_Loai1DK.Size = new System.Drawing.Size(195, 37);
-            this.M04_DN_rdb_Loai1DK.TabIndex = 1;
-            this.M04_DN_rdb_Loai1DK.Text = "- Đăng ký quyền sử dụng đất";
-            this.M04_DN_rdb_Loai1DK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_DN_lbl_Loai1CapCN
-            // 
-            this.M04_DN_lbl_Loai1CapCN.AutoSize = true;
-            this.M04_DN_lbl_Loai1CapCN.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_DN_lbl_Loai1CapCN.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.M04_DN_lbl_Loai1CapCN.Location = new System.Drawing.Point(333, 0);
-            this.M04_DN_lbl_Loai1CapCN.Name = "M04_DN_lbl_Loai1CapCN";
-            this.M04_DN_lbl_Loai1CapCN.Size = new System.Drawing.Size(828, 37);
-            this.M04_DN_lbl_Loai1CapCN.TabIndex = 1;
-            this.M04_DN_lbl_Loai1CapCN.Text = "- Cấp giấy chứng nhận đối với đất";
-            this.M04_DN_lbl_Loai1CapCN.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_DN_lbl_Loai2DK
-            // 
-            this.M04_DN_lbl_Loai2DK.AutoSize = true;
-            this.M04_DN_lbl_Loai2DK.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_DN_lbl_Loai2DK.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.M04_DN_lbl_Loai2DK.Location = new System.Drawing.Point(132, 37);
-            this.M04_DN_lbl_Loai2DK.Name = "M04_DN_lbl_Loai2DK";
-            this.M04_DN_lbl_Loai2DK.Size = new System.Drawing.Size(195, 37);
-            this.M04_DN_lbl_Loai2DK.TabIndex = 1;
-            this.M04_DN_lbl_Loai2DK.Text = "- Đăng ký quyền quản lý đất";
-            this.M04_DN_lbl_Loai2DK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_DN_lbl_Loai2CapCN
-            // 
-            this.M04_DN_lbl_Loai2CapCN.AutoSize = true;
-            this.M04_DN_lbl_Loai2CapCN.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_DN_lbl_Loai2CapCN.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.M04_DN_lbl_Loai2CapCN.Location = new System.Drawing.Point(333, 37);
-            this.M04_DN_lbl_Loai2CapCN.Name = "M04_DN_lbl_Loai2CapCN";
-            this.M04_DN_lbl_Loai2CapCN.Size = new System.Drawing.Size(828, 37);
-            this.M04_DN_lbl_Loai2CapCN.TabIndex = 1;
-            this.M04_DN_lbl_Loai2CapCN.Text = "- Cấp giấy chứng nhận đối với tài sản trên đất";
-            this.M04_DN_lbl_Loai2CapCN.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // tableLayoutPanel23
-            // 
-            this.tableLayoutPanel23.ColumnCount = 4;
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.68041F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.5567F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.5567F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.20618F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel23.Controls.Add(this.panel11, 0, 0);
-            this.tableLayoutPanel23.Controls.Add(this.panel12, 1, 0);
-            this.tableLayoutPanel23.Controls.Add(this.panel13, 2, 0);
-            this.tableLayoutPanel23.Controls.Add(this.panel14, 3, 0);
-            this.tableLayoutPanel23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel23.Location = new System.Drawing.Point(8, 495);
-            this.tableLayoutPanel23.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.tableLayoutPanel23.Name = "tableLayoutPanel23";
-            this.tableLayoutPanel23.RowCount = 1;
-            this.tableLayoutPanel23.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel23.Size = new System.Drawing.Size(1166, 111);
-            this.tableLayoutPanel23.TabIndex = 6;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.White;
-            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.tableLayoutPanel24);
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel11.Location = new System.Drawing.Point(0, 0);
-            this.panel11.Margin = new System.Windows.Forms.Padding(0);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(264, 111);
-            this.panel11.TabIndex = 0;
-            // 
-            // tableLayoutPanel24
-            // 
-            this.tableLayoutPanel24.ColumnCount = 1;
-            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel24.Controls.Add(this.label20, 0, 0);
-            this.tableLayoutPanel24.Controls.Add(this.M04_txt_ThuaDatDK, 0, 1);
-            this.tableLayoutPanel24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel24.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel24.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.tableLayoutPanel24.Name = "tableLayoutPanel24";
-            this.tableLayoutPanel24.RowCount = 2;
-            this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel24.Size = new System.Drawing.Size(262, 109);
-            this.tableLayoutPanel24.TabIndex = 0;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label20.Location = new System.Drawing.Point(3, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(256, 32);
-            this.label20.TabIndex = 0;
-            this.label20.Text = "Thửa đất đăng ký (2)";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_ThuaDatDK
-            // 
-            this.M04_txt_ThuaDatDK.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_ThuaDatDK.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_ThuaDatDK.Location = new System.Drawing.Point(3, 35);
-            this.M04_txt_ThuaDatDK.Multiline = true;
-            this.M04_txt_ThuaDatDK.Name = "M04_txt_ThuaDatDK";
-            this.M04_txt_ThuaDatDK.Size = new System.Drawing.Size(256, 71);
-            this.M04_txt_ThuaDatDK.TabIndex = 1;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.White;
-            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel12.Controls.Add(this.tableLayoutPanel25);
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel12.Location = new System.Drawing.Point(264, 0);
-            this.panel12.Margin = new System.Windows.Forms.Padding(0);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(216, 111);
-            this.panel12.TabIndex = 0;
-            // 
-            // tableLayoutPanel25
-            // 
-            this.tableLayoutPanel25.ColumnCount = 1;
-            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel25.Controls.Add(this.label21, 0, 0);
-            this.tableLayoutPanel25.Controls.Add(this.M04_txt_thuaDatSo, 0, 1);
-            this.tableLayoutPanel25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel25.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel25.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel25.Name = "tableLayoutPanel25";
-            this.tableLayoutPanel25.RowCount = 2;
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel25.Size = new System.Drawing.Size(214, 109);
-            this.tableLayoutPanel25.TabIndex = 0;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label21.Location = new System.Drawing.Point(3, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(208, 32);
-            this.label21.TabIndex = 0;
-            this.label21.Text = "Thửa đất số";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_thuaDatSo
-            // 
-            this.M04_txt_thuaDatSo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_thuaDatSo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_thuaDatSo.Location = new System.Drawing.Point(3, 35);
-            this.M04_txt_thuaDatSo.Multiline = true;
-            this.M04_txt_thuaDatSo.Name = "M04_txt_thuaDatSo";
-            this.M04_txt_thuaDatSo.Size = new System.Drawing.Size(208, 71);
-            this.M04_txt_thuaDatSo.TabIndex = 1;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.White;
-            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel13.Controls.Add(this.tableLayoutPanel26);
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel13.Location = new System.Drawing.Point(480, 0);
-            this.panel13.Margin = new System.Windows.Forms.Padding(0);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(216, 111);
-            this.panel13.TabIndex = 0;
-            // 
-            // tableLayoutPanel26
-            // 
-            this.tableLayoutPanel26.ColumnCount = 1;
-            this.tableLayoutPanel26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel26.Controls.Add(this.label23, 0, 0);
-            this.tableLayoutPanel26.Controls.Add(this.M04_txt_toBanDoSo, 0, 1);
-            this.tableLayoutPanel26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel26.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel26.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel26.Name = "tableLayoutPanel26";
-            this.tableLayoutPanel26.RowCount = 2;
-            this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel26.Size = new System.Drawing.Size(214, 109);
-            this.tableLayoutPanel26.TabIndex = 0;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label23.Location = new System.Drawing.Point(3, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(208, 32);
-            this.label23.TabIndex = 0;
-            this.label23.Text = "Tờ bản đồ số";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_toBanDoSo
-            // 
-            this.M04_txt_toBanDoSo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_toBanDoSo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_toBanDoSo.Location = new System.Drawing.Point(3, 35);
-            this.M04_txt_toBanDoSo.Multiline = true;
-            this.M04_txt_toBanDoSo.Name = "M04_txt_toBanDoSo";
-            this.M04_txt_toBanDoSo.Size = new System.Drawing.Size(208, 71);
-            this.M04_txt_toBanDoSo.TabIndex = 1;
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.White;
-            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel14.Controls.Add(this.tableLayoutPanel27);
-            this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel14.Location = new System.Drawing.Point(696, 0);
-            this.panel14.Margin = new System.Windows.Forms.Padding(0);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(470, 111);
-            this.panel14.TabIndex = 0;
-            // 
-            // tableLayoutPanel27
-            // 
-            this.tableLayoutPanel27.ColumnCount = 1;
-            this.tableLayoutPanel27.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel27.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel27.Controls.Add(this.label24, 0, 0);
-            this.tableLayoutPanel27.Controls.Add(this.M04_txt_diaChiDat, 0, 1);
-            this.tableLayoutPanel27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel27.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel27.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel27.Name = "tableLayoutPanel27";
-            this.tableLayoutPanel27.RowCount = 2;
-            this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel27.Size = new System.Drawing.Size(468, 109);
-            this.tableLayoutPanel27.TabIndex = 0;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label24.Location = new System.Drawing.Point(3, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(462, 32);
-            this.label24.TabIndex = 0;
-            this.label24.Text = "Địa chỉ tại";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_diaChiDat
-            // 
-            this.M04_txt_diaChiDat.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_diaChiDat.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_diaChiDat.Location = new System.Drawing.Point(3, 35);
-            this.M04_txt_diaChiDat.Multiline = true;
-            this.M04_txt_diaChiDat.Name = "M04_txt_diaChiDat";
-            this.M04_txt_diaChiDat.Size = new System.Drawing.Size(462, 71);
-            this.M04_txt_diaChiDat.TabIndex = 1;
-            // 
-            // tableLayoutPanel28
-            // 
-            this.tableLayoutPanel28.ColumnCount = 5;
-            this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.16461F));
-            this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.92574F));
-            this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.27379F));
-            this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.69283F));
-            this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.13993F));
-            this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel28.Controls.Add(this.panel15, 0, 0);
-            this.tableLayoutPanel28.Controls.Add(this.panel16, 1, 0);
-            this.tableLayoutPanel28.Controls.Add(this.panel17, 2, 0);
-            this.tableLayoutPanel28.Controls.Add(this.panel18, 3, 0);
-            this.tableLayoutPanel28.Controls.Add(this.tableLayoutPanel33, 4, 0);
-            this.tableLayoutPanel28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel28.Location = new System.Drawing.Point(8, 606);
-            this.tableLayoutPanel28.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.tableLayoutPanel28.Name = "tableLayoutPanel28";
-            this.tableLayoutPanel28.RowCount = 1;
-            this.tableLayoutPanel28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel28.Size = new System.Drawing.Size(1166, 111);
-            this.tableLayoutPanel28.TabIndex = 6;
-            // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.White;
-            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel15.Controls.Add(this.tableLayoutPanel29);
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel15.Location = new System.Drawing.Point(0, 0);
-            this.panel15.Margin = new System.Windows.Forms.Padding(0);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(199, 111);
-            this.panel15.TabIndex = 0;
-            // 
-            // tableLayoutPanel29
-            // 
-            this.tableLayoutPanel29.ColumnCount = 1;
-            this.tableLayoutPanel29.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel29.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel29.Controls.Add(this.label22, 0, 0);
-            this.tableLayoutPanel29.Controls.Add(this.M04_txt_dtDat, 0, 1);
-            this.tableLayoutPanel29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel29.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel29.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel29.Name = "tableLayoutPanel29";
-            this.tableLayoutPanel29.RowCount = 2;
-            this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel29.Size = new System.Drawing.Size(197, 109);
-            this.tableLayoutPanel29.TabIndex = 0;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label22.Location = new System.Drawing.Point(3, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(191, 32);
-            this.label22.TabIndex = 0;
-            this.label22.Text = "Diện tích (m2)";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_dtDat
-            // 
-            this.M04_txt_dtDat.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_dtDat.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_dtDat.Location = new System.Drawing.Point(3, 35);
-            this.M04_txt_dtDat.Multiline = true;
-            this.M04_txt_dtDat.Name = "M04_txt_dtDat";
-            this.M04_txt_dtDat.Size = new System.Drawing.Size(191, 71);
-            this.M04_txt_dtDat.TabIndex = 1;
-            // 
-            // panel16
-            // 
-            this.panel16.BackColor = System.Drawing.Color.White;
-            this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel16.Controls.Add(this.tableLayoutPanel30);
-            this.panel16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel16.Location = new System.Drawing.Point(199, 0);
-            this.panel16.Margin = new System.Windows.Forms.Padding(0);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(231, 111);
-            this.panel16.TabIndex = 0;
-            // 
-            // tableLayoutPanel30
-            // 
-            this.tableLayoutPanel30.ColumnCount = 1;
-            this.tableLayoutPanel30.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel30.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel30.Controls.Add(this.label25, 0, 0);
-            this.tableLayoutPanel30.Controls.Add(this.M04_txt_suDungChung, 0, 1);
-            this.tableLayoutPanel30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel30.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel30.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel30.Name = "tableLayoutPanel30";
-            this.tableLayoutPanel30.RowCount = 2;
-            this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel30.Size = new System.Drawing.Size(229, 109);
-            this.tableLayoutPanel30.TabIndex = 0;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label25.Location = new System.Drawing.Point(3, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(223, 32);
-            this.label25.TabIndex = 0;
-            this.label25.Text = "Sử dụng chung (m2)";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_suDungChung
-            // 
-            this.M04_txt_suDungChung.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_suDungChung.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_suDungChung.Location = new System.Drawing.Point(3, 35);
-            this.M04_txt_suDungChung.Multiline = true;
-            this.M04_txt_suDungChung.Name = "M04_txt_suDungChung";
-            this.M04_txt_suDungChung.Size = new System.Drawing.Size(223, 71);
-            this.M04_txt_suDungChung.TabIndex = 1;
-            // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.Color.White;
-            this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel17.Controls.Add(this.tableLayoutPanel31);
-            this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel17.Location = new System.Drawing.Point(430, 0);
-            this.panel17.Margin = new System.Windows.Forms.Padding(0);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(235, 111);
-            this.panel17.TabIndex = 0;
-            // 
-            // tableLayoutPanel31
-            // 
-            this.tableLayoutPanel31.ColumnCount = 1;
-            this.tableLayoutPanel31.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel31.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel31.Controls.Add(this.label26, 0, 0);
-            this.tableLayoutPanel31.Controls.Add(this.M04_txt_suDungRieng, 0, 1);
-            this.tableLayoutPanel31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel31.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel31.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel31.Name = "tableLayoutPanel31";
-            this.tableLayoutPanel31.RowCount = 2;
-            this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel31.Size = new System.Drawing.Size(233, 109);
-            this.tableLayoutPanel31.TabIndex = 0;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label26.Location = new System.Drawing.Point(3, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(227, 32);
-            this.label26.TabIndex = 0;
-            this.label26.Text = "Sử dụng riêng (m2)";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_suDungRieng
-            // 
-            this.M04_txt_suDungRieng.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_suDungRieng.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_suDungRieng.Location = new System.Drawing.Point(3, 35);
-            this.M04_txt_suDungRieng.Multiline = true;
-            this.M04_txt_suDungRieng.Name = "M04_txt_suDungRieng";
-            this.M04_txt_suDungRieng.Size = new System.Drawing.Size(227, 71);
-            this.M04_txt_suDungRieng.TabIndex = 1;
-            // 
-            // panel18
-            // 
-            this.panel18.BackColor = System.Drawing.Color.White;
-            this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel18.Controls.Add(this.tableLayoutPanel32);
-            this.panel18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel18.Location = new System.Drawing.Point(665, 0);
-            this.panel18.Margin = new System.Windows.Forms.Padding(0);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(345, 111);
-            this.panel18.TabIndex = 0;
-            // 
-            // tableLayoutPanel32
-            // 
-            this.tableLayoutPanel32.ColumnCount = 1;
-            this.tableLayoutPanel32.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel32.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel32.Controls.Add(this.label27, 0, 0);
-            this.tableLayoutPanel32.Controls.Add(this.M04_txt_suDungMD, 0, 1);
-            this.tableLayoutPanel32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel32.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel32.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel32.Name = "tableLayoutPanel32";
-            this.tableLayoutPanel32.RowCount = 2;
-            this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel32.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel32.Size = new System.Drawing.Size(343, 109);
-            this.tableLayoutPanel32.TabIndex = 0;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label27.Location = new System.Drawing.Point(3, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(337, 32);
-            this.label27.TabIndex = 0;
-            this.label27.Text = "Sử dụng vào mục đích";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_suDungMD
-            // 
-            this.M04_txt_suDungMD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_suDungMD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_suDungMD.Location = new System.Drawing.Point(3, 35);
-            this.M04_txt_suDungMD.Multiline = true;
-            this.M04_txt_suDungMD.Name = "M04_txt_suDungMD";
-            this.M04_txt_suDungMD.Size = new System.Drawing.Size(337, 71);
-            this.M04_txt_suDungMD.TabIndex = 1;
-            // 
-            // tableLayoutPanel33
-            // 
-            this.tableLayoutPanel33.ColumnCount = 1;
-            this.tableLayoutPanel33.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel33.Controls.Add(this.panel19, 0, 0);
-            this.tableLayoutPanel33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel33.Location = new System.Drawing.Point(1010, 0);
-            this.tableLayoutPanel33.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel33.Name = "tableLayoutPanel33";
-            this.tableLayoutPanel33.RowCount = 1;
-            this.tableLayoutPanel33.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel33.Size = new System.Drawing.Size(156, 111);
-            this.tableLayoutPanel33.TabIndex = 1;
-            // 
-            // panel19
-            // 
-            this.panel19.BackColor = System.Drawing.Color.White;
-            this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel19.Controls.Add(this.tableLayoutPanel40);
-            this.panel19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel19.Location = new System.Drawing.Point(0, 0);
-            this.panel19.Margin = new System.Windows.Forms.Padding(0);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(156, 111);
-            this.panel19.TabIndex = 0;
-            // 
-            // tableLayoutPanel40
-            // 
-            this.tableLayoutPanel40.ColumnCount = 1;
-            this.tableLayoutPanel40.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel40.Controls.Add(this.label28, 0, 0);
-            this.tableLayoutPanel40.Controls.Add(this.M04_dtp_tuThoiDiem, 0, 2);
-            this.tableLayoutPanel40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel40.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel40.Name = "tableLayoutPanel40";
-            this.tableLayoutPanel40.RowCount = 3;
-            this.tableLayoutPanel40.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel40.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel40.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel40.Size = new System.Drawing.Size(154, 109);
-            this.tableLayoutPanel40.TabIndex = 0;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label28.Location = new System.Drawing.Point(3, 0);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(148, 32);
-            this.label28.TabIndex = 0;
-            this.label28.Text = "Từ thời điểm";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_dtp_tuThoiDiem
-            // 
-            this.M04_dtp_tuThoiDiem.CalendarTodayDate = new System.DateTime(2021, 3, 9, 0, 0, 0, 0);
-            this.M04_dtp_tuThoiDiem.CustomFormat = "dd/MM/yyyy";
-            this.M04_dtp_tuThoiDiem.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_dtp_tuThoiDiem.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.M04_dtp_tuThoiDiem.Location = new System.Drawing.Point(3, 78);
-            this.M04_dtp_tuThoiDiem.Name = "M04_dtp_tuThoiDiem";
-            this.M04_dtp_tuThoiDiem.Size = new System.Drawing.Size(148, 28);
-            this.M04_dtp_tuThoiDiem.TabIndex = 1;
-            // 
-            // tableLayoutPanel34
-            // 
-            this.tableLayoutPanel34.ColumnCount = 5;
-            this.tableLayoutPanel34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.41998F));
-            this.tableLayoutPanel34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.45145F));
-            this.tableLayoutPanel34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.20252F));
-            this.tableLayoutPanel34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.37629F));
-            this.tableLayoutPanel34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.54975F));
-            this.tableLayoutPanel34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel34.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel34.Controls.Add(this.panel21, 1, 0);
-            this.tableLayoutPanel34.Controls.Add(this.panel22, 2, 0);
-            this.tableLayoutPanel34.Controls.Add(this.panel23, 3, 0);
-            this.tableLayoutPanel34.Controls.Add(this.panel24, 4, 0);
-            this.tableLayoutPanel34.Controls.Add(this.tableLayoutPanel35, 0, 0);
-            this.tableLayoutPanel34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel34.Location = new System.Drawing.Point(8, 717);
-            this.tableLayoutPanel34.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
-            this.tableLayoutPanel34.Name = "tableLayoutPanel34";
-            this.tableLayoutPanel34.RowCount = 1;
-            this.tableLayoutPanel34.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel34.Size = new System.Drawing.Size(1166, 111);
-            this.tableLayoutPanel34.TabIndex = 6;
-            // 
-            // panel21
-            // 
-            this.panel21.BackColor = System.Drawing.Color.White;
-            this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel21.Controls.Add(this.tableLayoutPanel36);
-            this.panel21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel21.Location = new System.Drawing.Point(144, 0);
-            this.panel21.Margin = new System.Windows.Forms.Padding(0);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(331, 111);
-            this.panel21.TabIndex = 0;
-            // 
-            // tableLayoutPanel36
-            // 
-            this.tableLayoutPanel36.ColumnCount = 1;
-            this.tableLayoutPanel36.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel36.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel36.Controls.Add(this.label30, 0, 0);
-            this.tableLayoutPanel36.Controls.Add(this.M04_txt_nguonGocSD, 0, 1);
-            this.tableLayoutPanel36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel36.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel36.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel36.Name = "tableLayoutPanel36";
-            this.tableLayoutPanel36.RowCount = 2;
-            this.tableLayoutPanel36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel36.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel36.Size = new System.Drawing.Size(329, 109);
-            this.tableLayoutPanel36.TabIndex = 0;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label30.Location = new System.Drawing.Point(3, 0);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(323, 32);
-            this.label30.TabIndex = 0;
-            this.label30.Text = "Nguồn gốc sử dụng (3) ";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_nguonGocSD
-            // 
-            this.M04_txt_nguonGocSD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_nguonGocSD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_nguonGocSD.Location = new System.Drawing.Point(3, 35);
-            this.M04_txt_nguonGocSD.Multiline = true;
-            this.M04_txt_nguonGocSD.Name = "M04_txt_nguonGocSD";
-            this.M04_txt_nguonGocSD.Size = new System.Drawing.Size(323, 71);
-            this.M04_txt_nguonGocSD.TabIndex = 1;
-            // 
-            // panel22
-            // 
-            this.panel22.BackColor = System.Drawing.Color.White;
-            this.panel22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel22.Controls.Add(this.tableLayoutPanel37);
-            this.panel22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel22.Location = new System.Drawing.Point(475, 0);
-            this.panel22.Margin = new System.Windows.Forms.Padding(0);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(223, 111);
-            this.panel22.TabIndex = 0;
-            // 
-            // tableLayoutPanel37
-            // 
-            this.tableLayoutPanel37.ColumnCount = 1;
-            this.tableLayoutPanel37.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel37.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel37.Controls.Add(this.label31, 0, 0);
-            this.tableLayoutPanel37.Controls.Add(this.M04_txt_sdHanChe, 0, 1);
-            this.tableLayoutPanel37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel37.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel37.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel37.Name = "tableLayoutPanel37";
-            this.tableLayoutPanel37.RowCount = 2;
-            this.tableLayoutPanel37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57.69231F));
-            this.tableLayoutPanel37.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.30769F));
-            this.tableLayoutPanel37.Size = new System.Drawing.Size(221, 109);
-            this.tableLayoutPanel37.TabIndex = 0;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label31.Location = new System.Drawing.Point(3, 0);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(215, 62);
-            this.label31.TabIndex = 0;
-            this.label31.Text = "Có quyền sử dụng chạn chế đối với thửa đất số";
-            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_sdHanChe
-            // 
-            this.M04_txt_sdHanChe.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_sdHanChe.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_sdHanChe.Location = new System.Drawing.Point(3, 65);
-            this.M04_txt_sdHanChe.Multiline = true;
-            this.M04_txt_sdHanChe.Name = "M04_txt_sdHanChe";
-            this.M04_txt_sdHanChe.Size = new System.Drawing.Size(215, 41);
-            this.M04_txt_sdHanChe.TabIndex = 1;
-            // 
-            // panel23
-            // 
-            this.panel23.BackColor = System.Drawing.Color.White;
-            this.panel23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel23.Controls.Add(this.tableLayoutPanel38);
-            this.panel23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel23.Location = new System.Drawing.Point(698, 0);
-            this.panel23.Margin = new System.Windows.Forms.Padding(0);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(202, 111);
-            this.panel23.TabIndex = 0;
-            // 
-            // tableLayoutPanel38
-            // 
-            this.tableLayoutPanel38.ColumnCount = 1;
-            this.tableLayoutPanel38.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel38.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel38.Controls.Add(this.label32, 0, 0);
-            this.tableLayoutPanel38.Controls.Add(this.M04_txt_cua, 0, 1);
-            this.tableLayoutPanel38.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel38.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel38.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel38.Name = "tableLayoutPanel38";
-            this.tableLayoutPanel38.RowCount = 2;
-            this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel38.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel38.Size = new System.Drawing.Size(200, 109);
-            this.tableLayoutPanel38.TabIndex = 0;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label32.Location = new System.Drawing.Point(3, 0);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(194, 32);
-            this.label32.TabIndex = 0;
-            this.label32.Text = "của";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_cua
-            // 
-            this.M04_txt_cua.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_cua.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_cua.Location = new System.Drawing.Point(3, 35);
-            this.M04_txt_cua.Multiline = true;
-            this.M04_txt_cua.Name = "M04_txt_cua";
-            this.M04_txt_cua.Size = new System.Drawing.Size(194, 71);
-            this.M04_txt_cua.TabIndex = 1;
-            // 
-            // panel24
-            // 
-            this.panel24.BackColor = System.Drawing.Color.White;
-            this.panel24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel24.Controls.Add(this.layout);
-            this.panel24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel24.Location = new System.Drawing.Point(900, 0);
-            this.panel24.Margin = new System.Windows.Forms.Padding(0);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(266, 111);
-            this.panel24.TabIndex = 1;
-            // 
-            // layout
-            // 
-            this.layout.ColumnCount = 1;
-            this.layout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.layout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.layout.Controls.Add(this.label33, 0, 0);
-            this.layout.Controls.Add(this.M04_txt_ndQuyenSD, 0, 1);
-            this.layout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layout.Location = new System.Drawing.Point(0, 0);
-            this.layout.Name = "layout";
-            this.layout.RowCount = 2;
-            this.layout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.layout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.layout.Size = new System.Drawing.Size(264, 109);
-            this.layout.TabIndex = 0;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label33.Location = new System.Drawing.Point(3, 0);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(258, 32);
-            this.label33.TabIndex = 0;
-            this.label33.Text = "Nội dung quyền sử dụng";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // tableLayoutPanel35
-            // 
-            this.tableLayoutPanel35.ColumnCount = 1;
-            this.tableLayoutPanel35.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel35.Controls.Add(this.panel20, 0, 0);
-            this.tableLayoutPanel35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel35.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel35.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel35.Name = "tableLayoutPanel35";
-            this.tableLayoutPanel35.RowCount = 1;
-            this.tableLayoutPanel35.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel35.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 111F));
-            this.tableLayoutPanel35.Size = new System.Drawing.Size(144, 111);
-            this.tableLayoutPanel35.TabIndex = 2;
-            // 
-            // panel20
-            // 
-            this.panel20.BackColor = System.Drawing.Color.White;
-            this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel20.Controls.Add(this.tableLayoutPanel41);
-            this.panel20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel20.Location = new System.Drawing.Point(0, 0);
-            this.panel20.Margin = new System.Windows.Forms.Padding(0);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(144, 111);
-            this.panel20.TabIndex = 0;
-            // 
-            // tableLayoutPanel41
-            // 
-            this.tableLayoutPanel41.ColumnCount = 1;
-            this.tableLayoutPanel41.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel41.Controls.Add(this.label29, 0, 0);
-            this.tableLayoutPanel41.Controls.Add(this.M04_dtp_thoiGianDeNghi, 0, 2);
-            this.tableLayoutPanel41.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel41.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel41.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel41.Name = "tableLayoutPanel41";
-            this.tableLayoutPanel41.RowCount = 3;
-            this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.99065F));
-            this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.16822F));
-            this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel41.Size = new System.Drawing.Size(142, 109);
-            this.tableLayoutPanel41.TabIndex = 0;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label29.Location = new System.Drawing.Point(3, 0);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(136, 47);
-            this.label29.TabIndex = 0;
-            this.label29.Text = "Thời gian đề nghị được sử dụng đất";
-            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_dtp_thoiGianDeNghi
-            // 
-            this.M04_dtp_thoiGianDeNghi.CalendarTodayDate = new System.DateTime(2021, 3, 9, 0, 0, 0, 0);
-            this.M04_dtp_thoiGianDeNghi.CustomFormat = "dd/MM/yyyy";
-            this.M04_dtp_thoiGianDeNghi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_dtp_thoiGianDeNghi.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.M04_dtp_thoiGianDeNghi.Location = new System.Drawing.Point(3, 78);
-            this.M04_dtp_thoiGianDeNghi.Name = "M04_dtp_thoiGianDeNghi";
-            this.M04_dtp_thoiGianDeNghi.Size = new System.Drawing.Size(136, 28);
-            this.M04_dtp_thoiGianDeNghi.TabIndex = 1;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(123)))), ((int)(((byte)(73)))));
-            this.label34.Location = new System.Drawing.Point(8, 828);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(1166, 31);
-            this.label34.TabIndex = 7;
-            this.label34.Text = "TÀI SẢN GẮN LIỀN VỚI ĐẤT";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // tableLayoutPanel42
-            // 
-            this.tableLayoutPanel42.ColumnCount = 1;
-            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel42.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel42.Controls.Add(this.label35, 0, 0);
-            this.tableLayoutPanel42.Controls.Add(this.tableLayoutPanel43, 0, 1);
-            this.tableLayoutPanel42.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel42.Location = new System.Drawing.Point(8, 862);
-            this.tableLayoutPanel42.Name = "tableLayoutPanel42";
-            this.tableLayoutPanel42.RowCount = 2;
-            this.tableLayoutPanel42.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel42.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel42.Size = new System.Drawing.Size(1166, 105);
-            this.tableLayoutPanel42.TabIndex = 8;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label35.Location = new System.Drawing.Point(10, 0);
-            this.label35.Margin = new System.Windows.Forms.Padding(10, 0, 3, 0);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(1153, 21);
-            this.label35.TabIndex = 0;
-            this.label35.Text = "Nhà ở, công trình xây dựng khác";
-            // 
-            // tableLayoutPanel43
-            // 
-            this.tableLayoutPanel43.ColumnCount = 8;
-            this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14F));
-            this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14F));
-            this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11F));
-            this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11F));
-            this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel43.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel43.Controls.Add(this.panel25, 0, 0);
-            this.tableLayoutPanel43.Controls.Add(this.panel26, 1, 0);
-            this.tableLayoutPanel43.Controls.Add(this.panel27, 2, 0);
-            this.tableLayoutPanel43.Controls.Add(this.panel28, 3, 0);
-            this.tableLayoutPanel43.Controls.Add(this.panel29, 4, 0);
-            this.tableLayoutPanel43.Controls.Add(this.panel30, 5, 0);
-            this.tableLayoutPanel43.Controls.Add(this.panel31, 6, 0);
-            this.tableLayoutPanel43.Controls.Add(this.panel32, 7, 0);
-            this.tableLayoutPanel43.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel43.Location = new System.Drawing.Point(0, 21);
-            this.tableLayoutPanel43.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel43.Name = "tableLayoutPanel43";
-            this.tableLayoutPanel43.RowCount = 1;
-            this.tableLayoutPanel43.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel43.Size = new System.Drawing.Size(1166, 84);
-            this.tableLayoutPanel43.TabIndex = 1;
-            // 
-            // panel25
-            // 
-            this.panel25.BackColor = System.Drawing.Color.White;
-            this.panel25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel25.Controls.Add(this.tableLayoutPanel44);
-            this.panel25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel25.Location = new System.Drawing.Point(0, 0);
-            this.panel25.Margin = new System.Windows.Forms.Padding(0);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(163, 84);
-            this.panel25.TabIndex = 0;
-            // 
-            // tableLayoutPanel44
-            // 
-            this.tableLayoutPanel44.ColumnCount = 1;
-            this.tableLayoutPanel44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel44.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel44.Controls.Add(this.label36, 0, 0);
-            this.tableLayoutPanel44.Controls.Add(this.M04_txt_NO_loaiNhaO, 0, 1);
-            this.tableLayoutPanel44.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel44.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel44.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel44.Name = "tableLayoutPanel44";
-            this.tableLayoutPanel44.RowCount = 2;
-            this.tableLayoutPanel44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel44.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel44.Size = new System.Drawing.Size(161, 82);
-            this.tableLayoutPanel44.TabIndex = 0;
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label36.Location = new System.Drawing.Point(3, 0);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(155, 24);
-            this.label36.TabIndex = 0;
-            this.label36.Text = "Loại nhà ở, công trình (4)";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_NO_loaiNhaO
-            // 
-            this.M04_txt_NO_loaiNhaO.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_NO_loaiNhaO.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_NO_loaiNhaO.Location = new System.Drawing.Point(0, 24);
-            this.M04_txt_NO_loaiNhaO.Margin = new System.Windows.Forms.Padding(0);
-            this.M04_txt_NO_loaiNhaO.Multiline = true;
-            this.M04_txt_NO_loaiNhaO.Name = "M04_txt_NO_loaiNhaO";
-            this.M04_txt_NO_loaiNhaO.Size = new System.Drawing.Size(161, 58);
-            this.M04_txt_NO_loaiNhaO.TabIndex = 1;
-            // 
-            // panel26
-            // 
-            this.panel26.BackColor = System.Drawing.Color.White;
-            this.panel26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel26.Controls.Add(this.tableLayoutPanel45);
-            this.panel26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel26.Location = new System.Drawing.Point(163, 0);
-            this.panel26.Margin = new System.Windows.Forms.Padding(0);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(174, 84);
-            this.panel26.TabIndex = 0;
-            // 
-            // tableLayoutPanel45
-            // 
-            this.tableLayoutPanel45.ColumnCount = 1;
-            this.tableLayoutPanel45.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel45.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel45.Controls.Add(this.label37, 0, 0);
-            this.tableLayoutPanel45.Controls.Add(this.M04_txt_NO_dtXD, 0, 1);
-            this.tableLayoutPanel45.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel45.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel45.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel45.Name = "tableLayoutPanel45";
-            this.tableLayoutPanel45.RowCount = 2;
-            this.tableLayoutPanel45.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel45.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel45.Size = new System.Drawing.Size(172, 82);
-            this.tableLayoutPanel45.TabIndex = 0;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label37.Location = new System.Drawing.Point(3, 0);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(166, 24);
-            this.label37.TabIndex = 0;
-            this.label37.Text = "Diện tích xây dựng (m2)";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_NO_dtXD
-            // 
-            this.M04_txt_NO_dtXD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_NO_dtXD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_NO_dtXD.Location = new System.Drawing.Point(0, 24);
-            this.M04_txt_NO_dtXD.Margin = new System.Windows.Forms.Padding(0);
-            this.M04_txt_NO_dtXD.Multiline = true;
-            this.M04_txt_NO_dtXD.Name = "M04_txt_NO_dtXD";
-            this.M04_txt_NO_dtXD.Size = new System.Drawing.Size(172, 58);
-            this.M04_txt_NO_dtXD.TabIndex = 1;
-            // 
-            // panel27
-            // 
-            this.panel27.BackColor = System.Drawing.Color.White;
-            this.panel27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel27.Controls.Add(this.tableLayoutPanel46);
-            this.panel27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel27.Location = new System.Drawing.Point(337, 0);
-            this.panel27.Margin = new System.Windows.Forms.Padding(0);
-            this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(163, 84);
-            this.panel27.TabIndex = 0;
-            // 
-            // tableLayoutPanel46
-            // 
-            this.tableLayoutPanel46.ColumnCount = 1;
-            this.tableLayoutPanel46.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel46.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel46.Controls.Add(this.label38, 0, 0);
-            this.tableLayoutPanel46.Controls.Add(this.M04_txt_NO_dtSan, 0, 1);
-            this.tableLayoutPanel46.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel46.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel46.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel46.Name = "tableLayoutPanel46";
-            this.tableLayoutPanel46.RowCount = 2;
-            this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel46.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel46.Size = new System.Drawing.Size(161, 82);
-            this.tableLayoutPanel46.TabIndex = 0;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label38.Location = new System.Drawing.Point(3, 0);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(155, 24);
-            this.label38.TabIndex = 0;
-            this.label38.Text = "Diện tích sàn hoặc công suất";
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_NO_dtSan
-            // 
-            this.M04_txt_NO_dtSan.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_NO_dtSan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_NO_dtSan.Location = new System.Drawing.Point(0, 24);
-            this.M04_txt_NO_dtSan.Margin = new System.Windows.Forms.Padding(0);
-            this.M04_txt_NO_dtSan.Multiline = true;
-            this.M04_txt_NO_dtSan.Name = "M04_txt_NO_dtSan";
-            this.M04_txt_NO_dtSan.Size = new System.Drawing.Size(161, 58);
-            this.M04_txt_NO_dtSan.TabIndex = 1;
-            // 
-            // panel28
-            // 
-            this.panel28.BackColor = System.Drawing.Color.White;
-            this.panel28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel28.Controls.Add(this.tableLayoutPanel47);
-            this.panel28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel28.Location = new System.Drawing.Point(500, 0);
-            this.panel28.Margin = new System.Windows.Forms.Padding(0);
-            this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(128, 84);
-            this.panel28.TabIndex = 0;
-            // 
-            // tableLayoutPanel47
-            // 
-            this.tableLayoutPanel47.ColumnCount = 1;
-            this.tableLayoutPanel47.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel47.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel47.Controls.Add(this.label39, 0, 0);
-            this.tableLayoutPanel47.Controls.Add(this.M04_txt_NO_soHuuChung, 0, 1);
-            this.tableLayoutPanel47.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel47.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel47.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel47.Name = "tableLayoutPanel47";
-            this.tableLayoutPanel47.RowCount = 2;
-            this.tableLayoutPanel47.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel47.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel47.Size = new System.Drawing.Size(126, 82);
-            this.tableLayoutPanel47.TabIndex = 0;
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label39.Location = new System.Drawing.Point(3, 0);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(120, 24);
-            this.label39.TabIndex = 0;
-            this.label39.Text = "Sở hữu chung (m2)";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_NO_soHuuChung
-            // 
-            this.M04_txt_NO_soHuuChung.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_NO_soHuuChung.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_NO_soHuuChung.Location = new System.Drawing.Point(0, 24);
-            this.M04_txt_NO_soHuuChung.Margin = new System.Windows.Forms.Padding(0);
-            this.M04_txt_NO_soHuuChung.Multiline = true;
-            this.M04_txt_NO_soHuuChung.Name = "M04_txt_NO_soHuuChung";
-            this.M04_txt_NO_soHuuChung.Size = new System.Drawing.Size(126, 58);
-            this.M04_txt_NO_soHuuChung.TabIndex = 1;
-            // 
-            // panel29
-            // 
-            this.panel29.BackColor = System.Drawing.Color.White;
-            this.panel29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel29.Controls.Add(this.tableLayoutPanel48);
-            this.panel29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel29.Location = new System.Drawing.Point(628, 0);
-            this.panel29.Margin = new System.Windows.Forms.Padding(0);
-            this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(128, 84);
-            this.panel29.TabIndex = 0;
-            // 
-            // tableLayoutPanel48
-            // 
-            this.tableLayoutPanel48.ColumnCount = 1;
-            this.tableLayoutPanel48.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel48.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel48.Controls.Add(this.label40, 0, 0);
-            this.tableLayoutPanel48.Controls.Add(this.M04_txt_NO_soHuuRieng, 0, 1);
-            this.tableLayoutPanel48.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel48.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel48.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel48.Name = "tableLayoutPanel48";
-            this.tableLayoutPanel48.RowCount = 2;
-            this.tableLayoutPanel48.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel48.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel48.Size = new System.Drawing.Size(126, 82);
-            this.tableLayoutPanel48.TabIndex = 0;
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label40.Location = new System.Drawing.Point(3, 0);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(120, 24);
-            this.label40.TabIndex = 0;
-            this.label40.Text = "Sở hữu riêng (m2)";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_NO_soHuuRieng
-            // 
-            this.M04_txt_NO_soHuuRieng.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_NO_soHuuRieng.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_NO_soHuuRieng.Location = new System.Drawing.Point(0, 24);
-            this.M04_txt_NO_soHuuRieng.Margin = new System.Windows.Forms.Padding(0);
-            this.M04_txt_NO_soHuuRieng.Multiline = true;
-            this.M04_txt_NO_soHuuRieng.Name = "M04_txt_NO_soHuuRieng";
-            this.M04_txt_NO_soHuuRieng.Size = new System.Drawing.Size(126, 58);
-            this.M04_txt_NO_soHuuRieng.TabIndex = 1;
-            // 
-            // panel30
-            // 
-            this.panel30.BackColor = System.Drawing.Color.White;
-            this.panel30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel30.Controls.Add(this.tableLayoutPanel49);
-            this.panel30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel30.Location = new System.Drawing.Point(756, 0);
-            this.panel30.Margin = new System.Windows.Forms.Padding(0);
-            this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(145, 84);
-            this.panel30.TabIndex = 0;
-            // 
-            // tableLayoutPanel49
-            // 
-            this.tableLayoutPanel49.ColumnCount = 1;
-            this.tableLayoutPanel49.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel49.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel49.Controls.Add(this.label41, 0, 0);
-            this.tableLayoutPanel49.Controls.Add(this.M04_txt_NO_ketCau, 0, 1);
-            this.tableLayoutPanel49.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel49.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel49.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel49.Name = "tableLayoutPanel49";
-            this.tableLayoutPanel49.RowCount = 2;
-            this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel49.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel49.Size = new System.Drawing.Size(143, 82);
-            this.tableLayoutPanel49.TabIndex = 0;
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label41.Location = new System.Drawing.Point(3, 0);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(137, 24);
-            this.label41.TabIndex = 0;
-            this.label41.Text = "Kết cấu";
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_NO_ketCau
-            // 
-            this.M04_txt_NO_ketCau.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_NO_ketCau.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_NO_ketCau.Location = new System.Drawing.Point(0, 24);
-            this.M04_txt_NO_ketCau.Margin = new System.Windows.Forms.Padding(0);
-            this.M04_txt_NO_ketCau.Multiline = true;
-            this.M04_txt_NO_ketCau.Name = "M04_txt_NO_ketCau";
-            this.M04_txt_NO_ketCau.Size = new System.Drawing.Size(143, 58);
-            this.M04_txt_NO_ketCau.TabIndex = 1;
-            // 
-            // panel31
-            // 
-            this.panel31.BackColor = System.Drawing.Color.White;
-            this.panel31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel31.Controls.Add(this.tableLayoutPanel50);
-            this.panel31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel31.Location = new System.Drawing.Point(901, 0);
-            this.panel31.Margin = new System.Windows.Forms.Padding(0);
-            this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(116, 84);
-            this.panel31.TabIndex = 0;
-            // 
-            // tableLayoutPanel50
-            // 
-            this.tableLayoutPanel50.ColumnCount = 1;
-            this.tableLayoutPanel50.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel50.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel50.Controls.Add(this.label42, 0, 0);
-            this.tableLayoutPanel50.Controls.Add(this.M04_txt_NO_soTang, 0, 1);
-            this.tableLayoutPanel50.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel50.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel50.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel50.Name = "tableLayoutPanel50";
-            this.tableLayoutPanel50.RowCount = 2;
-            this.tableLayoutPanel50.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel50.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel50.Size = new System.Drawing.Size(114, 82);
-            this.tableLayoutPanel50.TabIndex = 0;
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label42.Location = new System.Drawing.Point(3, 0);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(108, 24);
-            this.label42.TabIndex = 0;
-            this.label42.Text = "Số tầng";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_NO_soTang
-            // 
-            this.M04_txt_NO_soTang.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_NO_soTang.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_NO_soTang.Location = new System.Drawing.Point(0, 24);
-            this.M04_txt_NO_soTang.Margin = new System.Windows.Forms.Padding(0);
-            this.M04_txt_NO_soTang.Multiline = true;
-            this.M04_txt_NO_soTang.Name = "M04_txt_NO_soTang";
-            this.M04_txt_NO_soTang.Size = new System.Drawing.Size(114, 58);
-            this.M04_txt_NO_soTang.TabIndex = 1;
-            // 
-            // panel32
-            // 
-            this.panel32.BackColor = System.Drawing.Color.White;
-            this.panel32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel32.Controls.Add(this.tableLayoutPanel51);
-            this.panel32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel32.Location = new System.Drawing.Point(1017, 0);
-            this.panel32.Margin = new System.Windows.Forms.Padding(0);
-            this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(149, 84);
-            this.panel32.TabIndex = 0;
-            // 
-            // tableLayoutPanel51
-            // 
-            this.tableLayoutPanel51.ColumnCount = 1;
-            this.tableLayoutPanel51.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel51.Controls.Add(this.label43, 0, 0);
-            this.tableLayoutPanel51.Controls.Add(this.M04_txt_NO_HSD, 0, 2);
-            this.tableLayoutPanel51.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel51.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel51.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel51.Name = "tableLayoutPanel51";
-            this.tableLayoutPanel51.RowCount = 3;
-            this.tableLayoutPanel51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31.70732F));
-            this.tableLayoutPanel51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.02439F));
-            this.tableLayoutPanel51.Size = new System.Drawing.Size(147, 82);
-            this.tableLayoutPanel51.TabIndex = 0;
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label43.Location = new System.Drawing.Point(3, 0);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(141, 24);
-            this.label43.TabIndex = 0;
-            this.label43.Text = "Thời hạn sử dụng đến";
-            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_NO_HSD
-            // 
-            this.M04_txt_NO_HSD.CalendarTodayDate = new System.DateTime(2021, 3, 9, 0, 0, 0, 0);
-            this.M04_txt_NO_HSD.CustomFormat = "dd/MM/yyyy";
-            this.M04_txt_NO_HSD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_NO_HSD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.M04_txt_NO_HSD.Location = new System.Drawing.Point(3, 52);
-            this.M04_txt_NO_HSD.Name = "M04_txt_NO_HSD";
-            this.M04_txt_NO_HSD.Size = new System.Drawing.Size(141, 27);
-            this.M04_txt_NO_HSD.TabIndex = 1;
-            // 
-            // tableLayoutPanel64
-            // 
-            this.tableLayoutPanel64.ColumnCount = 1;
-            this.tableLayoutPanel64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel64.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel64.Controls.Add(this.label55, 0, 0);
-            this.tableLayoutPanel64.Controls.Add(this.tableLayoutPanel65, 0, 1);
-            this.tableLayoutPanel64.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel64.Location = new System.Drawing.Point(8, 1084);
-            this.tableLayoutPanel64.Name = "tableLayoutPanel64";
-            this.tableLayoutPanel64.RowCount = 2;
-            this.tableLayoutPanel64.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel64.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel64.Size = new System.Drawing.Size(1166, 105);
-            this.tableLayoutPanel64.TabIndex = 10;
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label55.Location = new System.Drawing.Point(10, 0);
-            this.label55.Margin = new System.Windows.Forms.Padding(10, 0, 3, 0);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(1153, 21);
-            this.label55.TabIndex = 0;
-            this.label55.Text = "Cây lâu năm";
-            // 
-            // tableLayoutPanel65
-            // 
-            this.tableLayoutPanel65.ColumnCount = 5;
-            this.tableLayoutPanel65.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.5F));
-            this.tableLayoutPanel65.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel65.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.5F));
-            this.tableLayoutPanel65.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.5F));
-            this.tableLayoutPanel65.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel65.Controls.Add(this.panel43, 0, 0);
-            this.tableLayoutPanel65.Controls.Add(this.panel44, 1, 0);
-            this.tableLayoutPanel65.Controls.Add(this.panel50, 4, 0);
-            this.tableLayoutPanel65.Controls.Add(this.panel51, 2, 0);
-            this.tableLayoutPanel65.Controls.Add(this.panel52, 3, 0);
-            this.tableLayoutPanel65.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel65.Location = new System.Drawing.Point(0, 21);
-            this.tableLayoutPanel65.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel65.Name = "tableLayoutPanel65";
-            this.tableLayoutPanel65.RowCount = 1;
-            this.tableLayoutPanel65.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel65.Size = new System.Drawing.Size(1166, 84);
-            this.tableLayoutPanel65.TabIndex = 1;
-            // 
-            // panel43
-            // 
-            this.panel43.BackColor = System.Drawing.Color.White;
-            this.panel43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel43.Controls.Add(this.tableLayoutPanel66);
-            this.panel43.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel43.Location = new System.Drawing.Point(0, 0);
-            this.panel43.Margin = new System.Windows.Forms.Padding(0);
-            this.panel43.Name = "panel43";
-            this.panel43.Size = new System.Drawing.Size(262, 84);
-            this.panel43.TabIndex = 0;
-            // 
-            // tableLayoutPanel66
-            // 
-            this.tableLayoutPanel66.ColumnCount = 1;
-            this.tableLayoutPanel66.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel66.Controls.Add(this.label56, 0, 0);
-            this.tableLayoutPanel66.Controls.Add(this.M04_txt_CLN_loaicay, 0, 1);
-            this.tableLayoutPanel66.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel66.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel66.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel66.Name = "tableLayoutPanel66";
-            this.tableLayoutPanel66.RowCount = 2;
-            this.tableLayoutPanel66.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel66.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel66.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel66.Size = new System.Drawing.Size(260, 82);
-            this.tableLayoutPanel66.TabIndex = 0;
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label56.Location = new System.Drawing.Point(3, 0);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(124, 24);
-            this.label56.TabIndex = 0;
-            this.label56.Text = "Loại cây chủ yếu";
-            this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_CLN_loaicay
-            // 
-            this.M04_txt_CLN_loaicay.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_CLN_loaicay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_CLN_loaicay.Location = new System.Drawing.Point(0, 24);
-            this.M04_txt_CLN_loaicay.Margin = new System.Windows.Forms.Padding(0);
-            this.M04_txt_CLN_loaicay.Multiline = true;
-            this.M04_txt_CLN_loaicay.Name = "M04_txt_CLN_loaicay";
-            this.M04_txt_CLN_loaicay.Size = new System.Drawing.Size(260, 58);
-            this.M04_txt_CLN_loaicay.TabIndex = 1;
-            // 
-            // panel44
-            // 
-            this.panel44.BackColor = System.Drawing.Color.White;
-            this.panel44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel44.Controls.Add(this.tableLayoutPanel67);
-            this.panel44.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel44.Location = new System.Drawing.Point(262, 0);
-            this.panel44.Margin = new System.Windows.Forms.Padding(0);
-            this.panel44.Name = "panel44";
-            this.panel44.Size = new System.Drawing.Size(233, 84);
-            this.panel44.TabIndex = 0;
-            // 
-            // tableLayoutPanel67
-            // 
-            this.tableLayoutPanel67.ColumnCount = 1;
-            this.tableLayoutPanel67.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel67.Controls.Add(this.label57, 0, 0);
-            this.tableLayoutPanel67.Controls.Add(this.M04_txt_CLN_dt, 0, 1);
-            this.tableLayoutPanel67.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel67.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel67.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel67.Name = "tableLayoutPanel67";
-            this.tableLayoutPanel67.RowCount = 2;
-            this.tableLayoutPanel67.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel67.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel67.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel67.Size = new System.Drawing.Size(231, 82);
-            this.tableLayoutPanel67.TabIndex = 0;
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label57.Location = new System.Drawing.Point(3, 0);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(225, 24);
-            this.label57.TabIndex = 0;
-            this.label57.Text = "Diện tích (m2)";
-            this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_CLN_dt
-            // 
-            this.M04_txt_CLN_dt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_CLN_dt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_CLN_dt.Location = new System.Drawing.Point(0, 24);
-            this.M04_txt_CLN_dt.Margin = new System.Windows.Forms.Padding(0);
-            this.M04_txt_CLN_dt.Multiline = true;
-            this.M04_txt_CLN_dt.Name = "M04_txt_CLN_dt";
-            this.M04_txt_CLN_dt.Size = new System.Drawing.Size(231, 58);
-            this.M04_txt_CLN_dt.TabIndex = 1;
-            // 
-            // panel50
-            // 
-            this.panel50.BackColor = System.Drawing.Color.White;
-            this.panel50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel50.Controls.Add(this.tableLayoutPanel73);
-            this.panel50.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel50.Location = new System.Drawing.Point(1019, 0);
-            this.panel50.Margin = new System.Windows.Forms.Padding(0);
-            this.panel50.Name = "panel50";
-            this.panel50.Size = new System.Drawing.Size(147, 84);
-            this.panel50.TabIndex = 0;
-            // 
-            // tableLayoutPanel73
-            // 
-            this.tableLayoutPanel73.ColumnCount = 1;
-            this.tableLayoutPanel73.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel73.Controls.Add(this.label63, 0, 0);
-            this.tableLayoutPanel73.Controls.Add(this.M04_dpt_CLN_HSD, 0, 2);
-            this.tableLayoutPanel73.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel73.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel73.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel73.Name = "tableLayoutPanel73";
-            this.tableLayoutPanel73.RowCount = 3;
-            this.tableLayoutPanel73.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel73.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31.70732F));
-            this.tableLayoutPanel73.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.02439F));
-            this.tableLayoutPanel73.Size = new System.Drawing.Size(145, 82);
-            this.tableLayoutPanel73.TabIndex = 0;
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label63.Location = new System.Drawing.Point(3, 0);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(139, 24);
-            this.label63.TabIndex = 0;
-            this.label63.Text = "Thời hạn sử dụng đến";
-            this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_dpt_CLN_HSD
-            // 
-            this.M04_dpt_CLN_HSD.CalendarTodayDate = new System.DateTime(2021, 3, 9, 0, 0, 0, 0);
-            this.M04_dpt_CLN_HSD.CustomFormat = "dd/MM/yyyy";
-            this.M04_dpt_CLN_HSD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_dpt_CLN_HSD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.M04_dpt_CLN_HSD.Location = new System.Drawing.Point(3, 52);
-            this.M04_dpt_CLN_HSD.Name = "M04_dpt_CLN_HSD";
-            this.M04_dpt_CLN_HSD.Size = new System.Drawing.Size(139, 27);
-            this.M04_dpt_CLN_HSD.TabIndex = 1;
-            // 
-            // panel51
-            // 
-            this.panel51.BackColor = System.Drawing.Color.White;
-            this.panel51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel51.Controls.Add(this.tableLayoutPanel74);
-            this.panel51.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel51.Location = new System.Drawing.Point(495, 0);
-            this.panel51.Margin = new System.Windows.Forms.Padding(0);
-            this.panel51.Name = "panel51";
-            this.panel51.Size = new System.Drawing.Size(262, 84);
-            this.panel51.TabIndex = 1;
-            // 
-            // tableLayoutPanel74
-            // 
-            this.tableLayoutPanel74.ColumnCount = 1;
-            this.tableLayoutPanel74.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel74.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel74.Controls.Add(this.label64, 0, 0);
-            this.tableLayoutPanel74.Controls.Add(this.M04_txt_CLN_soHuuChung, 0, 1);
-            this.tableLayoutPanel74.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel74.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel74.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel74.Name = "tableLayoutPanel74";
-            this.tableLayoutPanel74.RowCount = 2;
-            this.tableLayoutPanel74.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel74.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel74.Size = new System.Drawing.Size(260, 82);
-            this.tableLayoutPanel74.TabIndex = 0;
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label64.Location = new System.Drawing.Point(3, 0);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(254, 24);
-            this.label64.TabIndex = 0;
-            this.label64.Text = "Sở hữu chung (m2)";
-            this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_CLN_soHuuChung
-            // 
-            this.M04_txt_CLN_soHuuChung.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_CLN_soHuuChung.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_CLN_soHuuChung.Location = new System.Drawing.Point(0, 24);
-            this.M04_txt_CLN_soHuuChung.Margin = new System.Windows.Forms.Padding(0);
-            this.M04_txt_CLN_soHuuChung.Multiline = true;
-            this.M04_txt_CLN_soHuuChung.Name = "M04_txt_CLN_soHuuChung";
-            this.M04_txt_CLN_soHuuChung.Size = new System.Drawing.Size(260, 58);
-            this.M04_txt_CLN_soHuuChung.TabIndex = 1;
-            // 
-            // panel52
-            // 
-            this.panel52.BackColor = System.Drawing.Color.White;
-            this.panel52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel52.Controls.Add(this.tableLayoutPanel75);
-            this.panel52.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel52.Location = new System.Drawing.Point(757, 0);
-            this.panel52.Margin = new System.Windows.Forms.Padding(0);
-            this.panel52.Name = "panel52";
-            this.panel52.Size = new System.Drawing.Size(262, 84);
-            this.panel52.TabIndex = 1;
-            // 
-            // tableLayoutPanel75
-            // 
-            this.tableLayoutPanel75.ColumnCount = 1;
-            this.tableLayoutPanel75.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel75.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel75.Controls.Add(this.label65, 0, 0);
-            this.tableLayoutPanel75.Controls.Add(this.M04_txt_CLN_soHuuRieng, 0, 1);
-            this.tableLayoutPanel75.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel75.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel75.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel75.Name = "tableLayoutPanel75";
-            this.tableLayoutPanel75.RowCount = 2;
-            this.tableLayoutPanel75.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel75.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel75.Size = new System.Drawing.Size(260, 82);
-            this.tableLayoutPanel75.TabIndex = 0;
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label65.Location = new System.Drawing.Point(3, 0);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(254, 24);
-            this.label65.TabIndex = 0;
-            this.label65.Text = "Sở  hữu riêng (m2)";
-            this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_CLN_soHuuRieng
-            // 
-            this.M04_txt_CLN_soHuuRieng.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_CLN_soHuuRieng.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_CLN_soHuuRieng.Location = new System.Drawing.Point(0, 24);
-            this.M04_txt_CLN_soHuuRieng.Margin = new System.Windows.Forms.Padding(0);
-            this.M04_txt_CLN_soHuuRieng.Multiline = true;
-            this.M04_txt_CLN_soHuuRieng.Name = "M04_txt_CLN_soHuuRieng";
-            this.M04_txt_CLN_soHuuRieng.Size = new System.Drawing.Size(260, 58);
-            this.M04_txt_CLN_soHuuRieng.TabIndex = 1;
-            // 
-            // panel45
-            // 
-            this.panel45.BackColor = System.Drawing.Color.White;
-            this.panel45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel45.Controls.Add(this.tableLayoutPanel68);
-            this.panel45.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel45.Location = new System.Drawing.Point(8, 1226);
-            this.panel45.Name = "panel45";
-            this.panel45.Size = new System.Drawing.Size(1166, 160);
-            this.panel45.TabIndex = 11;
-            // 
-            // tableLayoutPanel68
-            // 
-            this.tableLayoutPanel68.ColumnCount = 1;
-            this.tableLayoutPanel68.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel68.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel68.Controls.Add(this.label58, 0, 0);
-            this.tableLayoutPanel68.Controls.Add(this.textBox38, 0, 1);
-            this.tableLayoutPanel68.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel68.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel68.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel68.Name = "tableLayoutPanel68";
-            this.tableLayoutPanel68.RowCount = 2;
-            this.tableLayoutPanel68.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel68.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel68.Size = new System.Drawing.Size(1164, 158);
-            this.tableLayoutPanel68.TabIndex = 0;
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label58.Location = new System.Drawing.Point(3, 0);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(1158, 31);
-            this.label58.TabIndex = 0;
-            this.label58.Text = "Những giấy từ nộp kèm theo";
-            this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // textBox38
-            // 
-            this.textBox38.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox38.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox38.Location = new System.Drawing.Point(0, 31);
-            this.textBox38.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox38.Multiline = true;
-            this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(1164, 127);
-            this.textBox38.TabIndex = 2;
-            // 
-            // panel46
-            // 
-            this.panel46.BackColor = System.Drawing.Color.White;
-            this.panel46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel46.Controls.Add(this.tableLayoutPanel69);
-            this.panel46.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel46.Location = new System.Drawing.Point(8, 1423);
-            this.panel46.Name = "panel46";
-            this.panel46.Size = new System.Drawing.Size(1166, 169);
-            this.panel46.TabIndex = 11;
-            // 
-            // tableLayoutPanel69
-            // 
-            this.tableLayoutPanel69.ColumnCount = 1;
-            this.tableLayoutPanel69.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel69.Controls.Add(this.label59, 0, 0);
-            this.tableLayoutPanel69.Controls.Add(this.label60, 0, 2);
-            this.tableLayoutPanel69.Controls.Add(this.M04_txt_deNghiKhac, 0, 3);
-            this.tableLayoutPanel69.Controls.Add(this.M04_txt_nhuCauGhiNo, 0, 1);
-            this.tableLayoutPanel69.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel69.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel69.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel69.Name = "tableLayoutPanel69";
-            this.tableLayoutPanel69.RowCount = 4;
-            this.tableLayoutPanel69.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel69.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel69.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel69.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel69.Size = new System.Drawing.Size(1164, 167);
-            this.tableLayoutPanel69.TabIndex = 0;
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label59.Location = new System.Drawing.Point(3, 0);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(1158, 33);
-            this.label59.TabIndex = 0;
-            this.label59.Text = "Có nhu cầu ghi nợ đối với loại nghĩa vụ tài chính";
-            this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label60.Location = new System.Drawing.Point(3, 83);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(1158, 33);
-            this.label60.TabIndex = 1;
-            this.label60.Text = "Đề nghị khác";
-            this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_deNghiKhac
-            // 
-            this.M04_txt_deNghiKhac.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_deNghiKhac.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_deNghiKhac.Location = new System.Drawing.Point(0, 116);
-            this.M04_txt_deNghiKhac.Margin = new System.Windows.Forms.Padding(0);
-            this.M04_txt_deNghiKhac.Multiline = true;
-            this.M04_txt_deNghiKhac.Name = "M04_txt_deNghiKhac";
-            this.M04_txt_deNghiKhac.Size = new System.Drawing.Size(1164, 51);
-            this.M04_txt_deNghiKhac.TabIndex = 2;
-            // 
-            // M04_txt_nhuCauGhiNo
-            // 
-            this.M04_txt_nhuCauGhiNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_nhuCauGhiNo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_nhuCauGhiNo.Location = new System.Drawing.Point(0, 33);
-            this.M04_txt_nhuCauGhiNo.Margin = new System.Windows.Forms.Padding(0);
-            this.M04_txt_nhuCauGhiNo.Multiline = true;
-            this.M04_txt_nhuCauGhiNo.Name = "M04_txt_nhuCauGhiNo";
-            this.M04_txt_nhuCauGhiNo.Size = new System.Drawing.Size(1164, 50);
-            this.M04_txt_nhuCauGhiNo.TabIndex = 2;
+            // filesPDF_mau04
+            // 
+            this.filesPDF_mau04.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.filesPDF_mau04.Enabled = true;
+            this.filesPDF_mau04.Location = new System.Drawing.Point(0, 0);
+            this.filesPDF_mau04.Name = "filesPDF_mau04";
+            this.filesPDF_mau04.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("filesPDF_mau04.OcxState")));
+            this.filesPDF_mau04.Size = new System.Drawing.Size(935, 600);
+            this.filesPDF_mau04.TabIndex = 0;
             // 
             // tabPage6
             // 
+            this.tabPage6.Controls.Add(this.tableLayoutPanel10);
             this.tabPage6.Location = new System.Drawing.Point(4, 45);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Size = new System.Drawing.Size(1337, 732);
             this.tabPage6.TabIndex = 5;
+            this.tabPage6.Tag = "6";
             this.tabPage6.Text = "Mẫu số 04a/ĐK";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
+            // tableLayoutPanel10
+            // 
+            this.tableLayoutPanel10.ColumnCount = 3;
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel10.Controls.Add(this.flowLayoutPanel6, 1, 1);
+            this.tableLayoutPanel10.Controls.Add(this.panel4, 1, 2);
+            this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
+            this.tableLayoutPanel10.RowCount = 4;
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(1337, 732);
+            this.tableLayoutPanel10.TabIndex = 2;
+            // 
+            // flowLayoutPanel6
+            // 
+            this.flowLayoutPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.flowLayoutPanel6.Controls.Add(this.button23);
+            this.flowLayoutPanel6.Controls.Add(this.button24);
+            this.flowLayoutPanel6.Controls.Add(this.button25);
+            this.flowLayoutPanel6.Controls.Add(this.button26);
+            this.flowLayoutPanel6.Controls.Add(this.button27);
+            this.flowLayoutPanel6.Controls.Add(this.button28);
+            this.flowLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel6.Location = new System.Drawing.Point(200, 36);
+            this.flowLayoutPanel6.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
+            this.flowLayoutPanel6.Size = new System.Drawing.Size(935, 58);
+            this.flowLayoutPanel6.TabIndex = 0;
+            // 
+            // button23
+            // 
+            this.button23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button23.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button23.FlatAppearance.BorderSize = 0;
+            this.button23.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button23.ForeColor = System.Drawing.Color.White;
+            this.button23.Image = global::PM_QLGTDD.Properties.Resources.icons8_pencil_24__1_;
+            this.button23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button23.Location = new System.Drawing.Point(0, 0);
+            this.button23.Margin = new System.Windows.Forms.Padding(0);
+            this.button23.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button23.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(142, 70);
+            this.button23.TabIndex = 1;
+            this.button23.Text = "Nhập";
+            this.button23.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button23.UseVisualStyleBackColor = false;
+            // 
+            // button24
+            // 
+            this.button24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button24.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button24.FlatAppearance.BorderSize = 0;
+            this.button24.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button24.ForeColor = System.Drawing.Color.White;
+            this.button24.Image = global::PM_QLGTDD.Properties.Resources.icons8_save_24;
+            this.button24.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button24.Location = new System.Drawing.Point(142, 0);
+            this.button24.Margin = new System.Windows.Forms.Padding(0);
+            this.button24.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button24.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(142, 70);
+            this.button24.TabIndex = 2;
+            this.button24.Text = "Lưu";
+            this.button24.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button24.UseVisualStyleBackColor = false;
+            // 
+            // button25
+            // 
+            this.button25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button25.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button25.FlatAppearance.BorderSize = 0;
+            this.button25.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button25.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button25.ForeColor = System.Drawing.Color.White;
+            this.button25.Image = global::PM_QLGTDD.Properties.Resources.f;
+            this.button25.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button25.Location = new System.Drawing.Point(284, 0);
+            this.button25.Margin = new System.Windows.Forms.Padding(0);
+            this.button25.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button25.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(142, 70);
+            this.button25.TabIndex = 3;
+            this.button25.Text = "Sửa";
+            this.button25.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button25.UseVisualStyleBackColor = false;
+            // 
+            // button26
+            // 
+            this.button26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button26.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button26.FlatAppearance.BorderSize = 0;
+            this.button26.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button26.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button26.ForeColor = System.Drawing.Color.White;
+            this.button26.Image = global::PM_QLGTDD.Properties.Resources.ey;
+            this.button26.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button26.Location = new System.Drawing.Point(426, 0);
+            this.button26.Margin = new System.Windows.Forms.Padding(0);
+            this.button26.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button26.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(142, 70);
+            this.button26.TabIndex = 4;
+            this.button26.Text = "Xem";
+            this.button26.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button26.UseVisualStyleBackColor = false;
+            // 
+            // button27
+            // 
+            this.button27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button27.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button27.FlatAppearance.BorderSize = 0;
+            this.button27.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button27.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button27.ForeColor = System.Drawing.Color.White;
+            this.button27.Image = global::PM_QLGTDD.Properties.Resources.icons8_print_24;
+            this.button27.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button27.Location = new System.Drawing.Point(568, 0);
+            this.button27.Margin = new System.Windows.Forms.Padding(0);
+            this.button27.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button27.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(142, 70);
+            this.button27.TabIndex = 5;
+            this.button27.Text = "In";
+            this.button27.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button27.UseVisualStyleBackColor = false;
+            // 
+            // button28
+            // 
+            this.button28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button28.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button28.FlatAppearance.BorderSize = 0;
+            this.button28.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button28.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button28.ForeColor = System.Drawing.Color.White;
+            this.button28.Image = global::PM_QLGTDD.Properties.Resources.icons8_delete_bin_24;
+            this.button28.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button28.Location = new System.Drawing.Point(710, 0);
+            this.button28.Margin = new System.Windows.Forms.Padding(0);
+            this.button28.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button28.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(142, 70);
+            this.button28.TabIndex = 6;
+            this.button28.Text = "Xóa";
+            this.button28.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button28.UseVisualStyleBackColor = false;
+            // 
+            // panel4
+            // 
+            this.panel4.AutoScroll = true;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
+            this.panel4.Controls.Add(this.axAcroPDF4);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(200, 94);
+            this.panel4.Margin = new System.Windows.Forms.Padding(0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(935, 600);
+            this.panel4.TabIndex = 1;
+            // 
+            // axAcroPDF4
+            // 
+            this.axAcroPDF4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF4.Enabled = true;
+            this.axAcroPDF4.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF4.Name = "axAcroPDF4";
+            this.axAcroPDF4.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF4.OcxState")));
+            this.axAcroPDF4.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF4.TabIndex = 0;
+            // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.tableLayoutPanel11);
             this.tabPage7.Location = new System.Drawing.Point(4, 45);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Size = new System.Drawing.Size(1337, 732);
             this.tabPage7.TabIndex = 6;
+            this.tabPage7.Tag = "7";
             this.tabPage7.Text = "Mẫu số 04b/ĐK";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
+            // tableLayoutPanel11
+            // 
+            this.tableLayoutPanel11.ColumnCount = 3;
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel11.Controls.Add(this.flowLayoutPanel7, 1, 1);
+            this.tableLayoutPanel11.Controls.Add(this.panel5, 1, 2);
+            this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel11.Name = "tableLayoutPanel11";
+            this.tableLayoutPanel11.RowCount = 4;
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(1337, 732);
+            this.tableLayoutPanel11.TabIndex = 2;
+            // 
+            // flowLayoutPanel7
+            // 
+            this.flowLayoutPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.flowLayoutPanel7.Controls.Add(this.button29);
+            this.flowLayoutPanel7.Controls.Add(this.button30);
+            this.flowLayoutPanel7.Controls.Add(this.button31);
+            this.flowLayoutPanel7.Controls.Add(this.button32);
+            this.flowLayoutPanel7.Controls.Add(this.button33);
+            this.flowLayoutPanel7.Controls.Add(this.button34);
+            this.flowLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel7.Location = new System.Drawing.Point(200, 36);
+            this.flowLayoutPanel7.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel7.Name = "flowLayoutPanel7";
+            this.flowLayoutPanel7.Size = new System.Drawing.Size(935, 58);
+            this.flowLayoutPanel7.TabIndex = 0;
+            // 
+            // button29
+            // 
+            this.button29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button29.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button29.FlatAppearance.BorderSize = 0;
+            this.button29.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button29.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button29.ForeColor = System.Drawing.Color.White;
+            this.button29.Image = global::PM_QLGTDD.Properties.Resources.icons8_pencil_24__1_;
+            this.button29.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button29.Location = new System.Drawing.Point(0, 0);
+            this.button29.Margin = new System.Windows.Forms.Padding(0);
+            this.button29.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button29.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(142, 70);
+            this.button29.TabIndex = 1;
+            this.button29.Text = "Nhập";
+            this.button29.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button29.UseVisualStyleBackColor = false;
+            // 
+            // button30
+            // 
+            this.button30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button30.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button30.FlatAppearance.BorderSize = 0;
+            this.button30.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button30.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button30.ForeColor = System.Drawing.Color.White;
+            this.button30.Image = global::PM_QLGTDD.Properties.Resources.icons8_save_24;
+            this.button30.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button30.Location = new System.Drawing.Point(142, 0);
+            this.button30.Margin = new System.Windows.Forms.Padding(0);
+            this.button30.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button30.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(142, 70);
+            this.button30.TabIndex = 2;
+            this.button30.Text = "Lưu";
+            this.button30.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button30.UseVisualStyleBackColor = false;
+            // 
+            // button31
+            // 
+            this.button31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button31.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button31.FlatAppearance.BorderSize = 0;
+            this.button31.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button31.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button31.ForeColor = System.Drawing.Color.White;
+            this.button31.Image = global::PM_QLGTDD.Properties.Resources.f;
+            this.button31.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button31.Location = new System.Drawing.Point(284, 0);
+            this.button31.Margin = new System.Windows.Forms.Padding(0);
+            this.button31.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button31.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button31.Name = "button31";
+            this.button31.Size = new System.Drawing.Size(142, 70);
+            this.button31.TabIndex = 3;
+            this.button31.Text = "Sửa";
+            this.button31.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button31.UseVisualStyleBackColor = false;
+            // 
+            // button32
+            // 
+            this.button32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button32.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button32.FlatAppearance.BorderSize = 0;
+            this.button32.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button32.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button32.ForeColor = System.Drawing.Color.White;
+            this.button32.Image = global::PM_QLGTDD.Properties.Resources.ey;
+            this.button32.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button32.Location = new System.Drawing.Point(426, 0);
+            this.button32.Margin = new System.Windows.Forms.Padding(0);
+            this.button32.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button32.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(142, 70);
+            this.button32.TabIndex = 4;
+            this.button32.Text = "Xem";
+            this.button32.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button32.UseVisualStyleBackColor = false;
+            // 
+            // button33
+            // 
+            this.button33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button33.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button33.FlatAppearance.BorderSize = 0;
+            this.button33.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button33.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button33.ForeColor = System.Drawing.Color.White;
+            this.button33.Image = global::PM_QLGTDD.Properties.Resources.icons8_print_24;
+            this.button33.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button33.Location = new System.Drawing.Point(568, 0);
+            this.button33.Margin = new System.Windows.Forms.Padding(0);
+            this.button33.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button33.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(142, 70);
+            this.button33.TabIndex = 5;
+            this.button33.Text = "In";
+            this.button33.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button33.UseVisualStyleBackColor = false;
+            // 
+            // button34
+            // 
+            this.button34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button34.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button34.FlatAppearance.BorderSize = 0;
+            this.button34.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button34.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button34.ForeColor = System.Drawing.Color.White;
+            this.button34.Image = global::PM_QLGTDD.Properties.Resources.icons8_delete_bin_24;
+            this.button34.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button34.Location = new System.Drawing.Point(710, 0);
+            this.button34.Margin = new System.Windows.Forms.Padding(0);
+            this.button34.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button34.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button34.Name = "button34";
+            this.button34.Size = new System.Drawing.Size(142, 70);
+            this.button34.TabIndex = 6;
+            this.button34.Text = "Xóa";
+            this.button34.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button34.UseVisualStyleBackColor = false;
+            // 
+            // panel5
+            // 
+            this.panel5.AutoScroll = true;
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
+            this.panel5.Controls.Add(this.axAcroPDF5);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(200, 94);
+            this.panel5.Margin = new System.Windows.Forms.Padding(0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(935, 600);
+            this.panel5.TabIndex = 1;
+            // 
+            // axAcroPDF5
+            // 
+            this.axAcroPDF5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF5.Enabled = true;
+            this.axAcroPDF5.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF5.Name = "axAcroPDF5";
+            this.axAcroPDF5.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF5.OcxState")));
+            this.axAcroPDF5.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF5.TabIndex = 0;
+            // 
             // tabPage8
             // 
+            this.tabPage8.Controls.Add(this.tableLayoutPanel12);
             this.tabPage8.Location = new System.Drawing.Point(4, 45);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Size = new System.Drawing.Size(1337, 732);
             this.tabPage8.TabIndex = 7;
+            this.tabPage8.Tag = "8";
             this.tabPage8.Text = "Mẫu số 04c/ĐK";
             this.tabPage8.UseVisualStyleBackColor = true;
             // 
+            // tableLayoutPanel12
+            // 
+            this.tableLayoutPanel12.ColumnCount = 3;
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel12.Controls.Add(this.flowLayoutPanel8, 1, 1);
+            this.tableLayoutPanel12.Controls.Add(this.panel6, 1, 2);
+            this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel12.Name = "tableLayoutPanel12";
+            this.tableLayoutPanel12.RowCount = 4;
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(1337, 732);
+            this.tableLayoutPanel12.TabIndex = 2;
+            // 
+            // flowLayoutPanel8
+            // 
+            this.flowLayoutPanel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.flowLayoutPanel8.Controls.Add(this.button35);
+            this.flowLayoutPanel8.Controls.Add(this.button36);
+            this.flowLayoutPanel8.Controls.Add(this.button37);
+            this.flowLayoutPanel8.Controls.Add(this.button38);
+            this.flowLayoutPanel8.Controls.Add(this.button39);
+            this.flowLayoutPanel8.Controls.Add(this.button40);
+            this.flowLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel8.Location = new System.Drawing.Point(200, 36);
+            this.flowLayoutPanel8.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel8.Name = "flowLayoutPanel8";
+            this.flowLayoutPanel8.Size = new System.Drawing.Size(935, 58);
+            this.flowLayoutPanel8.TabIndex = 0;
+            // 
+            // button35
+            // 
+            this.button35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button35.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button35.FlatAppearance.BorderSize = 0;
+            this.button35.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button35.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button35.ForeColor = System.Drawing.Color.White;
+            this.button35.Image = global::PM_QLGTDD.Properties.Resources.icons8_pencil_24__1_;
+            this.button35.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button35.Location = new System.Drawing.Point(0, 0);
+            this.button35.Margin = new System.Windows.Forms.Padding(0);
+            this.button35.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button35.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button35.Name = "button35";
+            this.button35.Size = new System.Drawing.Size(142, 70);
+            this.button35.TabIndex = 1;
+            this.button35.Text = "Nhập";
+            this.button35.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button35.UseVisualStyleBackColor = false;
+            // 
+            // button36
+            // 
+            this.button36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button36.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button36.FlatAppearance.BorderSize = 0;
+            this.button36.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button36.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button36.ForeColor = System.Drawing.Color.White;
+            this.button36.Image = global::PM_QLGTDD.Properties.Resources.icons8_save_24;
+            this.button36.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button36.Location = new System.Drawing.Point(142, 0);
+            this.button36.Margin = new System.Windows.Forms.Padding(0);
+            this.button36.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button36.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(142, 70);
+            this.button36.TabIndex = 2;
+            this.button36.Text = "Lưu";
+            this.button36.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button36.UseVisualStyleBackColor = false;
+            // 
+            // button37
+            // 
+            this.button37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button37.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button37.FlatAppearance.BorderSize = 0;
+            this.button37.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button37.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button37.ForeColor = System.Drawing.Color.White;
+            this.button37.Image = global::PM_QLGTDD.Properties.Resources.f;
+            this.button37.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button37.Location = new System.Drawing.Point(284, 0);
+            this.button37.Margin = new System.Windows.Forms.Padding(0);
+            this.button37.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button37.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button37.Name = "button37";
+            this.button37.Size = new System.Drawing.Size(142, 70);
+            this.button37.TabIndex = 3;
+            this.button37.Text = "Sửa";
+            this.button37.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button37.UseVisualStyleBackColor = false;
+            // 
+            // button38
+            // 
+            this.button38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button38.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button38.FlatAppearance.BorderSize = 0;
+            this.button38.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button38.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button38.ForeColor = System.Drawing.Color.White;
+            this.button38.Image = global::PM_QLGTDD.Properties.Resources.ey;
+            this.button38.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button38.Location = new System.Drawing.Point(426, 0);
+            this.button38.Margin = new System.Windows.Forms.Padding(0);
+            this.button38.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button38.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button38.Name = "button38";
+            this.button38.Size = new System.Drawing.Size(142, 70);
+            this.button38.TabIndex = 4;
+            this.button38.Text = "Xem";
+            this.button38.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button38.UseVisualStyleBackColor = false;
+            // 
+            // button39
+            // 
+            this.button39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button39.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button39.FlatAppearance.BorderSize = 0;
+            this.button39.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button39.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button39.ForeColor = System.Drawing.Color.White;
+            this.button39.Image = global::PM_QLGTDD.Properties.Resources.icons8_print_24;
+            this.button39.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button39.Location = new System.Drawing.Point(568, 0);
+            this.button39.Margin = new System.Windows.Forms.Padding(0);
+            this.button39.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button39.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button39.Name = "button39";
+            this.button39.Size = new System.Drawing.Size(142, 70);
+            this.button39.TabIndex = 5;
+            this.button39.Text = "In";
+            this.button39.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button39.UseVisualStyleBackColor = false;
+            // 
+            // button40
+            // 
+            this.button40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button40.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button40.FlatAppearance.BorderSize = 0;
+            this.button40.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button40.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button40.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button40.ForeColor = System.Drawing.Color.White;
+            this.button40.Image = global::PM_QLGTDD.Properties.Resources.icons8_delete_bin_24;
+            this.button40.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button40.Location = new System.Drawing.Point(710, 0);
+            this.button40.Margin = new System.Windows.Forms.Padding(0);
+            this.button40.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button40.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button40.Name = "button40";
+            this.button40.Size = new System.Drawing.Size(142, 70);
+            this.button40.TabIndex = 6;
+            this.button40.Text = "Xóa";
+            this.button40.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button40.UseVisualStyleBackColor = false;
+            // 
+            // panel6
+            // 
+            this.panel6.AutoScroll = true;
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
+            this.panel6.Controls.Add(this.axAcroPDF6);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Location = new System.Drawing.Point(200, 94);
+            this.panel6.Margin = new System.Windows.Forms.Padding(0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(935, 600);
+            this.panel6.TabIndex = 1;
+            // 
+            // axAcroPDF6
+            // 
+            this.axAcroPDF6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF6.Enabled = true;
+            this.axAcroPDF6.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF6.Name = "axAcroPDF6";
+            this.axAcroPDF6.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF6.OcxState")));
+            this.axAcroPDF6.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF6.TabIndex = 0;
+            // 
             // tabPage9
             // 
+            this.tabPage9.Controls.Add(this.tableLayoutPanel13);
             this.tabPage9.Location = new System.Drawing.Point(4, 45);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Size = new System.Drawing.Size(1337, 732);
             this.tabPage9.TabIndex = 8;
+            this.tabPage9.Tag = "9";
             this.tabPage9.Text = "Mẫu số 04d/ĐK";
             this.tabPage9.UseVisualStyleBackColor = true;
             // 
+            // tableLayoutPanel13
+            // 
+            this.tableLayoutPanel13.ColumnCount = 3;
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel13.Controls.Add(this.flowLayoutPanel9, 1, 1);
+            this.tableLayoutPanel13.Controls.Add(this.panel7, 1, 2);
+            this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel13.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel13.Name = "tableLayoutPanel13";
+            this.tableLayoutPanel13.RowCount = 4;
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82F));
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(1337, 732);
+            this.tableLayoutPanel13.TabIndex = 2;
+            // 
+            // flowLayoutPanel9
+            // 
+            this.flowLayoutPanel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.flowLayoutPanel9.Controls.Add(this.button41);
+            this.flowLayoutPanel9.Controls.Add(this.button42);
+            this.flowLayoutPanel9.Controls.Add(this.button43);
+            this.flowLayoutPanel9.Controls.Add(this.button44);
+            this.flowLayoutPanel9.Controls.Add(this.button45);
+            this.flowLayoutPanel9.Controls.Add(this.button46);
+            this.flowLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel9.Location = new System.Drawing.Point(200, 36);
+            this.flowLayoutPanel9.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel9.Name = "flowLayoutPanel9";
+            this.flowLayoutPanel9.Size = new System.Drawing.Size(935, 58);
+            this.flowLayoutPanel9.TabIndex = 0;
+            // 
+            // button41
+            // 
+            this.button41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button41.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button41.FlatAppearance.BorderSize = 0;
+            this.button41.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button41.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button41.ForeColor = System.Drawing.Color.White;
+            this.button41.Image = global::PM_QLGTDD.Properties.Resources.icons8_pencil_24__1_;
+            this.button41.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button41.Location = new System.Drawing.Point(0, 0);
+            this.button41.Margin = new System.Windows.Forms.Padding(0);
+            this.button41.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button41.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button41.Name = "button41";
+            this.button41.Size = new System.Drawing.Size(142, 70);
+            this.button41.TabIndex = 1;
+            this.button41.Text = "Nhập";
+            this.button41.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button41.UseVisualStyleBackColor = false;
+            // 
+            // button42
+            // 
+            this.button42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button42.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button42.FlatAppearance.BorderSize = 0;
+            this.button42.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button42.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button42.ForeColor = System.Drawing.Color.White;
+            this.button42.Image = global::PM_QLGTDD.Properties.Resources.icons8_save_24;
+            this.button42.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button42.Location = new System.Drawing.Point(142, 0);
+            this.button42.Margin = new System.Windows.Forms.Padding(0);
+            this.button42.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button42.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button42.Name = "button42";
+            this.button42.Size = new System.Drawing.Size(142, 70);
+            this.button42.TabIndex = 2;
+            this.button42.Text = "Lưu";
+            this.button42.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button42.UseVisualStyleBackColor = false;
+            // 
+            // button43
+            // 
+            this.button43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button43.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button43.FlatAppearance.BorderSize = 0;
+            this.button43.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button43.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button43.ForeColor = System.Drawing.Color.White;
+            this.button43.Image = global::PM_QLGTDD.Properties.Resources.f;
+            this.button43.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button43.Location = new System.Drawing.Point(284, 0);
+            this.button43.Margin = new System.Windows.Forms.Padding(0);
+            this.button43.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button43.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button43.Name = "button43";
+            this.button43.Size = new System.Drawing.Size(142, 70);
+            this.button43.TabIndex = 3;
+            this.button43.Text = "Sửa";
+            this.button43.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button43.UseVisualStyleBackColor = false;
+            // 
+            // button44
+            // 
+            this.button44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button44.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button44.FlatAppearance.BorderSize = 0;
+            this.button44.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button44.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button44.ForeColor = System.Drawing.Color.White;
+            this.button44.Image = global::PM_QLGTDD.Properties.Resources.ey;
+            this.button44.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button44.Location = new System.Drawing.Point(426, 0);
+            this.button44.Margin = new System.Windows.Forms.Padding(0);
+            this.button44.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button44.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button44.Name = "button44";
+            this.button44.Size = new System.Drawing.Size(142, 70);
+            this.button44.TabIndex = 4;
+            this.button44.Text = "Xem";
+            this.button44.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button44.UseVisualStyleBackColor = false;
+            // 
+            // button45
+            // 
+            this.button45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button45.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button45.FlatAppearance.BorderSize = 0;
+            this.button45.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button45.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button45.ForeColor = System.Drawing.Color.White;
+            this.button45.Image = global::PM_QLGTDD.Properties.Resources.icons8_print_24;
+            this.button45.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button45.Location = new System.Drawing.Point(568, 0);
+            this.button45.Margin = new System.Windows.Forms.Padding(0);
+            this.button45.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button45.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button45.Name = "button45";
+            this.button45.Size = new System.Drawing.Size(142, 70);
+            this.button45.TabIndex = 5;
+            this.button45.Text = "In";
+            this.button45.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button45.UseVisualStyleBackColor = false;
+            // 
+            // button46
+            // 
+            this.button46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button46.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button46.FlatAppearance.BorderSize = 0;
+            this.button46.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button46.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button46.ForeColor = System.Drawing.Color.White;
+            this.button46.Image = global::PM_QLGTDD.Properties.Resources.icons8_delete_bin_24;
+            this.button46.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button46.Location = new System.Drawing.Point(710, 0);
+            this.button46.Margin = new System.Windows.Forms.Padding(0);
+            this.button46.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button46.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button46.Name = "button46";
+            this.button46.Size = new System.Drawing.Size(142, 70);
+            this.button46.TabIndex = 6;
+            this.button46.Text = "Xóa";
+            this.button46.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button46.UseVisualStyleBackColor = false;
+            // 
+            // panel7
+            // 
+            this.panel7.AutoScroll = true;
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
+            this.panel7.Controls.Add(this.axAcroPDF7);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel7.Location = new System.Drawing.Point(200, 94);
+            this.panel7.Margin = new System.Windows.Forms.Padding(0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(935, 600);
+            this.panel7.TabIndex = 1;
+            // 
+            // axAcroPDF7
+            // 
+            this.axAcroPDF7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF7.Enabled = true;
+            this.axAcroPDF7.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF7.Name = "axAcroPDF7";
+            this.axAcroPDF7.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF7.OcxState")));
+            this.axAcroPDF7.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF7.TabIndex = 0;
+            // 
             // tabPage10
             // 
+            this.tabPage10.Controls.Add(this.tableLayoutPanel14);
             this.tabPage10.Location = new System.Drawing.Point(4, 45);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Size = new System.Drawing.Size(1337, 732);
             this.tabPage10.TabIndex = 9;
+            this.tabPage10.Tag = "10";
             this.tabPage10.Text = "Mẫu số 05/ĐK";
             this.tabPage10.UseVisualStyleBackColor = true;
             // 
+            // tableLayoutPanel14
+            // 
+            this.tableLayoutPanel14.ColumnCount = 3;
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel14.Controls.Add(this.flowLayoutPanel10, 1, 1);
+            this.tableLayoutPanel14.Controls.Add(this.panel8, 1, 2);
+            this.tableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel14.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel14.Name = "tableLayoutPanel14";
+            this.tableLayoutPanel14.RowCount = 4;
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82F));
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel14.Size = new System.Drawing.Size(1337, 732);
+            this.tableLayoutPanel14.TabIndex = 2;
+            // 
+            // flowLayoutPanel10
+            // 
+            this.flowLayoutPanel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.flowLayoutPanel10.Controls.Add(this.button47);
+            this.flowLayoutPanel10.Controls.Add(this.button48);
+            this.flowLayoutPanel10.Controls.Add(this.button49);
+            this.flowLayoutPanel10.Controls.Add(this.button50);
+            this.flowLayoutPanel10.Controls.Add(this.button51);
+            this.flowLayoutPanel10.Controls.Add(this.button52);
+            this.flowLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel10.Location = new System.Drawing.Point(200, 36);
+            this.flowLayoutPanel10.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel10.Name = "flowLayoutPanel10";
+            this.flowLayoutPanel10.Size = new System.Drawing.Size(935, 58);
+            this.flowLayoutPanel10.TabIndex = 0;
+            // 
+            // button47
+            // 
+            this.button47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button47.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button47.FlatAppearance.BorderSize = 0;
+            this.button47.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button47.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button47.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button47.ForeColor = System.Drawing.Color.White;
+            this.button47.Image = global::PM_QLGTDD.Properties.Resources.icons8_pencil_24__1_;
+            this.button47.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button47.Location = new System.Drawing.Point(0, 0);
+            this.button47.Margin = new System.Windows.Forms.Padding(0);
+            this.button47.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button47.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button47.Name = "button47";
+            this.button47.Size = new System.Drawing.Size(142, 70);
+            this.button47.TabIndex = 1;
+            this.button47.Text = "Nhập";
+            this.button47.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button47.UseVisualStyleBackColor = false;
+            // 
+            // button48
+            // 
+            this.button48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button48.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button48.FlatAppearance.BorderSize = 0;
+            this.button48.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button48.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button48.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button48.ForeColor = System.Drawing.Color.White;
+            this.button48.Image = global::PM_QLGTDD.Properties.Resources.icons8_save_24;
+            this.button48.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button48.Location = new System.Drawing.Point(142, 0);
+            this.button48.Margin = new System.Windows.Forms.Padding(0);
+            this.button48.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button48.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button48.Name = "button48";
+            this.button48.Size = new System.Drawing.Size(142, 70);
+            this.button48.TabIndex = 2;
+            this.button48.Text = "Lưu";
+            this.button48.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button48.UseVisualStyleBackColor = false;
+            // 
+            // button49
+            // 
+            this.button49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button49.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button49.FlatAppearance.BorderSize = 0;
+            this.button49.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button49.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button49.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button49.ForeColor = System.Drawing.Color.White;
+            this.button49.Image = global::PM_QLGTDD.Properties.Resources.f;
+            this.button49.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button49.Location = new System.Drawing.Point(284, 0);
+            this.button49.Margin = new System.Windows.Forms.Padding(0);
+            this.button49.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button49.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button49.Name = "button49";
+            this.button49.Size = new System.Drawing.Size(142, 70);
+            this.button49.TabIndex = 3;
+            this.button49.Text = "Sửa";
+            this.button49.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button49.UseVisualStyleBackColor = false;
+            // 
+            // button50
+            // 
+            this.button50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button50.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button50.FlatAppearance.BorderSize = 0;
+            this.button50.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button50.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button50.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button50.ForeColor = System.Drawing.Color.White;
+            this.button50.Image = global::PM_QLGTDD.Properties.Resources.ey;
+            this.button50.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button50.Location = new System.Drawing.Point(426, 0);
+            this.button50.Margin = new System.Windows.Forms.Padding(0);
+            this.button50.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button50.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button50.Name = "button50";
+            this.button50.Size = new System.Drawing.Size(142, 70);
+            this.button50.TabIndex = 4;
+            this.button50.Text = "Xem";
+            this.button50.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button50.UseVisualStyleBackColor = false;
+            // 
+            // button51
+            // 
+            this.button51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button51.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button51.FlatAppearance.BorderSize = 0;
+            this.button51.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button51.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button51.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button51.ForeColor = System.Drawing.Color.White;
+            this.button51.Image = global::PM_QLGTDD.Properties.Resources.icons8_print_24;
+            this.button51.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button51.Location = new System.Drawing.Point(568, 0);
+            this.button51.Margin = new System.Windows.Forms.Padding(0);
+            this.button51.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button51.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button51.Name = "button51";
+            this.button51.Size = new System.Drawing.Size(142, 70);
+            this.button51.TabIndex = 5;
+            this.button51.Text = "In";
+            this.button51.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button51.UseVisualStyleBackColor = false;
+            // 
+            // button52
+            // 
+            this.button52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button52.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button52.FlatAppearance.BorderSize = 0;
+            this.button52.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button52.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button52.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button52.ForeColor = System.Drawing.Color.White;
+            this.button52.Image = global::PM_QLGTDD.Properties.Resources.icons8_delete_bin_24;
+            this.button52.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button52.Location = new System.Drawing.Point(710, 0);
+            this.button52.Margin = new System.Windows.Forms.Padding(0);
+            this.button52.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button52.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button52.Name = "button52";
+            this.button52.Size = new System.Drawing.Size(142, 70);
+            this.button52.TabIndex = 6;
+            this.button52.Text = "Xóa";
+            this.button52.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button52.UseVisualStyleBackColor = false;
+            // 
+            // panel8
+            // 
+            this.panel8.AutoScroll = true;
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
+            this.panel8.Controls.Add(this.axAcroPDF8);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel8.Location = new System.Drawing.Point(200, 94);
+            this.panel8.Margin = new System.Windows.Forms.Padding(0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(935, 600);
+            this.panel8.TabIndex = 1;
+            // 
+            // axAcroPDF8
+            // 
+            this.axAcroPDF8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF8.Enabled = true;
+            this.axAcroPDF8.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF8.Name = "axAcroPDF8";
+            this.axAcroPDF8.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF8.OcxState")));
+            this.axAcroPDF8.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF8.TabIndex = 0;
+            // 
             // tabPage11
             // 
+            this.tabPage11.Controls.Add(this.tableLayoutPanel15);
             this.tabPage11.Location = new System.Drawing.Point(4, 45);
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.Size = new System.Drawing.Size(1337, 732);
             this.tabPage11.TabIndex = 10;
+            this.tabPage11.Tag = "11";
             this.tabPage11.Text = "Mẫu số 06/ĐK";
             this.tabPage11.UseVisualStyleBackColor = true;
             // 
+            // tableLayoutPanel15
+            // 
+            this.tableLayoutPanel15.ColumnCount = 3;
+            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel15.Controls.Add(this.flowLayoutPanel11, 1, 1);
+            this.tableLayoutPanel15.Controls.Add(this.panel9, 1, 2);
+            this.tableLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel15.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel15.Name = "tableLayoutPanel15";
+            this.tableLayoutPanel15.RowCount = 4;
+            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82F));
+            this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(1337, 732);
+            this.tableLayoutPanel15.TabIndex = 2;
+            // 
+            // flowLayoutPanel11
+            // 
+            this.flowLayoutPanel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.flowLayoutPanel11.Controls.Add(this.button53);
+            this.flowLayoutPanel11.Controls.Add(this.button54);
+            this.flowLayoutPanel11.Controls.Add(this.button55);
+            this.flowLayoutPanel11.Controls.Add(this.button56);
+            this.flowLayoutPanel11.Controls.Add(this.button57);
+            this.flowLayoutPanel11.Controls.Add(this.button58);
+            this.flowLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel11.Location = new System.Drawing.Point(200, 36);
+            this.flowLayoutPanel11.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel11.Name = "flowLayoutPanel11";
+            this.flowLayoutPanel11.Size = new System.Drawing.Size(935, 58);
+            this.flowLayoutPanel11.TabIndex = 0;
+            // 
+            // button53
+            // 
+            this.button53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button53.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button53.FlatAppearance.BorderSize = 0;
+            this.button53.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button53.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button53.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button53.ForeColor = System.Drawing.Color.White;
+            this.button53.Image = global::PM_QLGTDD.Properties.Resources.icons8_pencil_24__1_;
+            this.button53.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button53.Location = new System.Drawing.Point(0, 0);
+            this.button53.Margin = new System.Windows.Forms.Padding(0);
+            this.button53.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button53.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button53.Name = "button53";
+            this.button53.Size = new System.Drawing.Size(142, 70);
+            this.button53.TabIndex = 1;
+            this.button53.Text = "Nhập";
+            this.button53.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button53.UseVisualStyleBackColor = false;
+            // 
+            // button54
+            // 
+            this.button54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button54.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button54.FlatAppearance.BorderSize = 0;
+            this.button54.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button54.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button54.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button54.ForeColor = System.Drawing.Color.White;
+            this.button54.Image = global::PM_QLGTDD.Properties.Resources.icons8_save_24;
+            this.button54.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button54.Location = new System.Drawing.Point(142, 0);
+            this.button54.Margin = new System.Windows.Forms.Padding(0);
+            this.button54.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button54.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button54.Name = "button54";
+            this.button54.Size = new System.Drawing.Size(142, 70);
+            this.button54.TabIndex = 2;
+            this.button54.Text = "Lưu";
+            this.button54.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button54.UseVisualStyleBackColor = false;
+            // 
+            // button55
+            // 
+            this.button55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button55.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button55.FlatAppearance.BorderSize = 0;
+            this.button55.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button55.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button55.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button55.ForeColor = System.Drawing.Color.White;
+            this.button55.Image = global::PM_QLGTDD.Properties.Resources.f;
+            this.button55.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button55.Location = new System.Drawing.Point(284, 0);
+            this.button55.Margin = new System.Windows.Forms.Padding(0);
+            this.button55.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button55.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button55.Name = "button55";
+            this.button55.Size = new System.Drawing.Size(142, 70);
+            this.button55.TabIndex = 3;
+            this.button55.Text = "Sửa";
+            this.button55.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button55.UseVisualStyleBackColor = false;
+            // 
+            // button56
+            // 
+            this.button56.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button56.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button56.FlatAppearance.BorderSize = 0;
+            this.button56.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button56.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button56.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button56.ForeColor = System.Drawing.Color.White;
+            this.button56.Image = global::PM_QLGTDD.Properties.Resources.ey;
+            this.button56.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button56.Location = new System.Drawing.Point(426, 0);
+            this.button56.Margin = new System.Windows.Forms.Padding(0);
+            this.button56.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button56.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button56.Name = "button56";
+            this.button56.Size = new System.Drawing.Size(142, 70);
+            this.button56.TabIndex = 4;
+            this.button56.Text = "Xem";
+            this.button56.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button56.UseVisualStyleBackColor = false;
+            // 
+            // button57
+            // 
+            this.button57.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button57.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button57.FlatAppearance.BorderSize = 0;
+            this.button57.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button57.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button57.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button57.ForeColor = System.Drawing.Color.White;
+            this.button57.Image = global::PM_QLGTDD.Properties.Resources.icons8_print_24;
+            this.button57.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button57.Location = new System.Drawing.Point(568, 0);
+            this.button57.Margin = new System.Windows.Forms.Padding(0);
+            this.button57.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button57.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button57.Name = "button57";
+            this.button57.Size = new System.Drawing.Size(142, 70);
+            this.button57.TabIndex = 5;
+            this.button57.Text = "In";
+            this.button57.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button57.UseVisualStyleBackColor = false;
+            // 
+            // button58
+            // 
+            this.button58.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button58.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button58.FlatAppearance.BorderSize = 0;
+            this.button58.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button58.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button58.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button58.ForeColor = System.Drawing.Color.White;
+            this.button58.Image = global::PM_QLGTDD.Properties.Resources.icons8_delete_bin_24;
+            this.button58.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button58.Location = new System.Drawing.Point(710, 0);
+            this.button58.Margin = new System.Windows.Forms.Padding(0);
+            this.button58.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button58.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button58.Name = "button58";
+            this.button58.Size = new System.Drawing.Size(142, 70);
+            this.button58.TabIndex = 6;
+            this.button58.Text = "Xóa";
+            this.button58.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button58.UseVisualStyleBackColor = false;
+            // 
+            // panel9
+            // 
+            this.panel9.AutoScroll = true;
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
+            this.panel9.Controls.Add(this.axAcroPDF9);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel9.Location = new System.Drawing.Point(200, 94);
+            this.panel9.Margin = new System.Windows.Forms.Padding(0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(935, 600);
+            this.panel9.TabIndex = 1;
+            // 
+            // axAcroPDF9
+            // 
+            this.axAcroPDF9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF9.Enabled = true;
+            this.axAcroPDF9.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF9.Name = "axAcroPDF9";
+            this.axAcroPDF9.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF9.OcxState")));
+            this.axAcroPDF9.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF9.TabIndex = 0;
+            // 
             // tabPage12
             // 
+            this.tabPage12.Controls.Add(this.tableLayoutPanel16);
             this.tabPage12.Location = new System.Drawing.Point(4, 45);
             this.tabPage12.Name = "tabPage12";
             this.tabPage12.Size = new System.Drawing.Size(1337, 732);
             this.tabPage12.TabIndex = 11;
+            this.tabPage12.Tag = "12";
             this.tabPage12.Text = "Mẫu số 07/ĐK";
             this.tabPage12.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel16
+            // 
+            this.tableLayoutPanel16.ColumnCount = 3;
+            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel16.Controls.Add(this.flowLayoutPanel12, 1, 1);
+            this.tableLayoutPanel16.Controls.Add(this.panel10, 1, 2);
+            this.tableLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel16.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel16.Name = "tableLayoutPanel16";
+            this.tableLayoutPanel16.RowCount = 4;
+            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82F));
+            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel16.Size = new System.Drawing.Size(1337, 732);
+            this.tableLayoutPanel16.TabIndex = 2;
+            // 
+            // flowLayoutPanel12
+            // 
+            this.flowLayoutPanel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.flowLayoutPanel12.Controls.Add(this.button59);
+            this.flowLayoutPanel12.Controls.Add(this.button60);
+            this.flowLayoutPanel12.Controls.Add(this.button61);
+            this.flowLayoutPanel12.Controls.Add(this.button62);
+            this.flowLayoutPanel12.Controls.Add(this.button63);
+            this.flowLayoutPanel12.Controls.Add(this.button64);
+            this.flowLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel12.Location = new System.Drawing.Point(200, 36);
+            this.flowLayoutPanel12.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel12.Name = "flowLayoutPanel12";
+            this.flowLayoutPanel12.Size = new System.Drawing.Size(935, 58);
+            this.flowLayoutPanel12.TabIndex = 0;
+            // 
+            // button59
+            // 
+            this.button59.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button59.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button59.FlatAppearance.BorderSize = 0;
+            this.button59.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button59.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button59.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button59.ForeColor = System.Drawing.Color.White;
+            this.button59.Image = global::PM_QLGTDD.Properties.Resources.icons8_pencil_24__1_;
+            this.button59.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button59.Location = new System.Drawing.Point(0, 0);
+            this.button59.Margin = new System.Windows.Forms.Padding(0);
+            this.button59.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button59.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button59.Name = "button59";
+            this.button59.Size = new System.Drawing.Size(142, 70);
+            this.button59.TabIndex = 1;
+            this.button59.Text = "Nhập";
+            this.button59.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button59.UseVisualStyleBackColor = false;
+            // 
+            // button60
+            // 
+            this.button60.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button60.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button60.FlatAppearance.BorderSize = 0;
+            this.button60.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button60.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button60.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button60.ForeColor = System.Drawing.Color.White;
+            this.button60.Image = global::PM_QLGTDD.Properties.Resources.icons8_save_24;
+            this.button60.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button60.Location = new System.Drawing.Point(142, 0);
+            this.button60.Margin = new System.Windows.Forms.Padding(0);
+            this.button60.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button60.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button60.Name = "button60";
+            this.button60.Size = new System.Drawing.Size(142, 70);
+            this.button60.TabIndex = 2;
+            this.button60.Text = "Lưu";
+            this.button60.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button60.UseVisualStyleBackColor = false;
+            // 
+            // button61
+            // 
+            this.button61.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button61.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button61.FlatAppearance.BorderSize = 0;
+            this.button61.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button61.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button61.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button61.ForeColor = System.Drawing.Color.White;
+            this.button61.Image = global::PM_QLGTDD.Properties.Resources.f;
+            this.button61.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button61.Location = new System.Drawing.Point(284, 0);
+            this.button61.Margin = new System.Windows.Forms.Padding(0);
+            this.button61.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button61.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button61.Name = "button61";
+            this.button61.Size = new System.Drawing.Size(142, 70);
+            this.button61.TabIndex = 3;
+            this.button61.Text = "Sửa";
+            this.button61.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button61.UseVisualStyleBackColor = false;
+            // 
+            // button62
+            // 
+            this.button62.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button62.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button62.FlatAppearance.BorderSize = 0;
+            this.button62.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button62.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button62.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button62.ForeColor = System.Drawing.Color.White;
+            this.button62.Image = global::PM_QLGTDD.Properties.Resources.ey;
+            this.button62.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button62.Location = new System.Drawing.Point(426, 0);
+            this.button62.Margin = new System.Windows.Forms.Padding(0);
+            this.button62.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button62.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button62.Name = "button62";
+            this.button62.Size = new System.Drawing.Size(142, 70);
+            this.button62.TabIndex = 4;
+            this.button62.Text = "Xem";
+            this.button62.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button62.UseVisualStyleBackColor = false;
+            // 
+            // button63
+            // 
+            this.button63.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button63.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button63.FlatAppearance.BorderSize = 0;
+            this.button63.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button63.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button63.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button63.ForeColor = System.Drawing.Color.White;
+            this.button63.Image = global::PM_QLGTDD.Properties.Resources.icons8_print_24;
+            this.button63.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button63.Location = new System.Drawing.Point(568, 0);
+            this.button63.Margin = new System.Windows.Forms.Padding(0);
+            this.button63.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button63.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button63.Name = "button63";
+            this.button63.Size = new System.Drawing.Size(142, 70);
+            this.button63.TabIndex = 5;
+            this.button63.Text = "In";
+            this.button63.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button63.UseVisualStyleBackColor = false;
+            // 
+            // button64
+            // 
+            this.button64.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button64.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button64.FlatAppearance.BorderSize = 0;
+            this.button64.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button64.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button64.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button64.ForeColor = System.Drawing.Color.White;
+            this.button64.Image = global::PM_QLGTDD.Properties.Resources.icons8_delete_bin_24;
+            this.button64.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button64.Location = new System.Drawing.Point(710, 0);
+            this.button64.Margin = new System.Windows.Forms.Padding(0);
+            this.button64.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button64.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button64.Name = "button64";
+            this.button64.Size = new System.Drawing.Size(142, 70);
+            this.button64.TabIndex = 6;
+            this.button64.Text = "Xóa";
+            this.button64.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button64.UseVisualStyleBackColor = false;
+            // 
+            // panel10
+            // 
+            this.panel10.AutoScroll = true;
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
+            this.panel10.Controls.Add(this.axAcroPDF10);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel10.Location = new System.Drawing.Point(200, 94);
+            this.panel10.Margin = new System.Windows.Forms.Padding(0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(935, 600);
+            this.panel10.TabIndex = 1;
+            // 
+            // axAcroPDF10
+            // 
+            this.axAcroPDF10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF10.Enabled = true;
+            this.axAcroPDF10.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF10.Name = "axAcroPDF10";
+            this.axAcroPDF10.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF10.OcxState")));
+            this.axAcroPDF10.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF10.TabIndex = 0;
             // 
             // tabPage13
             // 
@@ -4301,73 +3051,1209 @@ namespace PM_QLGTDD
             this.tabPage13.Name = "tabPage13";
             this.tabPage13.Size = new System.Drawing.Size(1337, 732);
             this.tabPage13.TabIndex = 12;
+            this.tabPage13.Tag = "13";
             this.tabPage13.Text = "Mẫu số 08/ĐK";
             this.tabPage13.UseVisualStyleBackColor = true;
             // 
             // tabPage14
             // 
+            this.tabPage14.Controls.Add(this.tableLayoutPanel17);
             this.tabPage14.Location = new System.Drawing.Point(4, 45);
             this.tabPage14.Name = "tabPage14";
             this.tabPage14.Size = new System.Drawing.Size(1337, 732);
             this.tabPage14.TabIndex = 13;
+            this.tabPage14.Tag = "14";
             this.tabPage14.Text = "Mẫu số 08/ĐK";
             this.tabPage14.UseVisualStyleBackColor = true;
             // 
+            // tableLayoutPanel17
+            // 
+            this.tableLayoutPanel17.ColumnCount = 3;
+            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel17.Controls.Add(this.flowLayoutPanel13, 1, 1);
+            this.tableLayoutPanel17.Controls.Add(this.panel11, 1, 2);
+            this.tableLayoutPanel17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel17.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel17.Name = "tableLayoutPanel17";
+            this.tableLayoutPanel17.RowCount = 4;
+            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82F));
+            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel17.Size = new System.Drawing.Size(1337, 732);
+            this.tableLayoutPanel17.TabIndex = 2;
+            // 
+            // flowLayoutPanel13
+            // 
+            this.flowLayoutPanel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.flowLayoutPanel13.Controls.Add(this.button65);
+            this.flowLayoutPanel13.Controls.Add(this.button66);
+            this.flowLayoutPanel13.Controls.Add(this.button67);
+            this.flowLayoutPanel13.Controls.Add(this.button68);
+            this.flowLayoutPanel13.Controls.Add(this.button69);
+            this.flowLayoutPanel13.Controls.Add(this.button70);
+            this.flowLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel13.Location = new System.Drawing.Point(200, 36);
+            this.flowLayoutPanel13.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel13.Name = "flowLayoutPanel13";
+            this.flowLayoutPanel13.Size = new System.Drawing.Size(935, 58);
+            this.flowLayoutPanel13.TabIndex = 0;
+            // 
+            // button65
+            // 
+            this.button65.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button65.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button65.FlatAppearance.BorderSize = 0;
+            this.button65.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button65.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button65.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button65.ForeColor = System.Drawing.Color.White;
+            this.button65.Image = global::PM_QLGTDD.Properties.Resources.icons8_pencil_24__1_;
+            this.button65.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button65.Location = new System.Drawing.Point(0, 0);
+            this.button65.Margin = new System.Windows.Forms.Padding(0);
+            this.button65.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button65.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button65.Name = "button65";
+            this.button65.Size = new System.Drawing.Size(142, 70);
+            this.button65.TabIndex = 1;
+            this.button65.Text = "Nhập";
+            this.button65.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button65.UseVisualStyleBackColor = false;
+            // 
+            // button66
+            // 
+            this.button66.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button66.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button66.FlatAppearance.BorderSize = 0;
+            this.button66.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button66.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button66.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button66.ForeColor = System.Drawing.Color.White;
+            this.button66.Image = global::PM_QLGTDD.Properties.Resources.icons8_save_24;
+            this.button66.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button66.Location = new System.Drawing.Point(142, 0);
+            this.button66.Margin = new System.Windows.Forms.Padding(0);
+            this.button66.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button66.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button66.Name = "button66";
+            this.button66.Size = new System.Drawing.Size(142, 70);
+            this.button66.TabIndex = 2;
+            this.button66.Text = "Lưu";
+            this.button66.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button66.UseVisualStyleBackColor = false;
+            // 
+            // button67
+            // 
+            this.button67.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button67.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button67.FlatAppearance.BorderSize = 0;
+            this.button67.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button67.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button67.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button67.ForeColor = System.Drawing.Color.White;
+            this.button67.Image = global::PM_QLGTDD.Properties.Resources.f;
+            this.button67.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button67.Location = new System.Drawing.Point(284, 0);
+            this.button67.Margin = new System.Windows.Forms.Padding(0);
+            this.button67.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button67.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button67.Name = "button67";
+            this.button67.Size = new System.Drawing.Size(142, 70);
+            this.button67.TabIndex = 3;
+            this.button67.Text = "Sửa";
+            this.button67.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button67.UseVisualStyleBackColor = false;
+            // 
+            // button68
+            // 
+            this.button68.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button68.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button68.FlatAppearance.BorderSize = 0;
+            this.button68.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button68.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button68.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button68.ForeColor = System.Drawing.Color.White;
+            this.button68.Image = global::PM_QLGTDD.Properties.Resources.ey;
+            this.button68.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button68.Location = new System.Drawing.Point(426, 0);
+            this.button68.Margin = new System.Windows.Forms.Padding(0);
+            this.button68.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button68.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button68.Name = "button68";
+            this.button68.Size = new System.Drawing.Size(142, 70);
+            this.button68.TabIndex = 4;
+            this.button68.Text = "Xem";
+            this.button68.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button68.UseVisualStyleBackColor = false;
+            // 
+            // button69
+            // 
+            this.button69.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button69.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button69.FlatAppearance.BorderSize = 0;
+            this.button69.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button69.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button69.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button69.ForeColor = System.Drawing.Color.White;
+            this.button69.Image = global::PM_QLGTDD.Properties.Resources.icons8_print_24;
+            this.button69.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button69.Location = new System.Drawing.Point(568, 0);
+            this.button69.Margin = new System.Windows.Forms.Padding(0);
+            this.button69.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button69.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button69.Name = "button69";
+            this.button69.Size = new System.Drawing.Size(142, 70);
+            this.button69.TabIndex = 5;
+            this.button69.Text = "In";
+            this.button69.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button69.UseVisualStyleBackColor = false;
+            // 
+            // button70
+            // 
+            this.button70.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button70.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button70.FlatAppearance.BorderSize = 0;
+            this.button70.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button70.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button70.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button70.ForeColor = System.Drawing.Color.White;
+            this.button70.Image = global::PM_QLGTDD.Properties.Resources.icons8_delete_bin_24;
+            this.button70.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button70.Location = new System.Drawing.Point(710, 0);
+            this.button70.Margin = new System.Windows.Forms.Padding(0);
+            this.button70.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button70.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button70.Name = "button70";
+            this.button70.Size = new System.Drawing.Size(142, 70);
+            this.button70.TabIndex = 6;
+            this.button70.Text = "Xóa";
+            this.button70.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button70.UseVisualStyleBackColor = false;
+            // 
+            // panel11
+            // 
+            this.panel11.AutoScroll = true;
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
+            this.panel11.Controls.Add(this.axAcroPDF11);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel11.Location = new System.Drawing.Point(200, 94);
+            this.panel11.Margin = new System.Windows.Forms.Padding(0);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(935, 600);
+            this.panel11.TabIndex = 1;
+            // 
+            // axAcroPDF11
+            // 
+            this.axAcroPDF11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF11.Enabled = true;
+            this.axAcroPDF11.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF11.Name = "axAcroPDF11";
+            this.axAcroPDF11.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF11.OcxState")));
+            this.axAcroPDF11.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF11.TabIndex = 0;
+            // 
             // tabPage15
             // 
+            this.tabPage15.Controls.Add(this.tableLayoutPanel18);
             this.tabPage15.Location = new System.Drawing.Point(4, 45);
             this.tabPage15.Name = "tabPage15";
             this.tabPage15.Size = new System.Drawing.Size(1337, 732);
             this.tabPage15.TabIndex = 14;
+            this.tabPage15.Tag = "15";
             this.tabPage15.Text = "Mẫu số 09/ĐK";
             this.tabPage15.UseVisualStyleBackColor = true;
             // 
+            // tableLayoutPanel18
+            // 
+            this.tableLayoutPanel18.ColumnCount = 3;
+            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel18.Controls.Add(this.flowLayoutPanel14, 1, 1);
+            this.tableLayoutPanel18.Controls.Add(this.panel12, 1, 2);
+            this.tableLayoutPanel18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel18.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel18.Name = "tableLayoutPanel18";
+            this.tableLayoutPanel18.RowCount = 4;
+            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82F));
+            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel18.Size = new System.Drawing.Size(1337, 732);
+            this.tableLayoutPanel18.TabIndex = 2;
+            // 
+            // flowLayoutPanel14
+            // 
+            this.flowLayoutPanel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.flowLayoutPanel14.Controls.Add(this.button71);
+            this.flowLayoutPanel14.Controls.Add(this.button72);
+            this.flowLayoutPanel14.Controls.Add(this.button73);
+            this.flowLayoutPanel14.Controls.Add(this.button74);
+            this.flowLayoutPanel14.Controls.Add(this.button75);
+            this.flowLayoutPanel14.Controls.Add(this.button76);
+            this.flowLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel14.Location = new System.Drawing.Point(200, 36);
+            this.flowLayoutPanel14.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel14.Name = "flowLayoutPanel14";
+            this.flowLayoutPanel14.Size = new System.Drawing.Size(935, 58);
+            this.flowLayoutPanel14.TabIndex = 0;
+            // 
+            // button71
+            // 
+            this.button71.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button71.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button71.FlatAppearance.BorderSize = 0;
+            this.button71.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button71.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button71.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button71.ForeColor = System.Drawing.Color.White;
+            this.button71.Image = global::PM_QLGTDD.Properties.Resources.icons8_pencil_24__1_;
+            this.button71.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button71.Location = new System.Drawing.Point(0, 0);
+            this.button71.Margin = new System.Windows.Forms.Padding(0);
+            this.button71.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button71.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button71.Name = "button71";
+            this.button71.Size = new System.Drawing.Size(142, 70);
+            this.button71.TabIndex = 1;
+            this.button71.Text = "Nhập";
+            this.button71.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button71.UseVisualStyleBackColor = false;
+            // 
+            // button72
+            // 
+            this.button72.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button72.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button72.FlatAppearance.BorderSize = 0;
+            this.button72.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button72.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button72.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button72.ForeColor = System.Drawing.Color.White;
+            this.button72.Image = global::PM_QLGTDD.Properties.Resources.icons8_save_24;
+            this.button72.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button72.Location = new System.Drawing.Point(142, 0);
+            this.button72.Margin = new System.Windows.Forms.Padding(0);
+            this.button72.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button72.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button72.Name = "button72";
+            this.button72.Size = new System.Drawing.Size(142, 70);
+            this.button72.TabIndex = 2;
+            this.button72.Text = "Lưu";
+            this.button72.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button72.UseVisualStyleBackColor = false;
+            // 
+            // button73
+            // 
+            this.button73.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button73.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button73.FlatAppearance.BorderSize = 0;
+            this.button73.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button73.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button73.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button73.ForeColor = System.Drawing.Color.White;
+            this.button73.Image = global::PM_QLGTDD.Properties.Resources.f;
+            this.button73.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button73.Location = new System.Drawing.Point(284, 0);
+            this.button73.Margin = new System.Windows.Forms.Padding(0);
+            this.button73.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button73.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button73.Name = "button73";
+            this.button73.Size = new System.Drawing.Size(142, 70);
+            this.button73.TabIndex = 3;
+            this.button73.Text = "Sửa";
+            this.button73.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button73.UseVisualStyleBackColor = false;
+            // 
+            // button74
+            // 
+            this.button74.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button74.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button74.FlatAppearance.BorderSize = 0;
+            this.button74.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button74.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button74.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button74.ForeColor = System.Drawing.Color.White;
+            this.button74.Image = global::PM_QLGTDD.Properties.Resources.ey;
+            this.button74.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button74.Location = new System.Drawing.Point(426, 0);
+            this.button74.Margin = new System.Windows.Forms.Padding(0);
+            this.button74.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button74.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button74.Name = "button74";
+            this.button74.Size = new System.Drawing.Size(142, 70);
+            this.button74.TabIndex = 4;
+            this.button74.Text = "Xem";
+            this.button74.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button74.UseVisualStyleBackColor = false;
+            // 
+            // button75
+            // 
+            this.button75.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button75.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button75.FlatAppearance.BorderSize = 0;
+            this.button75.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button75.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button75.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button75.ForeColor = System.Drawing.Color.White;
+            this.button75.Image = global::PM_QLGTDD.Properties.Resources.icons8_print_24;
+            this.button75.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button75.Location = new System.Drawing.Point(568, 0);
+            this.button75.Margin = new System.Windows.Forms.Padding(0);
+            this.button75.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button75.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button75.Name = "button75";
+            this.button75.Size = new System.Drawing.Size(142, 70);
+            this.button75.TabIndex = 5;
+            this.button75.Text = "In";
+            this.button75.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button75.UseVisualStyleBackColor = false;
+            // 
+            // button76
+            // 
+            this.button76.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button76.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button76.FlatAppearance.BorderSize = 0;
+            this.button76.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button76.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button76.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button76.ForeColor = System.Drawing.Color.White;
+            this.button76.Image = global::PM_QLGTDD.Properties.Resources.icons8_delete_bin_24;
+            this.button76.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button76.Location = new System.Drawing.Point(710, 0);
+            this.button76.Margin = new System.Windows.Forms.Padding(0);
+            this.button76.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button76.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button76.Name = "button76";
+            this.button76.Size = new System.Drawing.Size(142, 70);
+            this.button76.TabIndex = 6;
+            this.button76.Text = "Xóa";
+            this.button76.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button76.UseVisualStyleBackColor = false;
+            // 
+            // panel12
+            // 
+            this.panel12.AutoScroll = true;
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
+            this.panel12.Controls.Add(this.axAcroPDF12);
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel12.Location = new System.Drawing.Point(200, 94);
+            this.panel12.Margin = new System.Windows.Forms.Padding(0);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(935, 600);
+            this.panel12.TabIndex = 1;
+            // 
+            // axAcroPDF12
+            // 
+            this.axAcroPDF12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF12.Enabled = true;
+            this.axAcroPDF12.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF12.Name = "axAcroPDF12";
+            this.axAcroPDF12.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF12.OcxState")));
+            this.axAcroPDF12.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF12.TabIndex = 0;
+            // 
             // tabPage16
             // 
+            this.tabPage16.Controls.Add(this.tableLayoutPanel19);
             this.tabPage16.Location = new System.Drawing.Point(4, 45);
             this.tabPage16.Name = "tabPage16";
             this.tabPage16.Size = new System.Drawing.Size(1337, 732);
             this.tabPage16.TabIndex = 15;
+            this.tabPage16.Tag = "16";
             this.tabPage16.Text = "Mẫu số 10/ĐK";
             this.tabPage16.UseVisualStyleBackColor = true;
             // 
+            // tableLayoutPanel19
+            // 
+            this.tableLayoutPanel19.ColumnCount = 3;
+            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel19.Controls.Add(this.flowLayoutPanel15, 1, 1);
+            this.tableLayoutPanel19.Controls.Add(this.panel13, 1, 2);
+            this.tableLayoutPanel19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel19.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel19.Name = "tableLayoutPanel19";
+            this.tableLayoutPanel19.RowCount = 4;
+            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82F));
+            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel19.Size = new System.Drawing.Size(1337, 732);
+            this.tableLayoutPanel19.TabIndex = 2;
+            // 
+            // flowLayoutPanel15
+            // 
+            this.flowLayoutPanel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.flowLayoutPanel15.Controls.Add(this.button77);
+            this.flowLayoutPanel15.Controls.Add(this.button78);
+            this.flowLayoutPanel15.Controls.Add(this.button79);
+            this.flowLayoutPanel15.Controls.Add(this.button80);
+            this.flowLayoutPanel15.Controls.Add(this.button81);
+            this.flowLayoutPanel15.Controls.Add(this.button82);
+            this.flowLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel15.Location = new System.Drawing.Point(200, 36);
+            this.flowLayoutPanel15.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel15.Name = "flowLayoutPanel15";
+            this.flowLayoutPanel15.Size = new System.Drawing.Size(935, 58);
+            this.flowLayoutPanel15.TabIndex = 0;
+            // 
+            // button77
+            // 
+            this.button77.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button77.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button77.FlatAppearance.BorderSize = 0;
+            this.button77.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button77.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button77.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button77.ForeColor = System.Drawing.Color.White;
+            this.button77.Image = global::PM_QLGTDD.Properties.Resources.icons8_pencil_24__1_;
+            this.button77.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button77.Location = new System.Drawing.Point(0, 0);
+            this.button77.Margin = new System.Windows.Forms.Padding(0);
+            this.button77.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button77.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button77.Name = "button77";
+            this.button77.Size = new System.Drawing.Size(142, 70);
+            this.button77.TabIndex = 1;
+            this.button77.Text = "Nhập";
+            this.button77.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button77.UseVisualStyleBackColor = false;
+            // 
+            // button78
+            // 
+            this.button78.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button78.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button78.FlatAppearance.BorderSize = 0;
+            this.button78.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button78.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button78.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button78.ForeColor = System.Drawing.Color.White;
+            this.button78.Image = global::PM_QLGTDD.Properties.Resources.icons8_save_24;
+            this.button78.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button78.Location = new System.Drawing.Point(142, 0);
+            this.button78.Margin = new System.Windows.Forms.Padding(0);
+            this.button78.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button78.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button78.Name = "button78";
+            this.button78.Size = new System.Drawing.Size(142, 70);
+            this.button78.TabIndex = 2;
+            this.button78.Text = "Lưu";
+            this.button78.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button78.UseVisualStyleBackColor = false;
+            // 
+            // button79
+            // 
+            this.button79.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button79.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button79.FlatAppearance.BorderSize = 0;
+            this.button79.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button79.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button79.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button79.ForeColor = System.Drawing.Color.White;
+            this.button79.Image = global::PM_QLGTDD.Properties.Resources.f;
+            this.button79.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button79.Location = new System.Drawing.Point(284, 0);
+            this.button79.Margin = new System.Windows.Forms.Padding(0);
+            this.button79.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button79.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button79.Name = "button79";
+            this.button79.Size = new System.Drawing.Size(142, 70);
+            this.button79.TabIndex = 3;
+            this.button79.Text = "Sửa";
+            this.button79.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button79.UseVisualStyleBackColor = false;
+            // 
+            // button80
+            // 
+            this.button80.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button80.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button80.FlatAppearance.BorderSize = 0;
+            this.button80.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button80.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button80.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button80.ForeColor = System.Drawing.Color.White;
+            this.button80.Image = global::PM_QLGTDD.Properties.Resources.ey;
+            this.button80.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button80.Location = new System.Drawing.Point(426, 0);
+            this.button80.Margin = new System.Windows.Forms.Padding(0);
+            this.button80.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button80.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button80.Name = "button80";
+            this.button80.Size = new System.Drawing.Size(142, 70);
+            this.button80.TabIndex = 4;
+            this.button80.Text = "Xem";
+            this.button80.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button80.UseVisualStyleBackColor = false;
+            // 
+            // button81
+            // 
+            this.button81.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button81.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button81.FlatAppearance.BorderSize = 0;
+            this.button81.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button81.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button81.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button81.ForeColor = System.Drawing.Color.White;
+            this.button81.Image = global::PM_QLGTDD.Properties.Resources.icons8_print_24;
+            this.button81.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button81.Location = new System.Drawing.Point(568, 0);
+            this.button81.Margin = new System.Windows.Forms.Padding(0);
+            this.button81.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button81.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button81.Name = "button81";
+            this.button81.Size = new System.Drawing.Size(142, 70);
+            this.button81.TabIndex = 5;
+            this.button81.Text = "In";
+            this.button81.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button81.UseVisualStyleBackColor = false;
+            // 
+            // button82
+            // 
+            this.button82.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button82.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button82.FlatAppearance.BorderSize = 0;
+            this.button82.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button82.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button82.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button82.ForeColor = System.Drawing.Color.White;
+            this.button82.Image = global::PM_QLGTDD.Properties.Resources.icons8_delete_bin_24;
+            this.button82.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button82.Location = new System.Drawing.Point(710, 0);
+            this.button82.Margin = new System.Windows.Forms.Padding(0);
+            this.button82.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button82.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button82.Name = "button82";
+            this.button82.Size = new System.Drawing.Size(142, 70);
+            this.button82.TabIndex = 6;
+            this.button82.Text = "Xóa";
+            this.button82.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button82.UseVisualStyleBackColor = false;
+            // 
+            // panel13
+            // 
+            this.panel13.AutoScroll = true;
+            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
+            this.panel13.Controls.Add(this.axAcroPDF13);
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel13.Location = new System.Drawing.Point(200, 94);
+            this.panel13.Margin = new System.Windows.Forms.Padding(0);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(935, 600);
+            this.panel13.TabIndex = 1;
+            // 
+            // axAcroPDF13
+            // 
+            this.axAcroPDF13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF13.Enabled = true;
+            this.axAcroPDF13.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF13.Name = "axAcroPDF13";
+            this.axAcroPDF13.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF13.OcxState")));
+            this.axAcroPDF13.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF13.TabIndex = 0;
+            // 
             // tabPage17
             // 
+            this.tabPage17.Controls.Add(this.tableLayoutPanel20);
             this.tabPage17.Location = new System.Drawing.Point(4, 45);
             this.tabPage17.Name = "tabPage17";
             this.tabPage17.Size = new System.Drawing.Size(1337, 732);
             this.tabPage17.TabIndex = 16;
+            this.tabPage17.Tag = "17";
             this.tabPage17.Text = "Mẫu số 11/ĐK";
             this.tabPage17.UseVisualStyleBackColor = true;
             // 
+            // tableLayoutPanel20
+            // 
+            this.tableLayoutPanel20.ColumnCount = 3;
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel20.Controls.Add(this.flowLayoutPanel16, 1, 1);
+            this.tableLayoutPanel20.Controls.Add(this.panel14, 1, 2);
+            this.tableLayoutPanel20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel20.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel20.Name = "tableLayoutPanel20";
+            this.tableLayoutPanel20.RowCount = 4;
+            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82F));
+            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel20.Size = new System.Drawing.Size(1337, 732);
+            this.tableLayoutPanel20.TabIndex = 2;
+            // 
+            // flowLayoutPanel16
+            // 
+            this.flowLayoutPanel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.flowLayoutPanel16.Controls.Add(this.button83);
+            this.flowLayoutPanel16.Controls.Add(this.button84);
+            this.flowLayoutPanel16.Controls.Add(this.button85);
+            this.flowLayoutPanel16.Controls.Add(this.button86);
+            this.flowLayoutPanel16.Controls.Add(this.button87);
+            this.flowLayoutPanel16.Controls.Add(this.button88);
+            this.flowLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel16.Location = new System.Drawing.Point(200, 36);
+            this.flowLayoutPanel16.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel16.Name = "flowLayoutPanel16";
+            this.flowLayoutPanel16.Size = new System.Drawing.Size(935, 58);
+            this.flowLayoutPanel16.TabIndex = 0;
+            // 
+            // button83
+            // 
+            this.button83.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button83.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button83.FlatAppearance.BorderSize = 0;
+            this.button83.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button83.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button83.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button83.ForeColor = System.Drawing.Color.White;
+            this.button83.Image = global::PM_QLGTDD.Properties.Resources.icons8_pencil_24__1_;
+            this.button83.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button83.Location = new System.Drawing.Point(0, 0);
+            this.button83.Margin = new System.Windows.Forms.Padding(0);
+            this.button83.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button83.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button83.Name = "button83";
+            this.button83.Size = new System.Drawing.Size(142, 70);
+            this.button83.TabIndex = 1;
+            this.button83.Text = "Nhập";
+            this.button83.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button83.UseVisualStyleBackColor = false;
+            // 
+            // button84
+            // 
+            this.button84.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button84.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button84.FlatAppearance.BorderSize = 0;
+            this.button84.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button84.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button84.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button84.ForeColor = System.Drawing.Color.White;
+            this.button84.Image = global::PM_QLGTDD.Properties.Resources.icons8_save_24;
+            this.button84.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button84.Location = new System.Drawing.Point(142, 0);
+            this.button84.Margin = new System.Windows.Forms.Padding(0);
+            this.button84.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button84.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button84.Name = "button84";
+            this.button84.Size = new System.Drawing.Size(142, 70);
+            this.button84.TabIndex = 2;
+            this.button84.Text = "Lưu";
+            this.button84.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button84.UseVisualStyleBackColor = false;
+            // 
+            // button85
+            // 
+            this.button85.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button85.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button85.FlatAppearance.BorderSize = 0;
+            this.button85.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button85.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button85.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button85.ForeColor = System.Drawing.Color.White;
+            this.button85.Image = global::PM_QLGTDD.Properties.Resources.f;
+            this.button85.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button85.Location = new System.Drawing.Point(284, 0);
+            this.button85.Margin = new System.Windows.Forms.Padding(0);
+            this.button85.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button85.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button85.Name = "button85";
+            this.button85.Size = new System.Drawing.Size(142, 70);
+            this.button85.TabIndex = 3;
+            this.button85.Text = "Sửa";
+            this.button85.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button85.UseVisualStyleBackColor = false;
+            // 
+            // button86
+            // 
+            this.button86.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button86.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button86.FlatAppearance.BorderSize = 0;
+            this.button86.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button86.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button86.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button86.ForeColor = System.Drawing.Color.White;
+            this.button86.Image = global::PM_QLGTDD.Properties.Resources.ey;
+            this.button86.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button86.Location = new System.Drawing.Point(426, 0);
+            this.button86.Margin = new System.Windows.Forms.Padding(0);
+            this.button86.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button86.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button86.Name = "button86";
+            this.button86.Size = new System.Drawing.Size(142, 70);
+            this.button86.TabIndex = 4;
+            this.button86.Text = "Xem";
+            this.button86.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button86.UseVisualStyleBackColor = false;
+            // 
+            // button87
+            // 
+            this.button87.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button87.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button87.FlatAppearance.BorderSize = 0;
+            this.button87.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button87.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button87.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button87.ForeColor = System.Drawing.Color.White;
+            this.button87.Image = global::PM_QLGTDD.Properties.Resources.icons8_print_24;
+            this.button87.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button87.Location = new System.Drawing.Point(568, 0);
+            this.button87.Margin = new System.Windows.Forms.Padding(0);
+            this.button87.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button87.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button87.Name = "button87";
+            this.button87.Size = new System.Drawing.Size(142, 70);
+            this.button87.TabIndex = 5;
+            this.button87.Text = "In";
+            this.button87.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button87.UseVisualStyleBackColor = false;
+            // 
+            // button88
+            // 
+            this.button88.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button88.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button88.FlatAppearance.BorderSize = 0;
+            this.button88.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button88.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button88.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button88.ForeColor = System.Drawing.Color.White;
+            this.button88.Image = global::PM_QLGTDD.Properties.Resources.icons8_delete_bin_24;
+            this.button88.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button88.Location = new System.Drawing.Point(710, 0);
+            this.button88.Margin = new System.Windows.Forms.Padding(0);
+            this.button88.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button88.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button88.Name = "button88";
+            this.button88.Size = new System.Drawing.Size(142, 70);
+            this.button88.TabIndex = 6;
+            this.button88.Text = "Xóa";
+            this.button88.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button88.UseVisualStyleBackColor = false;
+            // 
+            // panel14
+            // 
+            this.panel14.AutoScroll = true;
+            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
+            this.panel14.Controls.Add(this.axAcroPDF14);
+            this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel14.Location = new System.Drawing.Point(200, 94);
+            this.panel14.Margin = new System.Windows.Forms.Padding(0);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(935, 600);
+            this.panel14.TabIndex = 1;
+            // 
+            // axAcroPDF14
+            // 
+            this.axAcroPDF14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF14.Enabled = true;
+            this.axAcroPDF14.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF14.Name = "axAcroPDF14";
+            this.axAcroPDF14.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF14.OcxState")));
+            this.axAcroPDF14.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF14.TabIndex = 0;
+            // 
             // tabPage18
             // 
+            this.tabPage18.Controls.Add(this.tableLayoutPanel21);
             this.tabPage18.Location = new System.Drawing.Point(4, 45);
             this.tabPage18.Name = "tabPage18";
             this.tabPage18.Size = new System.Drawing.Size(1337, 732);
             this.tabPage18.TabIndex = 17;
+            this.tabPage18.Tag = "18";
             this.tabPage18.Text = "Mẫu số 12/ĐK";
             this.tabPage18.UseVisualStyleBackColor = true;
             // 
+            // tableLayoutPanel21
+            // 
+            this.tableLayoutPanel21.ColumnCount = 3;
+            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel21.Controls.Add(this.flowLayoutPanel17, 1, 1);
+            this.tableLayoutPanel21.Controls.Add(this.panel15, 1, 2);
+            this.tableLayoutPanel21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel21.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel21.Name = "tableLayoutPanel21";
+            this.tableLayoutPanel21.RowCount = 4;
+            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82F));
+            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel21.Size = new System.Drawing.Size(1337, 732);
+            this.tableLayoutPanel21.TabIndex = 2;
+            // 
+            // flowLayoutPanel17
+            // 
+            this.flowLayoutPanel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.flowLayoutPanel17.Controls.Add(this.button89);
+            this.flowLayoutPanel17.Controls.Add(this.button90);
+            this.flowLayoutPanel17.Controls.Add(this.button91);
+            this.flowLayoutPanel17.Controls.Add(this.button92);
+            this.flowLayoutPanel17.Controls.Add(this.button93);
+            this.flowLayoutPanel17.Controls.Add(this.button94);
+            this.flowLayoutPanel17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel17.Location = new System.Drawing.Point(200, 36);
+            this.flowLayoutPanel17.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel17.Name = "flowLayoutPanel17";
+            this.flowLayoutPanel17.Size = new System.Drawing.Size(935, 58);
+            this.flowLayoutPanel17.TabIndex = 0;
+            // 
+            // button89
+            // 
+            this.button89.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button89.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button89.FlatAppearance.BorderSize = 0;
+            this.button89.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button89.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button89.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button89.ForeColor = System.Drawing.Color.White;
+            this.button89.Image = global::PM_QLGTDD.Properties.Resources.icons8_pencil_24__1_;
+            this.button89.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button89.Location = new System.Drawing.Point(0, 0);
+            this.button89.Margin = new System.Windows.Forms.Padding(0);
+            this.button89.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button89.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button89.Name = "button89";
+            this.button89.Size = new System.Drawing.Size(142, 70);
+            this.button89.TabIndex = 1;
+            this.button89.Text = "Nhập";
+            this.button89.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button89.UseVisualStyleBackColor = false;
+            // 
+            // button90
+            // 
+            this.button90.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button90.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button90.FlatAppearance.BorderSize = 0;
+            this.button90.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button90.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button90.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button90.ForeColor = System.Drawing.Color.White;
+            this.button90.Image = global::PM_QLGTDD.Properties.Resources.icons8_save_24;
+            this.button90.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button90.Location = new System.Drawing.Point(142, 0);
+            this.button90.Margin = new System.Windows.Forms.Padding(0);
+            this.button90.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button90.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button90.Name = "button90";
+            this.button90.Size = new System.Drawing.Size(142, 70);
+            this.button90.TabIndex = 2;
+            this.button90.Text = "Lưu";
+            this.button90.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button90.UseVisualStyleBackColor = false;
+            // 
+            // button91
+            // 
+            this.button91.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button91.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button91.FlatAppearance.BorderSize = 0;
+            this.button91.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button91.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button91.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button91.ForeColor = System.Drawing.Color.White;
+            this.button91.Image = global::PM_QLGTDD.Properties.Resources.f;
+            this.button91.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button91.Location = new System.Drawing.Point(284, 0);
+            this.button91.Margin = new System.Windows.Forms.Padding(0);
+            this.button91.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button91.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button91.Name = "button91";
+            this.button91.Size = new System.Drawing.Size(142, 70);
+            this.button91.TabIndex = 3;
+            this.button91.Text = "Sửa";
+            this.button91.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button91.UseVisualStyleBackColor = false;
+            // 
+            // button92
+            // 
+            this.button92.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button92.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button92.FlatAppearance.BorderSize = 0;
+            this.button92.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button92.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button92.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button92.ForeColor = System.Drawing.Color.White;
+            this.button92.Image = global::PM_QLGTDD.Properties.Resources.ey;
+            this.button92.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button92.Location = new System.Drawing.Point(426, 0);
+            this.button92.Margin = new System.Windows.Forms.Padding(0);
+            this.button92.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button92.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button92.Name = "button92";
+            this.button92.Size = new System.Drawing.Size(142, 70);
+            this.button92.TabIndex = 4;
+            this.button92.Text = "Xem";
+            this.button92.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button92.UseVisualStyleBackColor = false;
+            // 
+            // button93
+            // 
+            this.button93.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button93.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button93.FlatAppearance.BorderSize = 0;
+            this.button93.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button93.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button93.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button93.ForeColor = System.Drawing.Color.White;
+            this.button93.Image = global::PM_QLGTDD.Properties.Resources.icons8_print_24;
+            this.button93.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button93.Location = new System.Drawing.Point(568, 0);
+            this.button93.Margin = new System.Windows.Forms.Padding(0);
+            this.button93.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button93.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button93.Name = "button93";
+            this.button93.Size = new System.Drawing.Size(142, 70);
+            this.button93.TabIndex = 5;
+            this.button93.Text = "In";
+            this.button93.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button93.UseVisualStyleBackColor = false;
+            // 
+            // button94
+            // 
+            this.button94.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button94.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button94.FlatAppearance.BorderSize = 0;
+            this.button94.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button94.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button94.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button94.ForeColor = System.Drawing.Color.White;
+            this.button94.Image = global::PM_QLGTDD.Properties.Resources.icons8_delete_bin_24;
+            this.button94.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button94.Location = new System.Drawing.Point(710, 0);
+            this.button94.Margin = new System.Windows.Forms.Padding(0);
+            this.button94.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button94.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button94.Name = "button94";
+            this.button94.Size = new System.Drawing.Size(142, 70);
+            this.button94.TabIndex = 6;
+            this.button94.Text = "Xóa";
+            this.button94.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button94.UseVisualStyleBackColor = false;
+            // 
+            // panel15
+            // 
+            this.panel15.AutoScroll = true;
+            this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
+            this.panel15.Controls.Add(this.axAcroPDF15);
+            this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel15.Location = new System.Drawing.Point(200, 94);
+            this.panel15.Margin = new System.Windows.Forms.Padding(0);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(935, 600);
+            this.panel15.TabIndex = 1;
+            // 
+            // axAcroPDF15
+            // 
+            this.axAcroPDF15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF15.Enabled = true;
+            this.axAcroPDF15.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF15.Name = "axAcroPDF15";
+            this.axAcroPDF15.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF15.OcxState")));
+            this.axAcroPDF15.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF15.TabIndex = 0;
+            // 
             // tabPage19
             // 
+            this.tabPage19.Controls.Add(this.tableLayoutPanel22);
             this.tabPage19.Location = new System.Drawing.Point(4, 45);
             this.tabPage19.Name = "tabPage19";
             this.tabPage19.Size = new System.Drawing.Size(1337, 732);
             this.tabPage19.TabIndex = 18;
+            this.tabPage19.Tag = "19";
             this.tabPage19.Text = "Mẫu số 13/ĐK";
             this.tabPage19.UseVisualStyleBackColor = true;
             // 
-            // M04_txt_ndQuyenSD
+            // tableLayoutPanel22
             // 
-            this.M04_txt_ndQuyenSD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_ndQuyenSD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_ndQuyenSD.Location = new System.Drawing.Point(0, 32);
-            this.M04_txt_ndQuyenSD.Margin = new System.Windows.Forms.Padding(0);
-            this.M04_txt_ndQuyenSD.Multiline = true;
-            this.M04_txt_ndQuyenSD.Name = "M04_txt_ndQuyenSD";
-            this.M04_txt_ndQuyenSD.Size = new System.Drawing.Size(264, 77);
-            this.M04_txt_ndQuyenSD.TabIndex = 1;
+            this.tableLayoutPanel22.ColumnCount = 3;
+            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel22.Controls.Add(this.flowLayoutPanel18, 1, 1);
+            this.tableLayoutPanel22.Controls.Add(this.panel16, 1, 2);
+            this.tableLayoutPanel22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel22.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel22.Name = "tableLayoutPanel22";
+            this.tableLayoutPanel22.RowCount = 4;
+            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82F));
+            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel22.Size = new System.Drawing.Size(1337, 732);
+            this.tableLayoutPanel22.TabIndex = 2;
+            // 
+            // flowLayoutPanel18
+            // 
+            this.flowLayoutPanel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.flowLayoutPanel18.Controls.Add(this.button95);
+            this.flowLayoutPanel18.Controls.Add(this.button96);
+            this.flowLayoutPanel18.Controls.Add(this.button97);
+            this.flowLayoutPanel18.Controls.Add(this.button98);
+            this.flowLayoutPanel18.Controls.Add(this.button99);
+            this.flowLayoutPanel18.Controls.Add(this.button100);
+            this.flowLayoutPanel18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel18.Location = new System.Drawing.Point(200, 36);
+            this.flowLayoutPanel18.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel18.Name = "flowLayoutPanel18";
+            this.flowLayoutPanel18.Size = new System.Drawing.Size(935, 58);
+            this.flowLayoutPanel18.TabIndex = 0;
+            // 
+            // button95
+            // 
+            this.button95.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button95.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button95.FlatAppearance.BorderSize = 0;
+            this.button95.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button95.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button95.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button95.ForeColor = System.Drawing.Color.White;
+            this.button95.Image = global::PM_QLGTDD.Properties.Resources.icons8_pencil_24__1_;
+            this.button95.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button95.Location = new System.Drawing.Point(0, 0);
+            this.button95.Margin = new System.Windows.Forms.Padding(0);
+            this.button95.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button95.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button95.Name = "button95";
+            this.button95.Size = new System.Drawing.Size(142, 70);
+            this.button95.TabIndex = 1;
+            this.button95.Text = "Nhập";
+            this.button95.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button95.UseVisualStyleBackColor = false;
+            // 
+            // button96
+            // 
+            this.button96.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button96.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button96.FlatAppearance.BorderSize = 0;
+            this.button96.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button96.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button96.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button96.ForeColor = System.Drawing.Color.White;
+            this.button96.Image = global::PM_QLGTDD.Properties.Resources.icons8_save_24;
+            this.button96.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button96.Location = new System.Drawing.Point(142, 0);
+            this.button96.Margin = new System.Windows.Forms.Padding(0);
+            this.button96.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button96.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button96.Name = "button96";
+            this.button96.Size = new System.Drawing.Size(142, 70);
+            this.button96.TabIndex = 2;
+            this.button96.Text = "Lưu";
+            this.button96.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button96.UseVisualStyleBackColor = false;
+            // 
+            // button97
+            // 
+            this.button97.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button97.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button97.FlatAppearance.BorderSize = 0;
+            this.button97.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button97.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button97.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button97.ForeColor = System.Drawing.Color.White;
+            this.button97.Image = global::PM_QLGTDD.Properties.Resources.f;
+            this.button97.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button97.Location = new System.Drawing.Point(284, 0);
+            this.button97.Margin = new System.Windows.Forms.Padding(0);
+            this.button97.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button97.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button97.Name = "button97";
+            this.button97.Size = new System.Drawing.Size(142, 70);
+            this.button97.TabIndex = 3;
+            this.button97.Text = "Sửa";
+            this.button97.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button97.UseVisualStyleBackColor = false;
+            // 
+            // button98
+            // 
+            this.button98.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button98.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button98.FlatAppearance.BorderSize = 0;
+            this.button98.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button98.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button98.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button98.ForeColor = System.Drawing.Color.White;
+            this.button98.Image = global::PM_QLGTDD.Properties.Resources.ey;
+            this.button98.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button98.Location = new System.Drawing.Point(426, 0);
+            this.button98.Margin = new System.Windows.Forms.Padding(0);
+            this.button98.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button98.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button98.Name = "button98";
+            this.button98.Size = new System.Drawing.Size(142, 70);
+            this.button98.TabIndex = 4;
+            this.button98.Text = "Xem";
+            this.button98.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button98.UseVisualStyleBackColor = false;
+            // 
+            // button99
+            // 
+            this.button99.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button99.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button99.FlatAppearance.BorderSize = 0;
+            this.button99.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button99.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button99.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button99.ForeColor = System.Drawing.Color.White;
+            this.button99.Image = global::PM_QLGTDD.Properties.Resources.icons8_print_24;
+            this.button99.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button99.Location = new System.Drawing.Point(568, 0);
+            this.button99.Margin = new System.Windows.Forms.Padding(0);
+            this.button99.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button99.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button99.Name = "button99";
+            this.button99.Size = new System.Drawing.Size(142, 70);
+            this.button99.TabIndex = 5;
+            this.button99.Text = "In";
+            this.button99.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button99.UseVisualStyleBackColor = false;
+            // 
+            // button100
+            // 
+            this.button100.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button100.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button100.FlatAppearance.BorderSize = 0;
+            this.button100.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.button100.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.button100.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button100.ForeColor = System.Drawing.Color.White;
+            this.button100.Image = global::PM_QLGTDD.Properties.Resources.icons8_delete_bin_24;
+            this.button100.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button100.Location = new System.Drawing.Point(710, 0);
+            this.button100.Margin = new System.Windows.Forms.Padding(0);
+            this.button100.MaximumSize = new System.Drawing.Size(142, 70);
+            this.button100.MinimumSize = new System.Drawing.Size(142, 70);
+            this.button100.Name = "button100";
+            this.button100.Size = new System.Drawing.Size(142, 70);
+            this.button100.TabIndex = 6;
+            this.button100.Text = "Xóa";
+            this.button100.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button100.UseVisualStyleBackColor = false;
+            // 
+            // panel16
+            // 
+            this.panel16.AutoScroll = true;
+            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
+            this.panel16.Controls.Add(this.axAcroPDF16);
+            this.panel16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel16.Location = new System.Drawing.Point(200, 94);
+            this.panel16.Margin = new System.Windows.Forms.Padding(0);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(935, 600);
+            this.panel16.TabIndex = 1;
+            // 
+            // axAcroPDF16
+            // 
+            this.axAcroPDF16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF16.Enabled = true;
+            this.axAcroPDF16.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF16.Name = "axAcroPDF16";
+            this.axAcroPDF16.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF16.OcxState")));
+            this.axAcroPDF16.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF16.TabIndex = 0;
             // 
             // frm_Main
             // 
@@ -4399,171 +4285,87 @@ namespace PM_QLGTDD
             this.tableLayoutPanel6.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF1)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.flowLayoutPanel4.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF2)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tableLayoutPanel9.ResumeLayout(false);
+            this.flowLayoutPanel5.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF3)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tableLayoutPanel8.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
             this.pnl_container_M04.ResumeLayout(false);
-            this.tableLayoutPanel9.ResumeLayout(false);
-            this.tableLayoutPanel9.PerformLayout();
-            this.tableLayoutPanel52.ResumeLayout(false);
-            this.tableLayoutPanel52.PerformLayout();
-            this.tableLayoutPanel53.ResumeLayout(false);
-            this.panel33.ResumeLayout(false);
-            this.M04_txt_RSX_loaiCay.ResumeLayout(false);
-            this.M04_txt_RSX_loaiCay.PerformLayout();
-            this.panel34.ResumeLayout(false);
-            this.lya.ResumeLayout(false);
-            this.lya.PerformLayout();
-            this.panel35.ResumeLayout(false);
-            this.tableLayoutPanel56.ResumeLayout(false);
-            this.tableLayoutPanel56.PerformLayout();
-            this.panel36.ResumeLayout(false);
-            this.tableLayoutPanel57.ResumeLayout(false);
-            this.tableLayoutPanel57.PerformLayout();
-            this.panel37.ResumeLayout(false);
-            this.tableLayoutPanel58.ResumeLayout(false);
-            this.tableLayoutPanel58.PerformLayout();
-            this.panel38.ResumeLayout(false);
-            this.tableLayoutPanel59.ResumeLayout(false);
-            this.tableLayoutPanel59.PerformLayout();
-            this.panel39.ResumeLayout(false);
-            this.tableLayoutPanel60.ResumeLayout(false);
-            this.tableLayoutPanel60.PerformLayout();
-            this.panel40.ResumeLayout(false);
-            this.tableLayoutPanel61.ResumeLayout(false);
-            this.tableLayoutPanel61.PerformLayout();
-            this.panel41.ResumeLayout(false);
-            this.tableLayoutPanel62.ResumeLayout(false);
-            this.tableLayoutPanel62.PerformLayout();
-            this.panel42.ResumeLayout(false);
-            this.tableLayoutPanel63.ResumeLayout(false);
-            this.tableLayoutPanel63.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.filesPDF_mau04)).EndInit();
+            this.tabPage6.ResumeLayout(false);
             this.tableLayoutPanel10.ResumeLayout(false);
+            this.flowLayoutPanel6.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF4)).EndInit();
+            this.tabPage7.ResumeLayout(false);
             this.tableLayoutPanel11.ResumeLayout(false);
-            this.tableLayoutPanel11.PerformLayout();
+            this.flowLayoutPanel7.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF5)).EndInit();
+            this.tabPage8.ResumeLayout(false);
             this.tableLayoutPanel12.ResumeLayout(false);
-            this.tableLayoutPanel12.PerformLayout();
+            this.flowLayoutPanel8.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
-            this.tableLayoutPanel14.ResumeLayout(false);
-            this.tableLayoutPanel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF6)).EndInit();
+            this.tabPage9.ResumeLayout(false);
+            this.tableLayoutPanel13.ResumeLayout(false);
+            this.flowLayoutPanel9.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
-            this.tableLayoutPanel15.ResumeLayout(false);
-            this.tableLayoutPanel15.PerformLayout();
-            this.tableLayoutPanel16.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.tableLayoutPanel17.ResumeLayout(false);
-            this.tableLayoutPanel17.PerformLayout();
-            this.tableLayoutPanel18.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF7)).EndInit();
+            this.tabPage10.ResumeLayout(false);
+            this.tableLayoutPanel14.ResumeLayout(false);
+            this.flowLayoutPanel10.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
-            this.tableLayoutPanel19.ResumeLayout(false);
-            this.tableLayoutPanel19.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF8)).EndInit();
+            this.tabPage11.ResumeLayout(false);
+            this.tableLayoutPanel15.ResumeLayout(false);
+            this.flowLayoutPanel11.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
-            this.tableLayoutPanel20.ResumeLayout(false);
-            this.tableLayoutPanel20.PerformLayout();
-            this.tableLayoutPanel21.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF9)).EndInit();
+            this.tabPage12.ResumeLayout(false);
+            this.tableLayoutPanel16.ResumeLayout(false);
+            this.flowLayoutPanel12.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
-            this.tableLayoutPanel22.ResumeLayout(false);
-            this.tableLayoutPanel22.PerformLayout();
-            this.tableLayoutPanel23.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF10)).EndInit();
+            this.tabPage14.ResumeLayout(false);
+            this.tableLayoutPanel17.ResumeLayout(false);
+            this.flowLayoutPanel13.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
-            this.tableLayoutPanel24.ResumeLayout(false);
-            this.tableLayoutPanel24.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF11)).EndInit();
+            this.tabPage15.ResumeLayout(false);
+            this.tableLayoutPanel18.ResumeLayout(false);
+            this.flowLayoutPanel14.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
-            this.tableLayoutPanel25.ResumeLayout(false);
-            this.tableLayoutPanel25.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF12)).EndInit();
+            this.tabPage16.ResumeLayout(false);
+            this.tableLayoutPanel19.ResumeLayout(false);
+            this.flowLayoutPanel15.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
-            this.tableLayoutPanel26.ResumeLayout(false);
-            this.tableLayoutPanel26.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF13)).EndInit();
+            this.tabPage17.ResumeLayout(false);
+            this.tableLayoutPanel20.ResumeLayout(false);
+            this.flowLayoutPanel16.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
-            this.tableLayoutPanel27.ResumeLayout(false);
-            this.tableLayoutPanel27.PerformLayout();
-            this.tableLayoutPanel28.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF14)).EndInit();
+            this.tabPage18.ResumeLayout(false);
+            this.tableLayoutPanel21.ResumeLayout(false);
+            this.flowLayoutPanel17.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
-            this.tableLayoutPanel29.ResumeLayout(false);
-            this.tableLayoutPanel29.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF15)).EndInit();
+            this.tabPage19.ResumeLayout(false);
+            this.tableLayoutPanel22.ResumeLayout(false);
+            this.flowLayoutPanel18.ResumeLayout(false);
             this.panel16.ResumeLayout(false);
-            this.tableLayoutPanel30.ResumeLayout(false);
-            this.tableLayoutPanel30.PerformLayout();
-            this.panel17.ResumeLayout(false);
-            this.tableLayoutPanel31.ResumeLayout(false);
-            this.tableLayoutPanel31.PerformLayout();
-            this.panel18.ResumeLayout(false);
-            this.tableLayoutPanel32.ResumeLayout(false);
-            this.tableLayoutPanel32.PerformLayout();
-            this.tableLayoutPanel33.ResumeLayout(false);
-            this.panel19.ResumeLayout(false);
-            this.tableLayoutPanel40.ResumeLayout(false);
-            this.tableLayoutPanel40.PerformLayout();
-            this.tableLayoutPanel34.ResumeLayout(false);
-            this.panel21.ResumeLayout(false);
-            this.tableLayoutPanel36.ResumeLayout(false);
-            this.tableLayoutPanel36.PerformLayout();
-            this.panel22.ResumeLayout(false);
-            this.tableLayoutPanel37.ResumeLayout(false);
-            this.tableLayoutPanel37.PerformLayout();
-            this.panel23.ResumeLayout(false);
-            this.tableLayoutPanel38.ResumeLayout(false);
-            this.tableLayoutPanel38.PerformLayout();
-            this.panel24.ResumeLayout(false);
-            this.layout.ResumeLayout(false);
-            this.layout.PerformLayout();
-            this.tableLayoutPanel35.ResumeLayout(false);
-            this.panel20.ResumeLayout(false);
-            this.tableLayoutPanel41.ResumeLayout(false);
-            this.tableLayoutPanel41.PerformLayout();
-            this.tableLayoutPanel42.ResumeLayout(false);
-            this.tableLayoutPanel42.PerformLayout();
-            this.tableLayoutPanel43.ResumeLayout(false);
-            this.panel25.ResumeLayout(false);
-            this.tableLayoutPanel44.ResumeLayout(false);
-            this.tableLayoutPanel44.PerformLayout();
-            this.panel26.ResumeLayout(false);
-            this.tableLayoutPanel45.ResumeLayout(false);
-            this.tableLayoutPanel45.PerformLayout();
-            this.panel27.ResumeLayout(false);
-            this.tableLayoutPanel46.ResumeLayout(false);
-            this.tableLayoutPanel46.PerformLayout();
-            this.panel28.ResumeLayout(false);
-            this.tableLayoutPanel47.ResumeLayout(false);
-            this.tableLayoutPanel47.PerformLayout();
-            this.panel29.ResumeLayout(false);
-            this.tableLayoutPanel48.ResumeLayout(false);
-            this.tableLayoutPanel48.PerformLayout();
-            this.panel30.ResumeLayout(false);
-            this.tableLayoutPanel49.ResumeLayout(false);
-            this.tableLayoutPanel49.PerformLayout();
-            this.panel31.ResumeLayout(false);
-            this.tableLayoutPanel50.ResumeLayout(false);
-            this.tableLayoutPanel50.PerformLayout();
-            this.panel32.ResumeLayout(false);
-            this.tableLayoutPanel51.ResumeLayout(false);
-            this.tableLayoutPanel51.PerformLayout();
-            this.tableLayoutPanel64.ResumeLayout(false);
-            this.tableLayoutPanel64.PerformLayout();
-            this.tableLayoutPanel65.ResumeLayout(false);
-            this.panel43.ResumeLayout(false);
-            this.tableLayoutPanel66.ResumeLayout(false);
-            this.tableLayoutPanel66.PerformLayout();
-            this.panel44.ResumeLayout(false);
-            this.tableLayoutPanel67.ResumeLayout(false);
-            this.tableLayoutPanel67.PerformLayout();
-            this.panel50.ResumeLayout(false);
-            this.tableLayoutPanel73.ResumeLayout(false);
-            this.tableLayoutPanel73.PerformLayout();
-            this.panel51.ResumeLayout(false);
-            this.tableLayoutPanel74.ResumeLayout(false);
-            this.tableLayoutPanel74.PerformLayout();
-            this.panel52.ResumeLayout(false);
-            this.tableLayoutPanel75.ResumeLayout(false);
-            this.tableLayoutPanel75.PerformLayout();
-            this.panel45.ResumeLayout(false);
-            this.tableLayoutPanel68.ResumeLayout(false);
-            this.tableLayoutPanel68.PerformLayout();
-            this.panel46.ResumeLayout(false);
-            this.tableLayoutPanel69.ResumeLayout(false);
-            this.tableLayoutPanel69.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF16)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -4621,16 +4423,6 @@ namespace PM_QLGTDD
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.Button M04_btn_Nhap;
@@ -4640,222 +4432,167 @@ namespace PM_QLGTDD
         private System.Windows.Forms.Button M04_btn_in;
         private System.Windows.Forms.Button M04_btn_xoa;
         private System.Windows.Forms.Panel pnl_container_M04;
+        private AxAcroPDFLib.AxAcroPDF filesPDF_mau04;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Panel panel1;
+        private AxAcroPDFLib.AxAcroPDF axAcroPDF1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Panel panel2;
+        private AxAcroPDFLib.AxAcroPDF axAcroPDF2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel16;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel17;
+        private AxAcroPDFLib.AxAcroPDF axAcroPDF3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Button button26;
+        private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Button button28;
         private System.Windows.Forms.Panel panel4;
+        private AxAcroPDFLib.AxAcroPDF axAcroPDF4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox M04_txt_quyenSo;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel7;
+        private System.Windows.Forms.Button button29;
+        private System.Windows.Forms.Button button30;
+        private System.Windows.Forms.Button button31;
+        private System.Windows.Forms.Button button32;
+        private System.Windows.Forms.Button button33;
+        private System.Windows.Forms.Button button34;
         private System.Windows.Forms.Panel panel5;
+        private AxAcroPDFLib.AxAcroPDF axAcroPDF5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox M04_NSD_txt_so;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel8;
+        private System.Windows.Forms.Button button35;
+        private System.Windows.Forms.Button button36;
+        private System.Windows.Forms.Button button37;
+        private System.Windows.Forms.Button button38;
+        private System.Windows.Forms.Button button39;
+        private System.Windows.Forms.Button button40;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel14;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox M04_txt_hoTenNguoiVD;
+        private AxAcroPDFLib.AxAcroPDF axAcroPDF6;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel9;
+        private System.Windows.Forms.Button button41;
+        private System.Windows.Forms.Button button42;
+        private System.Windows.Forms.Button button43;
+        private System.Windows.Forms.Button button44;
+        private System.Windows.Forms.Button button45;
+        private System.Windows.Forms.Button button46;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
-        private System.Windows.Forms.Label label10;
-        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker M04_dtp_NgayVD;
-        private System.Windows.Forms.TextBox M04_txt_kinhGui;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel18;
+        private AxAcroPDFLib.AxAcroPDF axAcroPDF7;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel14;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel10;
+        private System.Windows.Forms.Button button47;
+        private System.Windows.Forms.Button button48;
+        private System.Windows.Forms.Button button49;
+        private System.Windows.Forms.Button button50;
+        private System.Windows.Forms.Button button51;
+        private System.Windows.Forms.Button button52;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel19;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox M04_NSD_txt_hoTen;
+        private AxAcroPDFLib.AxAcroPDF axAcroPDF8;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel11;
+        private System.Windows.Forms.Button button53;
+        private System.Windows.Forms.Button button54;
+        private System.Windows.Forms.Button button55;
+        private System.Windows.Forms.Button button56;
+        private System.Windows.Forms.Button button57;
+        private System.Windows.Forms.Button button58;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel20;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox M04_NSD_txt_diaChi;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel21;
+        private AxAcroPDFLib.AxAcroPDF axAcroPDF9;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel16;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel12;
+        private System.Windows.Forms.Button button59;
+        private System.Windows.Forms.Button button60;
+        private System.Windows.Forms.Button button61;
+        private System.Windows.Forms.Button button62;
+        private System.Windows.Forms.Button button63;
+        private System.Windows.Forms.Button button64;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel22;
-        private System.Windows.Forms.RadioButton M04_DN_rdb_Loai1;
-        private System.Windows.Forms.RadioButton M04_DN_rdb_Loai2;
-        private System.Windows.Forms.Label M04_DN_rdb_Loai1DK;
-        private System.Windows.Forms.Label M04_DN_lbl_Loai1CapCN;
-        private System.Windows.Forms.Label M04_DN_lbl_Loai2DK;
-        private System.Windows.Forms.Label M04_DN_lbl_Loai2CapCN;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel23;
+        private AxAcroPDFLib.AxAcroPDF axAcroPDF10;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel17;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel13;
+        private System.Windows.Forms.Button button65;
+        private System.Windows.Forms.Button button66;
+        private System.Windows.Forms.Button button67;
+        private System.Windows.Forms.Button button68;
+        private System.Windows.Forms.Button button69;
+        private System.Windows.Forms.Button button70;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel24;
-        private System.Windows.Forms.Label label20;
+        private AxAcroPDFLib.AxAcroPDF axAcroPDF11;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel18;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel14;
+        private System.Windows.Forms.Button button71;
+        private System.Windows.Forms.Button button72;
+        private System.Windows.Forms.Button button73;
+        private System.Windows.Forms.Button button74;
+        private System.Windows.Forms.Button button75;
+        private System.Windows.Forms.Button button76;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel25;
-        private System.Windows.Forms.Label label21;
+        private AxAcroPDFLib.AxAcroPDF axAcroPDF12;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel19;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel15;
+        private System.Windows.Forms.Button button77;
+        private System.Windows.Forms.Button button78;
+        private System.Windows.Forms.Button button79;
+        private System.Windows.Forms.Button button80;
+        private System.Windows.Forms.Button button81;
+        private System.Windows.Forms.Button button82;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel26;
-        private System.Windows.Forms.Label label23;
+        private AxAcroPDFLib.AxAcroPDF axAcroPDF13;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel20;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel16;
+        private System.Windows.Forms.Button button83;
+        private System.Windows.Forms.Button button84;
+        private System.Windows.Forms.Button button85;
+        private System.Windows.Forms.Button button86;
+        private System.Windows.Forms.Button button87;
+        private System.Windows.Forms.Button button88;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel27;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox M04_txt_ThuaDatDK;
-        private System.Windows.Forms.TextBox M04_txt_thuaDatSo;
-        private System.Windows.Forms.TextBox M04_txt_toBanDoSo;
-        private System.Windows.Forms.TextBox M04_txt_diaChiDat;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel28;
+        private AxAcroPDFLib.AxAcroPDF axAcroPDF14;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel21;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel17;
+        private System.Windows.Forms.Button button89;
+        private System.Windows.Forms.Button button90;
+        private System.Windows.Forms.Button button91;
+        private System.Windows.Forms.Button button92;
+        private System.Windows.Forms.Button button93;
+        private System.Windows.Forms.Button button94;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel29;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox M04_txt_dtDat;
+        private AxAcroPDFLib.AxAcroPDF axAcroPDF15;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel22;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel18;
+        private System.Windows.Forms.Button button95;
+        private System.Windows.Forms.Button button96;
+        private System.Windows.Forms.Button button97;
+        private System.Windows.Forms.Button button98;
+        private System.Windows.Forms.Button button99;
+        private System.Windows.Forms.Button button100;
         private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel30;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox M04_txt_suDungChung;
-        private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel31;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TextBox M04_txt_suDungRieng;
-        private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel32;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox M04_txt_suDungMD;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel34;
-        private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel36;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox M04_txt_nguonGocSD;
-        private System.Windows.Forms.Panel panel22;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel37;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox M04_txt_sdHanChe;
-        private System.Windows.Forms.Panel panel23;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel38;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox M04_txt_cua;
-        private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.TableLayoutPanel layout;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel33;
-        private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel40;
-        private System.Windows.Forms.Label label28;
-        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker M04_dtp_tuThoiDiem;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel35;
-        private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel41;
-        private System.Windows.Forms.Label label29;
-        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker M04_dtp_thoiGianDeNghi;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel42;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel43;
-        private System.Windows.Forms.Panel panel25;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel44;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Panel panel26;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel45;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Panel panel27;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel46;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Panel panel28;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel47;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Panel panel29;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel48;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Panel panel30;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel49;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Panel panel31;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel50;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Panel panel32;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel51;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel52;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel53;
-        private System.Windows.Forms.Panel panel33;
-        private System.Windows.Forms.TableLayoutPanel M04_txt_RSX_loaiCay;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.Panel panel34;
-        private System.Windows.Forms.TableLayoutPanel lya;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.TextBox M04_txt_RSX_dienTich;
-        private System.Windows.Forms.Panel panel35;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel56;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.TextBox M04_txt_RSX_tuTrong;
-        private System.Windows.Forms.Panel panel36;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel57;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.TextBox M04_txt_RSX_NNKTT;
-        private System.Windows.Forms.Panel panel37;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel58;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.TextBox M04_txt_RSX_NNTT;
-        private System.Windows.Forms.Panel panel38;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel59;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.TextBox M04_txt_RSX_nhanChuyenQuyen;
-        private System.Windows.Forms.Panel panel39;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel60;
-        private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.TextBox M04_txt_RSX_nguonVon;
-        private System.Windows.Forms.Panel panel40;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel61;
-        private System.Windows.Forms.Label label52;
-        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker M04_dtp_RSX_HSD;
-        private System.Windows.Forms.Panel panel41;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel62;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.TextBox M04_txt_RSX_soHuuChung;
-        private System.Windows.Forms.Panel panel42;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel63;
-        private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.TextBox M04_txt_RSX_soHuuRieng;
-        private System.Windows.Forms.TextBox M04_txt_NO_loaiNhaO;
-        private System.Windows.Forms.TextBox M04_txt_NO_dtXD;
-        private System.Windows.Forms.TextBox M04_txt_NO_dtSan;
-        private System.Windows.Forms.TextBox M04_txt_NO_soHuuChung;
-        private System.Windows.Forms.TextBox M04_txt_NO_soHuuRieng;
-        private System.Windows.Forms.TextBox M04_txt_NO_ketCau;
-        private System.Windows.Forms.TextBox M04_txt_NO_soTang;
-        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker M04_txt_NO_HSD;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel64;
-        private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel65;
-        private System.Windows.Forms.Panel panel43;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel66;
-        private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.TextBox M04_txt_CLN_loaicay;
-        private System.Windows.Forms.Panel panel44;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel67;
-        private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.TextBox M04_txt_CLN_dt;
-        private System.Windows.Forms.Panel panel50;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel73;
-        private System.Windows.Forms.Label label63;
-        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker M04_dpt_CLN_HSD;
-        private System.Windows.Forms.Panel panel51;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel74;
-        private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.TextBox M04_txt_CLN_soHuuChung;
-        private System.Windows.Forms.Panel panel52;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel75;
-        private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.TextBox M04_txt_CLN_soHuuRieng;
-        private System.Windows.Forms.Panel panel45;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel68;
-        private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.TextBox textBox38;
-        private System.Windows.Forms.Panel panel46;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel69;
-        private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.TextBox M04_txt_deNghiKhac;
-        private System.Windows.Forms.TextBox M04_txt_nhuCauGhiNo;
-        private System.Windows.Forms.TextBox M04_txt_ndQuyenSD;
+        private AxAcroPDFLib.AxAcroPDF axAcroPDF16;
     }
 }
 

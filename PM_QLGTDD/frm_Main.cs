@@ -7,16 +7,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PM_QLGTDD.MauSo4a;
 
 namespace PM_QLGTDD
 {
     public partial class frm_Main : Form
     {
+        public delegate void sendInfo(string quyenso, string so);
+        public sendInfo Sender;
+        
         public frm_Main()
         {
+
             InitializeComponent();
+            Sender = new sendInfo(getInfo);
         }
-        string placeholder = "Nhập vào đây...";
+
+        string _quyenso, _so;
+        public void getInfo(string quyenso, string so)
+        {
+            _quyenso = quyenso;
+            _so = so;
+        }
+        void readerdemo()
+        {
+            MessageBox.Show(_quyenso, _so);
+        }
         void styleLayout()
         {
             tableLayoutPanel2.BackColor = Color.FromArgb(39, 89, 167);
@@ -36,58 +52,46 @@ namespace PM_QLGTDD
         private void frm_Main_Load(object sender, EventArgs e)
         {
             styleLayout();
-            loadM04();
+            
+
+
         }
 
 
-        void loadM04() {
-            List<TextBox> lstTxt = new List<TextBox>();
-            lstTxt.Add(M04_NSD_txt_diaChi);
-            lstTxt.Add(M04_NSD_txt_hoTen);
-            lstTxt.Add(M04_NSD_txt_so);
-            lstTxt.Add(M04_txt_CLN_dt);
-            lstTxt.Add(M04_txt_CLN_loaicay);
-            lstTxt.Add(M04_txt_CLN_soHuuChung);
-            lstTxt.Add(M04_txt_CLN_soHuuRieng);
-            lstTxt.Add(M04_txt_cua);
-            lstTxt.Add(M04_txt_deNghiKhac);
-            lstTxt.Add(M04_txt_diaChiDat);
-            lstTxt.Add(M04_txt_dtDat);
-            lstTxt.Add(M04_txt_hoTenNguoiVD);
-            lstTxt.Add(M04_txt_kinhGui);
-            lstTxt.Add(M04_txt_ndQuyenSD);
-            lstTxt.Add(M04_txt_nguonGocSD);
-            lstTxt.Add(M04_txt_nhuCauGhiNo);
-            lstTxt.Add(M04_txt_NO_dtSan);
-            lstTxt.Add(M04_txt_NO_dtXD);
-            lstTxt.Add(M04_txt_NO_ketCau);
-            lstTxt.Add(M04_txt_NO_loaiNhaO);
-            lstTxt.Add(M04_txt_NO_soHuuChung);
-            lstTxt.Add(M04_txt_NO_soHuuRieng);
-            lstTxt.Add(M04_txt_NO_soTang);
-            lstTxt.Add(M04_txt_quyenSo);
-            lstTxt.Add(M04_txt_RSX_dienTich);
-            //lstTxt.Add(M04_txt_RSX_loaiCay);
-            //lstTxt.Add(M04_NSD_txt_diaChi);
-            //lstTxt.Add(M04_NSD_txt_diaChi);
-            //lstTxt.Add(M04_NSD_txt_diaChi);
-            //lstTxt.Add(M04_NSD_txt_diaChi);
-            //lstTxt.Add(M04_NSD_txt_diaChi);
-            //lstTxt.Add(M04_NSD_txt_diaChi);
 
 
-            for (int l = 0; l < lstTxt.Count; l++)
+        private void M04_btn_Nhap_Click(object sender, EventArgs e)
+        {
+            pnl_container_M04.Controls.Clear();
+            UF_MauSo4a ufm4a = new UF_MauSo4a();
+            pnl_container_M04.Controls.Add(ufm4a);
+            //ufm4a.Dock = DockStyle.Fill;
+            pnl_container_M04.AutoScroll = true;
+
+        }
+
+        private void tabControl1_Click(object sender, EventArgs e)
+        {
+            int index = int.Parse(tabControl1.SelectedTab.Tag.ToString());
+            switch (index)
             {
-                if (l > 0)
-                {
-                    lstTxt[l].Text = placeholder;
-                    lstTxt[l].ForeColor = Color.Gray;
-                    lstTxt[l].Font = new Font(lstTxt[l].Font, FontStyle.Italic);
-                }
+                //Mau 04
+                case 5:
+                    {
+                        string path = System.IO.Path.GetFullPath("..\\..\\..\\template_mau\\MauSo4a.pdf");
+                        filesPDF_mau04.src = path;
+                        filesPDF_mau04.setPageMode("none");
+                    }
+                    break;
+                   
             }
-
+           
         }
 
-
+        private void M04_btn_Luu_Click(object sender, EventArgs e)
+        {
+           
+            readerdemo();
+        }
     }
 }
