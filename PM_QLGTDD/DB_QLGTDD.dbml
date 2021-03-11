@@ -1,23 +1,60 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PM_QLGTDD" Class="DB_QLGTDDDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-RDLUFLH4\SQLEXPRESS;Initial Catalog=PM_QLGTDD;Integrated Security=True" SettingsObjectName="PM_QLGTDD.Properties.Settings" SettingsPropertyName="PM_QLGTDDConnectionString" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.BIEUMAU" Member="BIEUMAUs">
-    <Type Name="BIEUMAU">
+  <Table Name="dbo.BIEUMAU_M04" Member="BIEUMAU_M04s">
+    <Type Name="BIEUMAU_M04">
       <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="QUYENSO" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="SO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SO" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
       <Column Name="HOTEN_NVD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="NGAYVIETDON" Type="System.DateTime" DbType="Date" CanBeNull="true" />
       <Column Name="ID_LOAIBIEUMAU" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="TT_XUAT" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Column Name="TT_XOA" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="LOAIBIEUMAU_BIEUMAU" Member="LOAIBIEUMAU" ThisKey="ID_LOAIBIEUMAU" OtherKey="ID_LOAIBIEUMAU" Type="LOAIBIEUMAU" IsForeignKey="true" />
+      <Column Name="KINHGUI" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="DIACHI_NVD" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="THUADATDANGKY" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="THUADATSO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TOBANDOSO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DIACHI_THUADAT" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="DT_TD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SHCHUNG_TD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SHRIENG_TD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="THOIHANDENGHISD_TD" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="LOAINHAO_NO" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="DTXAYDUNG_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DTSAN_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SHCHUNG_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SHRIENG_NO" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KETCAU_NO" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="SOTANG_NO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="THOIHANSDDEN_NO" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="LOAICAY_RSX" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="DT_RSX" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SDCHUNG_RSX" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SDRIENG_RSX" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="THOIHANSDDEN_RSX" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="LOAICAY_CLN" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="DT_CLN" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SHCHUNG_CLN" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SHRIENG_CLN" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="THOIHANSDDEN_CLN" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="GIAYTOKEMTHEO" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="NHU_CAU_GHI_NO" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="DENGHIKHAC" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="MUCDICHSD" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="TUTHOIDIEM_TD" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="NGUONGOC_TD" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="QUYENSUDUNGHANCHESO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CUA_TD" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="NDQUYENSD_TD" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Association Name="LOAIBIEUMAU_BIEUMAU_M04" Member="LOAIBIEUMAU" ThisKey="ID_LOAIBIEUMAU" OtherKey="ID_LOAIBIEUMAU" Type="LOAIBIEUMAU" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.LOAIBIEUMAU" Member="LOAIBIEUMAUs">
     <Type Name="LOAIBIEUMAU">
       <Column Name="ID_LOAIBIEUMAU" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="TENBIEUMAU" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
-      <Association Name="LOAIBIEUMAU_BIEUMAU" Member="BIEUMAUs" ThisKey="ID_LOAIBIEUMAU" OtherKey="ID_LOAIBIEUMAU" Type="BIEUMAU" />
+      <Association Name="LOAIBIEUMAU_BIEUMAU_M04" Member="BIEUMAU_M04s" ThisKey="ID_LOAIBIEUMAU" OtherKey="ID_LOAIBIEUMAU" Type="BIEUMAU_M04" />
     </Type>
   </Table>
 </Database>

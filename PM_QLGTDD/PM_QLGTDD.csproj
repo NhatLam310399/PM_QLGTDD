@@ -51,6 +51,10 @@
     <Reference Include="ComponentFactory.Krypton.Workspace">
       <HintPath>D:\DownloadTemp\RELEASE\ComponentFactory.Krypton.Workspace.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
@@ -77,6 +81,8 @@
     <Compile Include="frm_Main.Designer.cs">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="MauSo4a\DAL_saveDB_M04.cs" />
+    <Compile Include="MauSo4a\Model_MauSo04.cs" />
     <Compile Include="MauSo4a\UF_MauSo4a.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -109,6 +115,7 @@
       <LastGenOutput>DB_QLGTDD.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

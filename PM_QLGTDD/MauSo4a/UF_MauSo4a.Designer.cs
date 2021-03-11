@@ -64,7 +64,7 @@ namespace PM_QLGTDD.MauSo4a
             this.panel40 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel61 = new System.Windows.Forms.TableLayoutPanel();
             this.label52 = new System.Windows.Forms.Label();
-            this.M04_dtp_RSX_HSD = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
+            this.M04_txt_RSX_thsd = new System.Windows.Forms.TextBox();
             this.panel41 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel62 = new System.Windows.Forms.TableLayoutPanel();
             this.label53 = new System.Windows.Forms.Label();
@@ -115,6 +115,8 @@ namespace PM_QLGTDD.MauSo4a
             this.M04_DN_lbl_Loai2CapCN = new System.Windows.Forms.Label();
             this.Mau04_DN_chk_Loai1 = new ComponentFactory.Krypton.Toolkit.KryptonCheckBox();
             this.Mau04_DN_chk_Loai2 = new ComponentFactory.Krypton.Toolkit.KryptonCheckBox();
+            this.kryptonCheckBox1 = new ComponentFactory.Krypton.Toolkit.KryptonCheckBox();
+            this.kryptonCheckBox2 = new ComponentFactory.Krypton.Toolkit.KryptonCheckBox();
             this.tableLayoutPanel23 = new System.Windows.Forms.TableLayoutPanel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel24 = new System.Windows.Forms.TableLayoutPanel();
@@ -175,7 +177,7 @@ namespace PM_QLGTDD.MauSo4a
             this.panel20 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel41 = new System.Windows.Forms.TableLayoutPanel();
             this.label29 = new System.Windows.Forms.Label();
-            this.M04_dtp_thoiGianDeNghi = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
+            this.M04_txt_tgdenghiSDD = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
             this.tableLayoutPanel42 = new System.Windows.Forms.TableLayoutPanel();
             this.label35 = new System.Windows.Forms.Label();
@@ -211,7 +213,7 @@ namespace PM_QLGTDD.MauSo4a
             this.panel32 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel51 = new System.Windows.Forms.TableLayoutPanel();
             this.label43 = new System.Windows.Forms.Label();
-            this.M04_txt_NO_HSD = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
+            this.M04_txt_NO_thsd = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel64 = new System.Windows.Forms.TableLayoutPanel();
             this.label55 = new System.Windows.Forms.Label();
             this.tableLayoutPanel65 = new System.Windows.Forms.TableLayoutPanel();
@@ -226,7 +228,7 @@ namespace PM_QLGTDD.MauSo4a
             this.panel50 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel73 = new System.Windows.Forms.TableLayoutPanel();
             this.label63 = new System.Windows.Forms.Label();
-            this.M04_dpt_CLN_HSD = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
+            this.M04_txt_CLN_thsd = new System.Windows.Forms.TextBox();
             this.panel51 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel74 = new System.Windows.Forms.TableLayoutPanel();
             this.label64 = new System.Windows.Forms.Label();
@@ -851,15 +853,15 @@ namespace PM_QLGTDD.MauSo4a
             this.tableLayoutPanel61.ColumnCount = 1;
             this.tableLayoutPanel61.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel61.Controls.Add(this.label52, 0, 0);
-            this.tableLayoutPanel61.Controls.Add(this.M04_dtp_RSX_HSD, 0, 2);
+            this.tableLayoutPanel61.Controls.Add(this.M04_txt_RSX_thsd, 0, 1);
             this.tableLayoutPanel61.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel61.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel61.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel61.Name = "tableLayoutPanel61";
-            this.tableLayoutPanel61.RowCount = 3;
+            this.tableLayoutPanel61.RowCount = 2;
             this.tableLayoutPanel61.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel61.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31.70732F));
-            this.tableLayoutPanel61.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.02439F));
+            this.tableLayoutPanel61.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel61.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel61.Size = new System.Drawing.Size(120, 82);
             this.tableLayoutPanel61.TabIndex = 0;
             // 
@@ -874,16 +876,15 @@ namespace PM_QLGTDD.MauSo4a
             this.label52.Text = "Thời hạn sử dụng đến";
             this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // M04_dtp_RSX_HSD
+            // M04_txt_RSX_thsd
             // 
-            this.M04_dtp_RSX_HSD.CalendarTodayDate = new System.DateTime(2021, 3, 9, 0, 0, 0, 0);
-            this.M04_dtp_RSX_HSD.CustomFormat = "dd/MM/yyyy";
-            this.M04_dtp_RSX_HSD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_dtp_RSX_HSD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.M04_dtp_RSX_HSD.Location = new System.Drawing.Point(3, 52);
-            this.M04_dtp_RSX_HSD.Name = "M04_dtp_RSX_HSD";
-            this.M04_dtp_RSX_HSD.Size = new System.Drawing.Size(114, 27);
-            this.M04_dtp_RSX_HSD.TabIndex = 1;
+            this.M04_txt_RSX_thsd.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.M04_txt_RSX_thsd.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.M04_txt_RSX_thsd.Location = new System.Drawing.Point(3, 27);
+            this.M04_txt_RSX_thsd.Multiline = true;
+            this.M04_txt_RSX_thsd.Name = "M04_txt_RSX_thsd";
+            this.M04_txt_RSX_thsd.Size = new System.Drawing.Size(114, 52);
+            this.M04_txt_RSX_thsd.TabIndex = 1;
             // 
             // panel41
             // 
@@ -1222,7 +1223,7 @@ namespace PM_QLGTDD.MauSo4a
             this.M04_dtp_NgayVD.Margin = new System.Windows.Forms.Padding(0);
             this.M04_dtp_NgayVD.MinDate = new System.DateTime(2021, 3, 9, 0, 0, 0, 0);
             this.M04_dtp_NgayVD.Name = "M04_dtp_NgayVD";
-            this.M04_dtp_NgayVD.Size = new System.Drawing.Size(140, 25);
+            this.M04_dtp_NgayVD.Size = new System.Drawing.Size(140, 24);
             this.M04_dtp_NgayVD.TabIndex = 4;
             // 
             // tableLayoutPanel16
@@ -1464,18 +1465,20 @@ namespace PM_QLGTDD.MauSo4a
             // 
             // tableLayoutPanel22
             // 
-            this.tableLayoutPanel22.ColumnCount = 4;
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.94247F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.09983F));
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel22.ColumnCount = 5;
+            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.002878F));
+            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.16582F));
+            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.752961F));
+            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.36548F));
+            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.8934F));
             this.tableLayoutPanel22.Controls.Add(this.M04_DN_rdb_Loai1DK, 1, 0);
-            this.tableLayoutPanel22.Controls.Add(this.M04_DN_lbl_Loai1CapCN, 2, 0);
+            this.tableLayoutPanel22.Controls.Add(this.M04_DN_lbl_Loai1CapCN, 3, 0);
             this.tableLayoutPanel22.Controls.Add(this.M04_DN_lbl_Loai2DK, 1, 1);
-            this.tableLayoutPanel22.Controls.Add(this.M04_DN_lbl_Loai2CapCN, 2, 1);
+            this.tableLayoutPanel22.Controls.Add(this.M04_DN_lbl_Loai2CapCN, 3, 1);
             this.tableLayoutPanel22.Controls.Add(this.Mau04_DN_chk_Loai1, 0, 0);
             this.tableLayoutPanel22.Controls.Add(this.Mau04_DN_chk_Loai2, 0, 1);
+            this.tableLayoutPanel22.Controls.Add(this.kryptonCheckBox1, 2, 0);
+            this.tableLayoutPanel22.Controls.Add(this.kryptonCheckBox2, 2, 1);
             this.tableLayoutPanel22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel22.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel22.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
@@ -1493,7 +1496,7 @@ namespace PM_QLGTDD.MauSo4a
             this.M04_DN_rdb_Loai1DK.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.M04_DN_rdb_Loai1DK.Location = new System.Drawing.Point(62, 0);
             this.M04_DN_rdb_Loai1DK.Name = "M04_DN_rdb_Loai1DK";
-            this.M04_DN_rdb_Loai1DK.Size = new System.Drawing.Size(230, 37);
+            this.M04_DN_rdb_Loai1DK.Size = new System.Drawing.Size(255, 37);
             this.M04_DN_rdb_Loai1DK.TabIndex = 1;
             this.M04_DN_rdb_Loai1DK.Text = "- Đăng ký quyền sử dụng đất";
             this.M04_DN_rdb_Loai1DK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1503,9 +1506,9 @@ namespace PM_QLGTDD.MauSo4a
             this.M04_DN_lbl_Loai1CapCN.AutoSize = true;
             this.M04_DN_lbl_Loai1CapCN.Dock = System.Windows.Forms.DockStyle.Fill;
             this.M04_DN_lbl_Loai1CapCN.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.M04_DN_lbl_Loai1CapCN.Location = new System.Drawing.Point(298, 0);
+            this.M04_DN_lbl_Loai1CapCN.Location = new System.Drawing.Point(390, 0);
             this.M04_DN_lbl_Loai1CapCN.Name = "M04_DN_lbl_Loai1CapCN";
-            this.M04_DN_lbl_Loai1CapCN.Size = new System.Drawing.Size(276, 37);
+            this.M04_DN_lbl_Loai1CapCN.Size = new System.Drawing.Size(281, 37);
             this.M04_DN_lbl_Loai1CapCN.TabIndex = 1;
             this.M04_DN_lbl_Loai1CapCN.Text = "- Cấp giấy chứng nhận đối với đất";
             this.M04_DN_lbl_Loai1CapCN.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1517,7 +1520,7 @@ namespace PM_QLGTDD.MauSo4a
             this.M04_DN_lbl_Loai2DK.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.M04_DN_lbl_Loai2DK.Location = new System.Drawing.Point(62, 37);
             this.M04_DN_lbl_Loai2DK.Name = "M04_DN_lbl_Loai2DK";
-            this.M04_DN_lbl_Loai2DK.Size = new System.Drawing.Size(230, 37);
+            this.M04_DN_lbl_Loai2DK.Size = new System.Drawing.Size(255, 37);
             this.M04_DN_lbl_Loai2DK.TabIndex = 1;
             this.M04_DN_lbl_Loai2DK.Text = "- Đăng ký quyền quản lý đất";
             this.M04_DN_lbl_Loai2DK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1527,9 +1530,9 @@ namespace PM_QLGTDD.MauSo4a
             this.M04_DN_lbl_Loai2CapCN.AutoSize = true;
             this.M04_DN_lbl_Loai2CapCN.Dock = System.Windows.Forms.DockStyle.Fill;
             this.M04_DN_lbl_Loai2CapCN.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.M04_DN_lbl_Loai2CapCN.Location = new System.Drawing.Point(298, 37);
+            this.M04_DN_lbl_Loai2CapCN.Location = new System.Drawing.Point(390, 37);
             this.M04_DN_lbl_Loai2CapCN.Name = "M04_DN_lbl_Loai2CapCN";
-            this.M04_DN_lbl_Loai2CapCN.Size = new System.Drawing.Size(276, 37);
+            this.M04_DN_lbl_Loai2CapCN.Size = new System.Drawing.Size(281, 37);
             this.M04_DN_lbl_Loai2CapCN.TabIndex = 1;
             this.M04_DN_lbl_Loai2CapCN.Text = "- Cấp giấy chứng nhận đối với tài sản trên đất";
             this.M04_DN_lbl_Loai2CapCN.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1553,6 +1556,26 @@ namespace PM_QLGTDD.MauSo4a
             this.Mau04_DN_chk_Loai2.Size = new System.Drawing.Size(53, 31);
             this.Mau04_DN_chk_Loai2.TabIndex = 2;
             this.Mau04_DN_chk_Loai2.Values.Text = "";
+            // 
+            // kryptonCheckBox1
+            // 
+            this.kryptonCheckBox1.CheckPosition = ComponentFactory.Krypton.Toolkit.VisualOrientation.Right;
+            this.kryptonCheckBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonCheckBox1.Location = new System.Drawing.Point(323, 3);
+            this.kryptonCheckBox1.Name = "kryptonCheckBox1";
+            this.kryptonCheckBox1.Size = new System.Drawing.Size(61, 31);
+            this.kryptonCheckBox1.TabIndex = 2;
+            this.kryptonCheckBox1.Values.Text = "";
+            // 
+            // kryptonCheckBox2
+            // 
+            this.kryptonCheckBox2.CheckPosition = ComponentFactory.Krypton.Toolkit.VisualOrientation.Right;
+            this.kryptonCheckBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonCheckBox2.Location = new System.Drawing.Point(323, 40);
+            this.kryptonCheckBox2.Name = "kryptonCheckBox2";
+            this.kryptonCheckBox2.Size = new System.Drawing.Size(61, 31);
+            this.kryptonCheckBox2.TabIndex = 2;
+            this.kryptonCheckBox2.Values.Text = "";
             // 
             // tableLayoutPanel23
             // 
@@ -2337,15 +2360,15 @@ namespace PM_QLGTDD.MauSo4a
             this.tableLayoutPanel41.ColumnCount = 1;
             this.tableLayoutPanel41.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel41.Controls.Add(this.label29, 0, 0);
-            this.tableLayoutPanel41.Controls.Add(this.M04_dtp_thoiGianDeNghi, 0, 2);
+            this.tableLayoutPanel41.Controls.Add(this.M04_txt_tgdenghiSDD, 0, 1);
             this.tableLayoutPanel41.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel41.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel41.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel41.Name = "tableLayoutPanel41";
-            this.tableLayoutPanel41.RowCount = 3;
-            this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.99065F));
-            this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.16822F));
-            this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel41.RowCount = 2;
+            this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 41.74229F));
+            this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 58.25772F));
+            this.tableLayoutPanel41.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel41.Size = new System.Drawing.Size(145, 109);
             this.tableLayoutPanel41.TabIndex = 0;
             // 
@@ -2355,21 +2378,20 @@ namespace PM_QLGTDD.MauSo4a
             this.label29.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label29.Location = new System.Drawing.Point(3, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(139, 47);
+            this.label29.Size = new System.Drawing.Size(139, 45);
             this.label29.TabIndex = 0;
             this.label29.Text = "Thời gian đề nghị được sử dụng đất";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // M04_dtp_thoiGianDeNghi
+            // M04_txt_tgdenghiSDD
             // 
-            this.M04_dtp_thoiGianDeNghi.CalendarTodayDate = new System.DateTime(2021, 3, 9, 0, 0, 0, 0);
-            this.M04_dtp_thoiGianDeNghi.CustomFormat = "dd/MM/yyyy";
-            this.M04_dtp_thoiGianDeNghi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_dtp_thoiGianDeNghi.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.M04_dtp_thoiGianDeNghi.Location = new System.Drawing.Point(3, 78);
-            this.M04_dtp_thoiGianDeNghi.Name = "M04_dtp_thoiGianDeNghi";
-            this.M04_dtp_thoiGianDeNghi.Size = new System.Drawing.Size(139, 28);
-            this.M04_dtp_thoiGianDeNghi.TabIndex = 1;
+            this.M04_txt_tgdenghiSDD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.M04_txt_tgdenghiSDD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.M04_txt_tgdenghiSDD.Location = new System.Drawing.Point(3, 48);
+            this.M04_txt_tgdenghiSDD.Multiline = true;
+            this.M04_txt_tgdenghiSDD.Name = "M04_txt_tgdenghiSDD";
+            this.M04_txt_tgdenghiSDD.Size = new System.Drawing.Size(139, 58);
+            this.M04_txt_tgdenghiSDD.TabIndex = 1;
             // 
             // label34
             // 
@@ -2827,15 +2849,15 @@ namespace PM_QLGTDD.MauSo4a
             this.tableLayoutPanel51.ColumnCount = 1;
             this.tableLayoutPanel51.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel51.Controls.Add(this.label43, 0, 0);
-            this.tableLayoutPanel51.Controls.Add(this.M04_txt_NO_HSD, 0, 2);
+            this.tableLayoutPanel51.Controls.Add(this.M04_txt_NO_thsd, 0, 1);
             this.tableLayoutPanel51.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel51.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel51.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel51.Name = "tableLayoutPanel51";
-            this.tableLayoutPanel51.RowCount = 3;
+            this.tableLayoutPanel51.RowCount = 2;
             this.tableLayoutPanel51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31.70732F));
-            this.tableLayoutPanel51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.02439F));
+            this.tableLayoutPanel51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel51.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel51.Size = new System.Drawing.Size(149, 82);
             this.tableLayoutPanel51.TabIndex = 0;
             // 
@@ -2850,16 +2872,15 @@ namespace PM_QLGTDD.MauSo4a
             this.label43.Text = "Thời hạn sử dụng đến";
             this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // M04_txt_NO_HSD
+            // M04_txt_NO_thsd
             // 
-            this.M04_txt_NO_HSD.CalendarTodayDate = new System.DateTime(2021, 3, 9, 0, 0, 0, 0);
-            this.M04_txt_NO_HSD.CustomFormat = "dd/MM/yyyy";
-            this.M04_txt_NO_HSD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_NO_HSD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.M04_txt_NO_HSD.Location = new System.Drawing.Point(3, 52);
-            this.M04_txt_NO_HSD.Name = "M04_txt_NO_HSD";
-            this.M04_txt_NO_HSD.Size = new System.Drawing.Size(143, 27);
-            this.M04_txt_NO_HSD.TabIndex = 1;
+            this.M04_txt_NO_thsd.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.M04_txt_NO_thsd.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.M04_txt_NO_thsd.Location = new System.Drawing.Point(3, 27);
+            this.M04_txt_NO_thsd.Multiline = true;
+            this.M04_txt_NO_thsd.Name = "M04_txt_NO_thsd";
+            this.M04_txt_NO_thsd.Size = new System.Drawing.Size(143, 52);
+            this.M04_txt_NO_thsd.TabIndex = 1;
             // 
             // tableLayoutPanel64
             // 
@@ -3038,15 +3059,15 @@ namespace PM_QLGTDD.MauSo4a
             this.tableLayoutPanel73.ColumnCount = 1;
             this.tableLayoutPanel73.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel73.Controls.Add(this.label63, 0, 0);
-            this.tableLayoutPanel73.Controls.Add(this.M04_dpt_CLN_HSD, 0, 2);
+            this.tableLayoutPanel73.Controls.Add(this.M04_txt_CLN_thsd, 0, 1);
             this.tableLayoutPanel73.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel73.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel73.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel73.Name = "tableLayoutPanel73";
-            this.tableLayoutPanel73.RowCount = 3;
+            this.tableLayoutPanel73.RowCount = 2;
             this.tableLayoutPanel73.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel73.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31.70732F));
-            this.tableLayoutPanel73.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.02439F));
+            this.tableLayoutPanel73.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel73.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel73.Size = new System.Drawing.Size(148, 82);
             this.tableLayoutPanel73.TabIndex = 0;
             // 
@@ -3061,16 +3082,15 @@ namespace PM_QLGTDD.MauSo4a
             this.label63.Text = "Thời hạn sử dụng đến";
             this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // M04_dpt_CLN_HSD
+            // M04_txt_CLN_thsd
             // 
-            this.M04_dpt_CLN_HSD.CalendarTodayDate = new System.DateTime(2021, 3, 9, 0, 0, 0, 0);
-            this.M04_dpt_CLN_HSD.CustomFormat = "dd/MM/yyyy";
-            this.M04_dpt_CLN_HSD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_dpt_CLN_HSD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.M04_dpt_CLN_HSD.Location = new System.Drawing.Point(3, 52);
-            this.M04_dpt_CLN_HSD.Name = "M04_dpt_CLN_HSD";
-            this.M04_dpt_CLN_HSD.Size = new System.Drawing.Size(142, 27);
-            this.M04_dpt_CLN_HSD.TabIndex = 1;
+            this.M04_txt_CLN_thsd.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.M04_txt_CLN_thsd.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.M04_txt_CLN_thsd.Location = new System.Drawing.Point(3, 27);
+            this.M04_txt_CLN_thsd.Multiline = true;
+            this.M04_txt_CLN_thsd.Name = "M04_txt_CLN_thsd";
+            this.M04_txt_CLN_thsd.Size = new System.Drawing.Size(142, 52);
+            this.M04_txt_CLN_thsd.TabIndex = 1;
             // 
             // panel51
             // 
@@ -3559,7 +3579,6 @@ namespace PM_QLGTDD.MauSo4a
         private System.Windows.Forms.Panel panel40;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel61;
         private System.Windows.Forms.Label label52;
-        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker M04_dtp_RSX_HSD;
         private System.Windows.Forms.Panel panel41;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel62;
         private System.Windows.Forms.Label label53;
@@ -3668,7 +3687,6 @@ namespace PM_QLGTDD.MauSo4a
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel41;
         private System.Windows.Forms.Label label29;
-        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker M04_dtp_thoiGianDeNghi;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel42;
         private System.Windows.Forms.Label label35;
@@ -3704,7 +3722,6 @@ namespace PM_QLGTDD.MauSo4a
         private System.Windows.Forms.Panel panel32;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel51;
         private System.Windows.Forms.Label label43;
-        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker M04_txt_NO_HSD;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel64;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel65;
@@ -3719,7 +3736,6 @@ namespace PM_QLGTDD.MauSo4a
         private System.Windows.Forms.Panel panel50;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel73;
         private System.Windows.Forms.Label label63;
-        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker M04_dpt_CLN_HSD;
         private System.Windows.Forms.Panel panel51;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel74;
         private System.Windows.Forms.Label label64;
@@ -3745,5 +3761,11 @@ namespace PM_QLGTDD.MauSo4a
         private System.Windows.Forms.TextBox M04_txt_RSX_loaiCay;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button M04_btn_Luu;
+        private System.Windows.Forms.TextBox M04_txt_RSX_thsd;
+        private System.Windows.Forms.TextBox M04_txt_NO_thsd;
+        private System.Windows.Forms.TextBox M04_txt_CLN_thsd;
+        private System.Windows.Forms.TextBox M04_txt_tgdenghiSDD;
+        private ComponentFactory.Krypton.Toolkit.KryptonCheckBox kryptonCheckBox1;
+        private ComponentFactory.Krypton.Toolkit.KryptonCheckBox kryptonCheckBox2;
     }
 }

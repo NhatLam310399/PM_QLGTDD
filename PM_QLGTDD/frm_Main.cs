@@ -8,30 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PM_QLGTDD.MauSo4a;
-
+//using Microsoft.Office.Interop.Word;
 namespace PM_QLGTDD
 {
     public partial class frm_Main : Form
     {
-        public delegate void sendInfo(string quyenso, string so);
-        public sendInfo Sender;
-        
+        UF_MauSo4a ufm04 = new UF_MauSo4a();
         public frm_Main()
         {
-
             InitializeComponent();
-            Sender = new sendInfo(getInfo);
-        }
-
-        string _quyenso, _so;
-        public void getInfo(string quyenso, string so)
-        {
-            _quyenso = quyenso;
-            _so = so;
-        }
-        void readerdemo()
-        {
-            MessageBox.Show(_quyenso, _so);
         }
         void styleLayout()
         {
@@ -56,10 +41,6 @@ namespace PM_QLGTDD
 
 
         }
-
-
-
-
         private void M04_btn_Nhap_Click(object sender, EventArgs e)
         {
             pnl_container_M04.Controls.Clear();
@@ -90,8 +71,19 @@ namespace PM_QLGTDD
 
         private void M04_btn_Luu_Click(object sender, EventArgs e)
         {
-           
-            readerdemo();
+        }
+
+        private void M04_btn_in_Click(object sender, EventArgs e)
+        {
+            if (ufm04.xuatFiles())
+            {
+                MessageBox.Show("Xuất file thành công! File đã được xuất ngoài màn hình chính của bạn");
+            }
+            else
+            {
+                MessageBox.Show("Xuất file thất bại!");
+
+            }
         }
     }
 }

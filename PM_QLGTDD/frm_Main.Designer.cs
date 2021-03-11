@@ -1600,6 +1600,7 @@ namespace PM_QLGTDD
             this.M04_btn_in.Text = "In";
             this.M04_btn_in.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.M04_btn_in.UseVisualStyleBackColor = false;
+            this.M04_btn_in.Click += new System.EventHandler(this.M04_btn_in_Click);
             // 
             // M04_btn_xoa
             // 
