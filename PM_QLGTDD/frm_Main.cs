@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PM_QLGTDD.MauSo4a;
-//using Microsoft.Office.Interop.Word;
+using PM_QLGTDD.Library;
 namespace PM_QLGTDD
 {
     public partial class frm_Main : Form
@@ -61,7 +61,9 @@ namespace PM_QLGTDD
                     {
                         string path = System.IO.Path.GetFullPath("..\\..\\..\\template_mau\\MauSo4a.pdf");
                         filesPDF_mau04.src = path;
-                        filesPDF_mau04.setPageMode("none");
+                        //filesPDF_mau04.setPageMode("none");
+                        filesPDF_mau04.UseWaitCursor = true;
+                        //filesPDF_mau04.
                     }
                     break;
                    
@@ -71,19 +73,13 @@ namespace PM_QLGTDD
 
         private void M04_btn_Luu_Click(object sender, EventArgs e)
         {
+
         }
 
-        private void M04_btn_in_Click(object sender, EventArgs e)
+        private void M04_btn_xem_Click(object sender, EventArgs e)
         {
-            if (ufm04.xuatFiles())
-            {
-                MessageBox.Show("Xuất file thành công! File đã được xuất ngoài màn hình chính của bạn");
-            }
-            else
-            {
-                MessageBox.Show("Xuất file thất bại!");
-
-            }
+            ufm04.xuatFiles();
+            MessageBox.Show("Đã xuất file thành công!");
         }
     }
 }

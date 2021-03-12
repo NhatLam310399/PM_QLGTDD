@@ -100,10 +100,8 @@ namespace PM_QLGTDD
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.M04_btn_Nhap = new System.Windows.Forms.Button();
-            this.M04_btn_Luu = new System.Windows.Forms.Button();
             this.M04_btn_sua = new System.Windows.Forms.Button();
             this.M04_btn_xem = new System.Windows.Forms.Button();
-            this.M04_btn_in = new System.Windows.Forms.Button();
             this.M04_btn_xoa = new System.Windows.Forms.Button();
             this.pnl_container_M04 = new System.Windows.Forms.Panel();
             this.filesPDF_mau04 = new AxAcroPDFLib.AxAcroPDF();
@@ -1477,10 +1475,8 @@ namespace PM_QLGTDD
             // 
             this.flowLayoutPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
             this.flowLayoutPanel3.Controls.Add(this.M04_btn_Nhap);
-            this.flowLayoutPanel3.Controls.Add(this.M04_btn_Luu);
             this.flowLayoutPanel3.Controls.Add(this.M04_btn_sua);
             this.flowLayoutPanel3.Controls.Add(this.M04_btn_xem);
-            this.flowLayoutPanel3.Controls.Add(this.M04_btn_in);
             this.flowLayoutPanel3.Controls.Add(this.M04_btn_xoa);
             this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel3.Location = new System.Drawing.Point(200, 36);
@@ -1512,29 +1508,6 @@ namespace PM_QLGTDD
             this.M04_btn_Nhap.UseVisualStyleBackColor = false;
             this.M04_btn_Nhap.Click += new System.EventHandler(this.M04_btn_Nhap_Click);
             // 
-            // M04_btn_Luu
-            // 
-            this.M04_btn_Luu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
-            this.M04_btn_Luu.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
-            this.M04_btn_Luu.FlatAppearance.BorderSize = 0;
-            this.M04_btn_Luu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
-            this.M04_btn_Luu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
-            this.M04_btn_Luu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M04_btn_Luu.ForeColor = System.Drawing.Color.White;
-            this.M04_btn_Luu.Image = global::PM_QLGTDD.Properties.Resources.icons8_save_24;
-            this.M04_btn_Luu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.M04_btn_Luu.Location = new System.Drawing.Point(142, 0);
-            this.M04_btn_Luu.Margin = new System.Windows.Forms.Padding(0);
-            this.M04_btn_Luu.MaximumSize = new System.Drawing.Size(142, 70);
-            this.M04_btn_Luu.MinimumSize = new System.Drawing.Size(142, 70);
-            this.M04_btn_Luu.Name = "M04_btn_Luu";
-            this.M04_btn_Luu.Size = new System.Drawing.Size(142, 70);
-            this.M04_btn_Luu.TabIndex = 2;
-            this.M04_btn_Luu.Text = "Lưu";
-            this.M04_btn_Luu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.M04_btn_Luu.UseVisualStyleBackColor = false;
-            this.M04_btn_Luu.Click += new System.EventHandler(this.M04_btn_Luu_Click);
-            // 
             // M04_btn_sua
             // 
             this.M04_btn_sua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
@@ -1546,7 +1519,7 @@ namespace PM_QLGTDD
             this.M04_btn_sua.ForeColor = System.Drawing.Color.White;
             this.M04_btn_sua.Image = global::PM_QLGTDD.Properties.Resources.f;
             this.M04_btn_sua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.M04_btn_sua.Location = new System.Drawing.Point(284, 0);
+            this.M04_btn_sua.Location = new System.Drawing.Point(142, 0);
             this.M04_btn_sua.Margin = new System.Windows.Forms.Padding(0);
             this.M04_btn_sua.MaximumSize = new System.Drawing.Size(142, 70);
             this.M04_btn_sua.MinimumSize = new System.Drawing.Size(142, 70);
@@ -1568,7 +1541,7 @@ namespace PM_QLGTDD
             this.M04_btn_xem.ForeColor = System.Drawing.Color.White;
             this.M04_btn_xem.Image = global::PM_QLGTDD.Properties.Resources.ey;
             this.M04_btn_xem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.M04_btn_xem.Location = new System.Drawing.Point(426, 0);
+            this.M04_btn_xem.Location = new System.Drawing.Point(284, 0);
             this.M04_btn_xem.Margin = new System.Windows.Forms.Padding(0);
             this.M04_btn_xem.MaximumSize = new System.Drawing.Size(142, 70);
             this.M04_btn_xem.MinimumSize = new System.Drawing.Size(142, 70);
@@ -1578,29 +1551,7 @@ namespace PM_QLGTDD
             this.M04_btn_xem.Text = "Xem";
             this.M04_btn_xem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.M04_btn_xem.UseVisualStyleBackColor = false;
-            // 
-            // M04_btn_in
-            // 
-            this.M04_btn_in.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
-            this.M04_btn_in.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
-            this.M04_btn_in.FlatAppearance.BorderSize = 0;
-            this.M04_btn_in.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
-            this.M04_btn_in.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
-            this.M04_btn_in.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.M04_btn_in.ForeColor = System.Drawing.Color.White;
-            this.M04_btn_in.Image = global::PM_QLGTDD.Properties.Resources.icons8_print_24;
-            this.M04_btn_in.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.M04_btn_in.Location = new System.Drawing.Point(568, 0);
-            this.M04_btn_in.Margin = new System.Windows.Forms.Padding(0);
-            this.M04_btn_in.MaximumSize = new System.Drawing.Size(142, 70);
-            this.M04_btn_in.MinimumSize = new System.Drawing.Size(142, 70);
-            this.M04_btn_in.Name = "M04_btn_in";
-            this.M04_btn_in.Size = new System.Drawing.Size(142, 70);
-            this.M04_btn_in.TabIndex = 5;
-            this.M04_btn_in.Text = "In";
-            this.M04_btn_in.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.M04_btn_in.UseVisualStyleBackColor = false;
-            this.M04_btn_in.Click += new System.EventHandler(this.M04_btn_in_Click);
+            this.M04_btn_xem.Click += new System.EventHandler(this.M04_btn_xem_Click);
             // 
             // M04_btn_xoa
             // 
@@ -1613,7 +1564,7 @@ namespace PM_QLGTDD
             this.M04_btn_xoa.ForeColor = System.Drawing.Color.White;
             this.M04_btn_xoa.Image = global::PM_QLGTDD.Properties.Resources.icons8_delete_bin_24;
             this.M04_btn_xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.M04_btn_xoa.Location = new System.Drawing.Point(710, 0);
+            this.M04_btn_xoa.Location = new System.Drawing.Point(426, 0);
             this.M04_btn_xoa.Margin = new System.Windows.Forms.Padding(0);
             this.M04_btn_xoa.MaximumSize = new System.Drawing.Size(142, 70);
             this.M04_btn_xoa.MinimumSize = new System.Drawing.Size(142, 70);
@@ -1645,6 +1596,7 @@ namespace PM_QLGTDD
             this.filesPDF_mau04.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("filesPDF_mau04.OcxState")));
             this.filesPDF_mau04.Size = new System.Drawing.Size(935, 600);
             this.filesPDF_mau04.TabIndex = 0;
+            this.filesPDF_mau04.UseWaitCursor = true;
             // 
             // tabPage6
             // 
@@ -4427,10 +4379,8 @@ namespace PM_QLGTDD
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.Button M04_btn_Nhap;
-        private System.Windows.Forms.Button M04_btn_Luu;
         private System.Windows.Forms.Button M04_btn_sua;
         private System.Windows.Forms.Button M04_btn_xem;
-        private System.Windows.Forms.Button M04_btn_in;
         private System.Windows.Forms.Button M04_btn_xoa;
         private System.Windows.Forms.Panel pnl_container_M04;
         private AxAcroPDFLib.AxAcroPDF filesPDF_mau04;

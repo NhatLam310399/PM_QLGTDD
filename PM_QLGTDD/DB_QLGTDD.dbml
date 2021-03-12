@@ -12,7 +12,6 @@
       <Column Name="TT_XOA" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Column Name="KINHGUI" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
       <Column Name="DIACHI_NVD" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
-      <Column Name="THUADATDANGKY" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
       <Column Name="THUADATSO" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="TOBANDOSO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="DIACHI_THUADAT" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />

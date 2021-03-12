@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+//using System.ComponentModel;
+//using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+//using System.Text;
+//using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.Office.Interop.Word;
-using System.Globalization;
-using DataTable = System.Data.DataTable;
-
+//using Microsoft.Office.Interop.Word;
+//using System.Globalization;
+//using DataTable = System.Data.DataTable;
+using PM_QLGTDD.Library;
 namespace PM_QLGTDD.MauSo4a
 {
     public partial class UF_MauSo4a : UserControl
@@ -18,7 +18,7 @@ namespace PM_QLGTDD.MauSo4a
         public UF_MauSo4a uf_m4;
         List<TextBox> lstTxt;
         string placeholder = "Nhập tại đây...";
-        private readonly string path = System.Windows.Forms.Application.StartupPath + "\\template_out\\MauSo4a.docx";
+
 
         DAL_saveDB_M04 dal = new DAL_saveDB_M04();
         
@@ -73,7 +73,7 @@ namespace PM_QLGTDD.MauSo4a
             lstTxt.Add(M04_txt_suDungChung);
             lstTxt.Add(M04_txt_suDungMD);
             lstTxt.Add(M04_txt_suDungRieng);
-            lstTxt.Add(M04_txt_ThuaDatDK);
+         
             lstTxt.Add(M04_txt_thuaDatSo);
             lstTxt.Add(M04_txt_toBanDoSo);
             lstTxt.Add(M04_NSD_txt_diaChi);
@@ -146,12 +146,6 @@ namespace PM_QLGTDD.MauSo4a
             M04_NSD_txt_diaChi.ForeColor = Color.Black;
         }
 
-        private void M04_txt_ThuaDatDK_MouseClick(object sender, MouseEventArgs e)
-        {
-            M04_txt_ThuaDatDK.Clear();
-            M04_txt_ThuaDatDK.Font = new System.Drawing.Font(M04_txt_ThuaDatDK.Font, FontStyle.Regular);
-            M04_txt_ThuaDatDK.ForeColor = Color.Black;
-        }
 
         private void M04_txt_thuaDatSo_MouseClick(object sender, MouseEventArgs e)
         {
@@ -410,7 +404,7 @@ namespace PM_QLGTDD.MauSo4a
             lstTxt.Add(M04_txt_suDungChung);
             lstTxt.Add(M04_txt_suDungMD);
             lstTxt.Add(M04_txt_suDungRieng);
-            lstTxt.Add(M04_txt_ThuaDatDK);
+    
             lstTxt.Add(M04_txt_thuaDatSo);
             lstTxt.Add(M04_txt_toBanDoSo);
 
@@ -487,20 +481,23 @@ namespace PM_QLGTDD.MauSo4a
             _bm.SDCHUNG_RSX = float.Parse(M04_txt_RSX_soHuuChung.Text);
             _bm.SDRIENG_RSX = float.Parse(M04_txt_RSX_soHuuRieng.Text);
             _bm.SHCHUNG_CLN = float.Parse(M04_txt_CLN_soHuuChung.Text);
+            _bm.SHRIENG_CLN = float.Parse(M04_txt_CLN_soHuuRieng.Text);
             _bm.SHCHUNG_NO = float.Parse(M04_txt_NO_soHuuChung.Text);
-            _bm.SHRIENG_TD = float.Parse(M04_txt_NO_soHuuRieng.Text);
+            _bm.SHRIENG_NO= float.Parse(M04_txt_NO_soHuuRieng.Text);
+            _bm.SHRIENG_TD = float.Parse(M04_txt_suDungRieng.Text);
+            _bm.SHCHUNG_TD = float.Parse(M04_txt_suDungChung.Text);
             _bm.SO = M04_NSD_txt_so.Text;
             _bm.SOTANG_NO = int.Parse(M04_txt_NO_soTang.Text);
             _bm.THOIHANDENGHISD_TD = M04_txt_tgdenghiSDD.Text;
             _bm.THOIHANSDDEN_CLN = M04_txt_CLN_thsd.Text;
             _bm.THOIHANSDDEN_NO = M04_txt_NO_thsd.Text;
             _bm.THOIHANSDDEN_RSX = M04_txt_RSX_thsd.Text;
-            _bm.THUADATDANGKY = M04_txt_ThuaDatDK.Text;
             _bm.THUADATSO = int.Parse(M04_txt_thuaDatSo.Text);
             _bm.TOBANDOSO = M04_txt_toBanDoSo.Text;
             _bm.TT_XOA = false;
             _bm.TT_XUAT = false;
             _bm.MUCDICHSD = M04_txt_suDungMD.Text;
+            _bm.NGUONGOC_TD = M04_txt_nguonGocSD.Text;
             if (dal.saveInfo_M04(_bm))
             {
                 
@@ -512,13 +509,9 @@ namespace PM_QLGTDD.MauSo4a
             }
            
         }
-        public bool xuatFiles()
+        public void xuatFiles()
         {
             List<BIEUMAU_M04> lstbm = dal.loadInfo_m04().ToList();
-
-
-            //Model_MauSo04 mbm = new Model_MauSo04();
-            //MessageBox.Show(mbm.DENGHIKHAC.ToString());
             foreach (var item in lstbm)
             {
                 
@@ -554,10 +547,20 @@ namespace PM_QLGTDD.MauSo4a
                 var CLNSHChung = "";
                 var CLNSHRieng = "";
                 var CLNThoiGianSH = "";
-
+                var cua = item.CUA_TD;
+                var ndsd = item.NDQUYENSD_TD;
+                var nguongoc = item.NGUONGOC_TD;
                 if (item.LOAINHAO_NO != null)
                 {
                     LoaiNhaO = item.LOAINHAO_NO;//
+                }
+                if (item.SHRIENG_NO != null)
+                {
+                    NOSDRieng = item.SHRIENG_NO.ToString();//
+                }
+                if (item.SHRIENG_CLN != null)
+                {
+                    CLNSHRieng = item.SHRIENG_CLN.ToString();//
                 }
 
 
@@ -667,14 +670,14 @@ namespace PM_QLGTDD.MauSo4a
                 var NhuCauGhiNo = item.NHU_CAU_GHI_NO;
                 var DeNghiKhac = item.DENGHIKHAC;
 
-                var NgayV = "";
+                var NgayV = " ";
                 if (item.NGAYVIETDON.Value.Day > 10)
                 {
                     NgayV = item.NGAYVIETDON.Value.Day.ToString();
                 }
                 else { NgayV = "0" + item.NGAYVIETDON.Value.Day; }
 
-                var ThangV = "";
+                var ThangV = " ";
                 if (item.NGAYVIETDON.Value.Month > 10)
                 {
                     ThangV = item.NGAYVIETDON.Value.Month.ToString();
@@ -684,63 +687,69 @@ namespace PM_QLGTDD.MauSo4a
                 }
 
                 var NamV = item.NGAYVIETDON.Value.Year;
-
-
-                //CultureInfo cul = new CultureInfo.GetCultureInfo("vi-VN");
-                var wordApp = new Microsoft.Office.Interop.Word.Application();
-                var wordDoc = wordApp.Documents.OpenNoRepairDialog(path);
-
-                ReplaceWord("{KinhGui}", KinhGui, wordDoc);
-                ReplaceWord("{So}", So, wordDoc);
-                ReplaceWord("{QuyenSo}", QuyenSo.ToString(), wordDoc);
-                ReplaceWord("{HoTen_NV}", HoTen_NV.ToUpper(), wordDoc);
-                ReplaceWord("{DiaChi}", DiaChi, wordDoc);
-                ReplaceWord("{ThuaDatSo}", ThuaDatSo.ToString(), wordDoc);
-                ReplaceWord("{ToBanDoSo}", ToBanDoSo, wordDoc);
-                ReplaceWord("{DiaChiThuaDat}", DiaChiThuaDat, wordDoc);
-                ReplaceWord("{DienTich_TD}", DienTich_TD.ToString(), wordDoc);
-                ReplaceWord("{SDChung}", SDChung.ToString(), wordDoc);
-                ReplaceWord("{SDRieng}", SDRieng.ToString(), wordDoc);
-                ReplaceWord("{SDMD}", SDMD, wordDoc);
-                ReplaceWord("{TuThoiDiem}", TuThoiDiem.ToString(), wordDoc);
-                ReplaceWord("{LoaiNhaO}", LoaiNhaO, wordDoc);
-                ReplaceWord("{DTNhaO}", DTNhaO.ToString(), wordDoc);
-                ReplaceWord("{DTSan}", DTSan.ToString(), wordDoc);
-                ReplaceWord("{NOSDChung}", NOSDChung.ToString(), wordDoc);
-                ReplaceWord("{NOSDRieng}", NOSDRieng.ToString(), wordDoc);
-                ReplaceWord("{NOKetCau}", NOKetCau, wordDoc);
-                ReplaceWord("{NOSoTang}", NOSoTang.ToString(), wordDoc);
-                ReplaceWord("{NOThoiHanSH}", NOThoiHanSH, wordDoc);
-                ReplaceWord("{RXSLoaiCay}", RXSLoaiCay, wordDoc);
-                ReplaceWord("{RXSDienTich}", RXSDienTich.ToString(), wordDoc);
-                ReplaceWord("{CLNLoaiCay}", CLNLoaiCay, wordDoc);
-                ReplaceWord("{RXSSHChung}", RXSSHChung.ToString(), wordDoc);
-                ReplaceWord("{RXSSHRieng}", RXSSHRieng.ToString(), wordDoc);
-                ReplaceWord("{RXSThoiGianSH}", RXSThoiGianSH, wordDoc);
-                ReplaceWord("{CLNDienTich}", CLNDienTich.ToString(), wordDoc);
-                ReplaceWord("{CLNSHChung}", CLNSHChung.ToString(), wordDoc);
-                ReplaceWord("{CLNSHRieng}", CLNSHRieng.ToString(), wordDoc);
-                ReplaceWord("{CLNThoiGianSH}", CLNThoiGianSH, wordDoc);
-                ReplaceWord("{GiayToKemTheo}", GiayToKemTheo, wordDoc);
-                ReplaceWord("{NhuCauGhiNo}", NhuCauGhiNo, wordDoc);
-                ReplaceWord("{DeNghiKhac}", DeNghiKhac, wordDoc);
-                ReplaceWord("{NgayV}", NgayV.ToString(), wordDoc);
-                ReplaceWord("{ThangV}", ThangV.ToString(), wordDoc);
-                ReplaceWord("{NamV}", NamV.ToString(), wordDoc);
-                string pathOut = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\Mau04DK"+ So + ".docx";
-                wordDoc.SaveAs2(pathOut);
                 
-                wordApp.Documents.OpenNoRepairDialog(pathOut);
-                return true;
+                Dictionary<string, string> dic = new Dictionary<string, string>();
+                dic.Add("KinhGui", KinhGui);
+                dic.Add("So", So);
+                dic.Add("QuyenSo", QuyenSo.ToString());
+                dic.Add("HoVaTen_NVD", HoTen_NV.ToUpper());
+                dic.Add("HoVaTen", HoTen_NV);
+                dic.Add("DiaChi", DiaChi);
+                dic.Add("ThuaDatSo", ThuaDatSo.ToString());
+                dic.Add("ToBanDoSo", ToBanDoSo);
+                dic.Add("DiaChiThuaDat", DiaChiThuaDat);
+                dic.Add("DienTich_TD", DienTich_TD.ToString());
+                dic.Add("SDChung", SDChung.ToString());
+                dic.Add("SDRieng", SDRieng.ToString());
+                dic.Add("SDMD", SDMD);
+                dic.Add("TuThoiDiem", TuThoiDiem.ToString());
+                dic.Add("LoaiNhaO", LoaiNhaO);
+                dic.Add("DTNhaO", DTNhaO.ToString());
+                dic.Add("DTSan", DTSan.ToString());
+                dic.Add("NOSDChung", NOSDChung.ToString());
+                dic.Add("NOSDRieng", NOSDRieng.ToString());
+                dic.Add("NOKetCau", NOKetCau);
+                dic.Add("NOSoTang", NOSoTang.ToString());
+                dic.Add("NOThoiHanSH", NOThoiHanSH);
+                dic.Add("RXSLoaiCay", RXSLoaiCay);
+                dic.Add("RXSDienTich", RXSDienTich.ToString());
+                dic.Add("CLNLoaiCay", CLNLoaiCay);
+                dic.Add("RXSSHChung", RXSSHChung.ToString());
+                dic.Add("RXSSHRieng", RXSSHRieng.ToString());
+                dic.Add("RXSThoiGianSH", RXSThoiGianSH);
+                dic.Add("CLNDienTich", CLNDienTich.ToString());
+                dic.Add("CLNSHChung", CLNSHChung.ToString());
+                
+                dic.Add("CLNSHRieng", CLNSHRieng.ToString());
+                dic.Add("CLNThoiGianSH", CLNThoiGianSH);
+                dic.Add("GiayToKemTheo", GiayToKemTheo);
+                dic.Add("NhuCauGhiNo", NhuCauGhiNo);
+                dic.Add("DeNghiKhac", DeNghiKhac);
+                dic.Add("NgayV", NgayV.ToString());
+                dic.Add("ThangV", ThangV.ToString());
+                dic.Add("NamV", NamV.ToString());
+                dic.Add("cua", cua);
+                dic.Add("NguonGoc", nguongoc);
+                dic.Add("THDNSD", THDNSD);
+                dic.Add("Noidungsd", ndsd);
+
+                //dic.Add("ht", "Nguyễn Nhật Lâm".ToUpper());
+                string path = System.Windows.Forms.Application.StartupPath + "/template_out/MauSo4a.dotx";
+                //string pathOut = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\Mau04DK"+ So + ".docx";
+                Word w = new Word(path, true);
+                // In các Field
+                w.WriteFields(dic);
+                //wordDoc.SaveAs2(pathOut);
+
             }
-            return false;
         }
 
-        public void ReplaceWord(string str, string text, Microsoft.Office.Interop.Word.Document wdc)
-        {
-            var rag = wdc.Content;
-            rag.Find.ClearFormatting();
-            rag.Find.Execute(FindText: str, ReplaceWith: text);
-        }
+        //public void ReplaceWord(string str, string text, Microsoft.Office.Interop.Word.Document wdc)
+        //{
+        //    var rag = wdc.Content;
+        //    rag.Find.ClearFormatting();
+        //    rag.Find.Execute(FindText: str, ReplaceWith: text);
+        //}
+
     }
 }

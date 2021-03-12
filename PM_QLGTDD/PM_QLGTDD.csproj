@@ -81,6 +81,7 @@
     <Compile Include="frm_Main.Designer.cs">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Library\Word.cs" />
     <Compile Include="MauSo4a\DAL_saveDB_M04.cs" />
     <Compile Include="MauSo4a\Model_MauSo04.cs" />
     <Compile Include="MauSo4a\UF_MauSo4a.cs">

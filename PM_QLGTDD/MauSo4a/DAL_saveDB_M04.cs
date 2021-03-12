@@ -32,10 +32,7 @@ namespace PM_QLGTDD.MauSo4a
                 {
                     _bm.DT_RSX = bm.DT_RSX;
                 }
-                if( bm.DT_TD != 0)
-                {
-                    _bm.DT_TD = bm.DT_TD;
-                }
+               
                 if (bm.SDCHUNG_RSX != 0)
                 {
                     _bm.SDCHUNG_RSX = bm.SDCHUNG_RSX;
@@ -51,6 +48,10 @@ namespace PM_QLGTDD.MauSo4a
                 if (bm.SHCHUNG_NO != 0)
                 {
                     _bm.SHCHUNG_NO = bm.SHCHUNG_NO;
+                }
+                if (bm.SHRIENG_NO != 0)
+                {
+                    _bm.SHRIENG_NO = bm.SHRIENG_NO;
                 }
                 if (bm.THOIHANSDDEN_CLN != "0")
                 {
@@ -84,7 +85,9 @@ namespace PM_QLGTDD.MauSo4a
                 {
                     _bm.SOTANG_NO = bm.SOTANG_NO;
                 }
+                _bm.DT_TD = bm.DT_TD;
                 _bm.SHRIENG_TD = bm.SHRIENG_TD;
+                _bm.SHCHUNG_TD = bm.SHCHUNG_TD;
                 _bm.DENGHIKHAC = bm.DENGHIKHAC;
                 _bm.DIACHI_NVD = bm.DIACHI_NVD;
                 _bm.DIACHI_THUADAT = bm.DIACHI_THUADAT;
@@ -97,7 +100,7 @@ namespace PM_QLGTDD.MauSo4a
                 _bm.QUYENSO = bm.QUYENSO;
                 _bm.SO = bm.SO;
                 _bm.THOIHANDENGHISD_TD = bm.THOIHANDENGHISD_TD;
-                _bm.THUADATDANGKY = bm.THUADATDANGKY;
+   
                 _bm.THUADATSO = bm.THUADATSO;
                 _bm.TOBANDOSO = bm.TOBANDOSO;
                 _bm.TT_XOA = bm.TT_XOA;

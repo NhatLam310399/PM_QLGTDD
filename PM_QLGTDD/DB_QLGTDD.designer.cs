@@ -111,8 +111,6 @@ namespace PM_QLGTDD
 		
 		private string _DIACHI_NVD;
 		
-		private string _THUADATDANGKY;
-		
 		private System.Nullable<int> _THUADATSO;
 		
 		private string _TOBANDOSO;
@@ -207,8 +205,6 @@ namespace PM_QLGTDD
     partial void OnKINHGUIChanged();
     partial void OnDIACHI_NVDChanging(string value);
     partial void OnDIACHI_NVDChanged();
-    partial void OnTHUADATDANGKYChanging(string value);
-    partial void OnTHUADATDANGKYChanged();
     partial void OnTHUADATSOChanging(System.Nullable<int> value);
     partial void OnTHUADATSOChanged();
     partial void OnTOBANDOSOChanging(string value);
@@ -485,26 +481,6 @@ namespace PM_QLGTDD
 					this._DIACHI_NVD = value;
 					this.SendPropertyChanged("DIACHI_NVD");
 					this.OnDIACHI_NVDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_THUADATDANGKY", DbType="NVarChar(500)")]
-		public string THUADATDANGKY
-		{
-			get
-			{
-				return this._THUADATDANGKY;
-			}
-			set
-			{
-				if ((this._THUADATDANGKY != value))
-				{
-					this.OnTHUADATDANGKYChanging(value);
-					this.SendPropertyChanging();
-					this._THUADATDANGKY = value;
-					this.SendPropertyChanged("THUADATDANGKY");
-					this.OnTHUADATDANGKYChanged();
 				}
 			}
 		}

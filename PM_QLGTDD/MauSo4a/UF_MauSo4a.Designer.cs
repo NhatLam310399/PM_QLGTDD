@@ -118,10 +118,6 @@ namespace PM_QLGTDD.MauSo4a
             this.kryptonCheckBox1 = new ComponentFactory.Krypton.Toolkit.KryptonCheckBox();
             this.kryptonCheckBox2 = new ComponentFactory.Krypton.Toolkit.KryptonCheckBox();
             this.tableLayoutPanel23 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel24 = new System.Windows.Forms.TableLayoutPanel();
-            this.label20 = new System.Windows.Forms.Label();
-            this.M04_txt_ThuaDatDK = new System.Windows.Forms.TextBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel25 = new System.Windows.Forms.TableLayoutPanel();
             this.label21 = new System.Windows.Forms.Label();
@@ -249,6 +245,7 @@ namespace PM_QLGTDD.MauSo4a
             this.M04_txt_nhuCauGhiNo = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.M04_btn_Luu = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel9.SuspendLayout();
             this.tableLayoutPanel52.SuspendLayout();
             this.tableLayoutPanel53.SuspendLayout();
@@ -293,8 +290,6 @@ namespace PM_QLGTDD.MauSo4a
             this.panel10.SuspendLayout();
             this.tableLayoutPanel22.SuspendLayout();
             this.tableLayoutPanel23.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.tableLayoutPanel24.SuspendLayout();
             this.panel12.SuspendLayout();
             this.tableLayoutPanel25.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -367,43 +362,45 @@ namespace PM_QLGTDD.MauSo4a
             this.tableLayoutPanel9.BackColor = System.Drawing.SystemColors.Control;
             this.tableLayoutPanel9.ColumnCount = 1;
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel52, 0, 11);
+            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel52, 0, 12);
             this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel10, 0, 0);
             this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel16, 0, 1);
             this.tableLayoutPanel9.Controls.Add(this.label12, 0, 2);
             this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel18, 0, 3);
             this.tableLayoutPanel9.Controls.Add(this.label15, 0, 4);
             this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel21, 0, 5);
-            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel23, 0, 6);
-            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel28, 0, 7);
-            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel34, 0, 8);
-            this.tableLayoutPanel9.Controls.Add(this.label34, 0, 9);
-            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel42, 0, 10);
-            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel64, 0, 12);
-            this.tableLayoutPanel9.Controls.Add(this.panel45, 0, 14);
-            this.tableLayoutPanel9.Controls.Add(this.panel46, 0, 16);
-            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel1, 0, 17);
+            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel23, 0, 7);
+            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel28, 0, 8);
+            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel34, 0, 9);
+            this.tableLayoutPanel9.Controls.Add(this.label34, 0, 10);
+            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel42, 0, 11);
+            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel64, 0, 13);
+            this.tableLayoutPanel9.Controls.Add(this.panel45, 0, 15);
+            this.tableLayoutPanel9.Controls.Add(this.panel46, 0, 17);
+            this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel1, 0, 18);
+            this.tableLayoutPanel9.Controls.Add(this.label1, 0, 6);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel9.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(10);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.Padding = new System.Windows.Forms.Padding(5);
-            this.tableLayoutPanel9.RowCount = 18;
+            this.tableLayoutPanel9.RowCount = 19;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3F));
@@ -424,7 +421,7 @@ namespace PM_QLGTDD.MauSo4a
             this.tableLayoutPanel52.Controls.Add(this.label44, 0, 0);
             this.tableLayoutPanel52.Controls.Add(this.tableLayoutPanel53, 0, 1);
             this.tableLayoutPanel52.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel52.Location = new System.Drawing.Point(8, 973);
+            this.tableLayoutPanel52.Location = new System.Drawing.Point(8, 1004);
             this.tableLayoutPanel52.Name = "tableLayoutPanel52";
             this.tableLayoutPanel52.RowCount = 2;
             this.tableLayoutPanel52.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -1579,20 +1576,16 @@ namespace PM_QLGTDD.MauSo4a
             // 
             // tableLayoutPanel23
             // 
-            this.tableLayoutPanel23.ColumnCount = 4;
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.68041F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.5567F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.5567F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.20618F));
+            this.tableLayoutPanel23.ColumnCount = 3;
+            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel23.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel23.Controls.Add(this.panel11, 0, 0);
-            this.tableLayoutPanel23.Controls.Add(this.panel12, 1, 0);
-            this.tableLayoutPanel23.Controls.Add(this.panel13, 2, 0);
-            this.tableLayoutPanel23.Controls.Add(this.panel14, 3, 0);
+            this.tableLayoutPanel23.Controls.Add(this.panel12, 0, 0);
+            this.tableLayoutPanel23.Controls.Add(this.panel13, 1, 0);
+            this.tableLayoutPanel23.Controls.Add(this.panel14, 2, 0);
             this.tableLayoutPanel23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel23.Location = new System.Drawing.Point(8, 495);
+            this.tableLayoutPanel23.Location = new System.Drawing.Point(8, 526);
             this.tableLayoutPanel23.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.tableLayoutPanel23.Name = "tableLayoutPanel23";
             this.tableLayoutPanel23.RowCount = 1;
@@ -1600,67 +1593,16 @@ namespace PM_QLGTDD.MauSo4a
             this.tableLayoutPanel23.Size = new System.Drawing.Size(1184, 111);
             this.tableLayoutPanel23.TabIndex = 6;
             // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.White;
-            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.tableLayoutPanel24);
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel11.Location = new System.Drawing.Point(0, 0);
-            this.panel11.Margin = new System.Windows.Forms.Padding(0);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(268, 111);
-            this.panel11.TabIndex = 0;
-            // 
-            // tableLayoutPanel24
-            // 
-            this.tableLayoutPanel24.ColumnCount = 1;
-            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel24.Controls.Add(this.label20, 0, 0);
-            this.tableLayoutPanel24.Controls.Add(this.M04_txt_ThuaDatDK, 0, 1);
-            this.tableLayoutPanel24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel24.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel24.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.tableLayoutPanel24.Name = "tableLayoutPanel24";
-            this.tableLayoutPanel24.RowCount = 2;
-            this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel24.Size = new System.Drawing.Size(266, 109);
-            this.tableLayoutPanel24.TabIndex = 0;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label20.Location = new System.Drawing.Point(3, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(260, 32);
-            this.label20.TabIndex = 0;
-            this.label20.Text = "Thửa đất đăng ký (2)";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // M04_txt_ThuaDatDK
-            // 
-            this.M04_txt_ThuaDatDK.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.M04_txt_ThuaDatDK.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.M04_txt_ThuaDatDK.Location = new System.Drawing.Point(3, 35);
-            this.M04_txt_ThuaDatDK.Multiline = true;
-            this.M04_txt_ThuaDatDK.Name = "M04_txt_ThuaDatDK";
-            this.M04_txt_ThuaDatDK.Size = new System.Drawing.Size(260, 71);
-            this.M04_txt_ThuaDatDK.TabIndex = 1;
-            this.M04_txt_ThuaDatDK.MouseClick += new System.Windows.Forms.MouseEventHandler(this.M04_txt_ThuaDatDK_MouseClick);
-            // 
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.White;
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Controls.Add(this.tableLayoutPanel25);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel12.Location = new System.Drawing.Point(268, 0);
+            this.panel12.Location = new System.Drawing.Point(0, 0);
             this.panel12.Margin = new System.Windows.Forms.Padding(0);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(219, 111);
+            this.panel12.Size = new System.Drawing.Size(236, 111);
             this.panel12.TabIndex = 0;
             // 
             // tableLayoutPanel25
@@ -1677,7 +1619,7 @@ namespace PM_QLGTDD.MauSo4a
             this.tableLayoutPanel25.RowCount = 2;
             this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel25.Size = new System.Drawing.Size(217, 109);
+            this.tableLayoutPanel25.Size = new System.Drawing.Size(234, 109);
             this.tableLayoutPanel25.TabIndex = 0;
             // 
             // label21
@@ -1686,19 +1628,20 @@ namespace PM_QLGTDD.MauSo4a
             this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label21.Location = new System.Drawing.Point(3, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(211, 32);
+            this.label21.Size = new System.Drawing.Size(228, 32);
             this.label21.TabIndex = 0;
             this.label21.Text = "Thửa đất số";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // M04_txt_thuaDatSo
             // 
+            this.M04_txt_thuaDatSo.BackColor = System.Drawing.Color.White;
             this.M04_txt_thuaDatSo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.M04_txt_thuaDatSo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.M04_txt_thuaDatSo.Location = new System.Drawing.Point(3, 35);
             this.M04_txt_thuaDatSo.Multiline = true;
             this.M04_txt_thuaDatSo.Name = "M04_txt_thuaDatSo";
-            this.M04_txt_thuaDatSo.Size = new System.Drawing.Size(211, 71);
+            this.M04_txt_thuaDatSo.Size = new System.Drawing.Size(228, 71);
             this.M04_txt_thuaDatSo.TabIndex = 1;
             this.M04_txt_thuaDatSo.MouseClick += new System.Windows.Forms.MouseEventHandler(this.M04_txt_thuaDatSo_MouseClick);
             // 
@@ -1708,10 +1651,10 @@ namespace PM_QLGTDD.MauSo4a
             this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel13.Controls.Add(this.tableLayoutPanel26);
             this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel13.Location = new System.Drawing.Point(487, 0);
+            this.panel13.Location = new System.Drawing.Point(236, 0);
             this.panel13.Margin = new System.Windows.Forms.Padding(0);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(219, 111);
+            this.panel13.Size = new System.Drawing.Size(236, 111);
             this.panel13.TabIndex = 0;
             // 
             // tableLayoutPanel26
@@ -1728,7 +1671,7 @@ namespace PM_QLGTDD.MauSo4a
             this.tableLayoutPanel26.RowCount = 2;
             this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel26.Size = new System.Drawing.Size(217, 109);
+            this.tableLayoutPanel26.Size = new System.Drawing.Size(234, 109);
             this.tableLayoutPanel26.TabIndex = 0;
             // 
             // label23
@@ -1737,7 +1680,7 @@ namespace PM_QLGTDD.MauSo4a
             this.label23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label23.Location = new System.Drawing.Point(3, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(211, 32);
+            this.label23.Size = new System.Drawing.Size(228, 32);
             this.label23.TabIndex = 0;
             this.label23.Text = "Tờ bản đồ số";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1749,7 +1692,7 @@ namespace PM_QLGTDD.MauSo4a
             this.M04_txt_toBanDoSo.Location = new System.Drawing.Point(3, 35);
             this.M04_txt_toBanDoSo.Multiline = true;
             this.M04_txt_toBanDoSo.Name = "M04_txt_toBanDoSo";
-            this.M04_txt_toBanDoSo.Size = new System.Drawing.Size(211, 71);
+            this.M04_txt_toBanDoSo.Size = new System.Drawing.Size(228, 71);
             this.M04_txt_toBanDoSo.TabIndex = 1;
             this.M04_txt_toBanDoSo.MouseClick += new System.Windows.Forms.MouseEventHandler(this.M04_txt_toBanDoSo_MouseClick);
             // 
@@ -1759,10 +1702,10 @@ namespace PM_QLGTDD.MauSo4a
             this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel14.Controls.Add(this.tableLayoutPanel27);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel14.Location = new System.Drawing.Point(706, 0);
+            this.panel14.Location = new System.Drawing.Point(472, 0);
             this.panel14.Margin = new System.Windows.Forms.Padding(0);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(478, 111);
+            this.panel14.Size = new System.Drawing.Size(712, 111);
             this.panel14.TabIndex = 0;
             // 
             // tableLayoutPanel27
@@ -1779,7 +1722,7 @@ namespace PM_QLGTDD.MauSo4a
             this.tableLayoutPanel27.RowCount = 2;
             this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel27.Size = new System.Drawing.Size(476, 109);
+            this.tableLayoutPanel27.Size = new System.Drawing.Size(710, 109);
             this.tableLayoutPanel27.TabIndex = 0;
             // 
             // label24
@@ -1788,7 +1731,7 @@ namespace PM_QLGTDD.MauSo4a
             this.label24.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label24.Location = new System.Drawing.Point(3, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(470, 32);
+            this.label24.Size = new System.Drawing.Size(704, 32);
             this.label24.TabIndex = 0;
             this.label24.Text = "Địa chỉ tại";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1800,7 +1743,7 @@ namespace PM_QLGTDD.MauSo4a
             this.M04_txt_diaChiDat.Location = new System.Drawing.Point(3, 35);
             this.M04_txt_diaChiDat.Multiline = true;
             this.M04_txt_diaChiDat.Name = "M04_txt_diaChiDat";
-            this.M04_txt_diaChiDat.Size = new System.Drawing.Size(470, 71);
+            this.M04_txt_diaChiDat.Size = new System.Drawing.Size(704, 71);
             this.M04_txt_diaChiDat.TabIndex = 1;
             this.M04_txt_diaChiDat.MouseClick += new System.Windows.Forms.MouseEventHandler(this.M04_txt_diaChiDat_MouseClick);
             // 
@@ -1822,7 +1765,7 @@ namespace PM_QLGTDD.MauSo4a
             this.tableLayoutPanel28.Controls.Add(this.panel18, 3, 0);
             this.tableLayoutPanel28.Controls.Add(this.tableLayoutPanel33, 4, 0);
             this.tableLayoutPanel28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel28.Location = new System.Drawing.Point(8, 606);
+            this.tableLayoutPanel28.Location = new System.Drawing.Point(8, 637);
             this.tableLayoutPanel28.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.tableLayoutPanel28.Name = "tableLayoutPanel28";
             this.tableLayoutPanel28.RowCount = 1;
@@ -2116,7 +2059,7 @@ namespace PM_QLGTDD.MauSo4a
             this.tableLayoutPanel34.Controls.Add(this.panel24, 4, 0);
             this.tableLayoutPanel34.Controls.Add(this.tableLayoutPanel35, 0, 0);
             this.tableLayoutPanel34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel34.Location = new System.Drawing.Point(8, 717);
+            this.tableLayoutPanel34.Location = new System.Drawing.Point(8, 748);
             this.tableLayoutPanel34.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.tableLayoutPanel34.Name = "tableLayoutPanel34";
             this.tableLayoutPanel34.RowCount = 1;
@@ -2399,7 +2342,7 @@ namespace PM_QLGTDD.MauSo4a
             this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label34.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(123)))), ((int)(((byte)(73)))));
-            this.label34.Location = new System.Drawing.Point(8, 828);
+            this.label34.Location = new System.Drawing.Point(8, 859);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(1184, 31);
             this.label34.TabIndex = 7;
@@ -2420,7 +2363,7 @@ namespace PM_QLGTDD.MauSo4a
             this.tableLayoutPanel42.Controls.Add(this.label35, 0, 0);
             this.tableLayoutPanel42.Controls.Add(this.tableLayoutPanel43, 0, 1);
             this.tableLayoutPanel42.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel42.Location = new System.Drawing.Point(8, 862);
+            this.tableLayoutPanel42.Location = new System.Drawing.Point(8, 893);
             this.tableLayoutPanel42.Name = "tableLayoutPanel42";
             this.tableLayoutPanel42.RowCount = 2;
             this.tableLayoutPanel42.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -2896,7 +2839,7 @@ namespace PM_QLGTDD.MauSo4a
             this.tableLayoutPanel64.Controls.Add(this.label55, 0, 0);
             this.tableLayoutPanel64.Controls.Add(this.tableLayoutPanel65, 0, 1);
             this.tableLayoutPanel64.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel64.Location = new System.Drawing.Point(8, 1084);
+            this.tableLayoutPanel64.Location = new System.Drawing.Point(8, 1115);
             this.tableLayoutPanel64.Name = "tableLayoutPanel64";
             this.tableLayoutPanel64.RowCount = 2;
             this.tableLayoutPanel64.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -3202,9 +3145,9 @@ namespace PM_QLGTDD.MauSo4a
             this.panel45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel45.Controls.Add(this.tableLayoutPanel68);
             this.panel45.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel45.Location = new System.Drawing.Point(8, 1226);
+            this.panel45.Location = new System.Drawing.Point(8, 1257);
             this.panel45.Name = "panel45";
-            this.panel45.Size = new System.Drawing.Size(1184, 153);
+            this.panel45.Size = new System.Drawing.Size(1184, 121);
             this.panel45.TabIndex = 11;
             // 
             // tableLayoutPanel68
@@ -3221,7 +3164,7 @@ namespace PM_QLGTDD.MauSo4a
             this.tableLayoutPanel68.RowCount = 2;
             this.tableLayoutPanel68.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel68.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel68.Size = new System.Drawing.Size(1182, 151);
+            this.tableLayoutPanel68.Size = new System.Drawing.Size(1182, 119);
             this.tableLayoutPanel68.TabIndex = 0;
             // 
             // label58
@@ -3230,7 +3173,7 @@ namespace PM_QLGTDD.MauSo4a
             this.label58.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label58.Location = new System.Drawing.Point(3, 0);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(1176, 30);
+            this.label58.Size = new System.Drawing.Size(1176, 23);
             this.label58.TabIndex = 0;
             this.label58.Text = "Những giấy từ nộp kèm theo";
             this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3239,11 +3182,11 @@ namespace PM_QLGTDD.MauSo4a
             // 
             this.Mau04_txt_giayTokemTheo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Mau04_txt_giayTokemTheo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mau04_txt_giayTokemTheo.Location = new System.Drawing.Point(0, 30);
+            this.Mau04_txt_giayTokemTheo.Location = new System.Drawing.Point(0, 23);
             this.Mau04_txt_giayTokemTheo.Margin = new System.Windows.Forms.Padding(0);
             this.Mau04_txt_giayTokemTheo.Multiline = true;
             this.Mau04_txt_giayTokemTheo.Name = "Mau04_txt_giayTokemTheo";
-            this.Mau04_txt_giayTokemTheo.Size = new System.Drawing.Size(1182, 121);
+            this.Mau04_txt_giayTokemTheo.Size = new System.Drawing.Size(1182, 96);
             this.Mau04_txt_giayTokemTheo.TabIndex = 2;
             this.Mau04_txt_giayTokemTheo.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Mau04_txt_giayTokemTheo_MouseClick);
             // 
@@ -3253,7 +3196,7 @@ namespace PM_QLGTDD.MauSo4a
             this.panel46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel46.Controls.Add(this.tableLayoutPanel69);
             this.panel46.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel46.Location = new System.Drawing.Point(8, 1416);
+            this.panel46.Location = new System.Drawing.Point(8, 1415);
             this.panel46.Name = "panel46";
             this.panel46.Size = new System.Drawing.Size(1184, 121);
             this.panel46.TabIndex = 11;
@@ -3339,13 +3282,13 @@ namespace PM_QLGTDD.MauSo4a
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.Controls.Add(this.M04_btn_Luu, 9, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(5, 1540);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(5, 1539);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1190, 55);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1190, 56);
             this.tableLayoutPanel1.TabIndex = 12;
             // 
             // M04_btn_Luu
@@ -3363,12 +3306,25 @@ namespace PM_QLGTDD.MauSo4a
             this.M04_btn_Luu.Location = new System.Drawing.Point(1071, 0);
             this.M04_btn_Luu.Margin = new System.Windows.Forms.Padding(0);
             this.M04_btn_Luu.Name = "M04_btn_Luu";
-            this.M04_btn_Luu.Size = new System.Drawing.Size(119, 55);
+            this.M04_btn_Luu.Size = new System.Drawing.Size(119, 56);
             this.M04_btn_Luu.TabIndex = 3;
             this.M04_btn_Luu.Text = "Lưu";
             this.M04_btn_Luu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.M04_btn_Luu.UseVisualStyleBackColor = false;
             this.M04_btn_Luu.Click += new System.EventHandler(this.M04_btn_Luu_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(123)))), ((int)(((byte)(73)))));
+            this.label1.Location = new System.Drawing.Point(8, 495);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1184, 31);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "THỬA ĐẤT ĐĂNG KÝ";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // UF_MauSo4a
             // 
@@ -3443,9 +3399,6 @@ namespace PM_QLGTDD.MauSo4a
             this.tableLayoutPanel22.ResumeLayout(false);
             this.tableLayoutPanel22.PerformLayout();
             this.tableLayoutPanel23.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.tableLayoutPanel24.ResumeLayout(false);
-            this.tableLayoutPanel24.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.tableLayoutPanel25.ResumeLayout(false);
             this.tableLayoutPanel25.PerformLayout();
@@ -3628,10 +3581,6 @@ namespace PM_QLGTDD.MauSo4a
         private System.Windows.Forms.Label M04_DN_lbl_Loai2DK;
         private System.Windows.Forms.Label M04_DN_lbl_Loai2CapCN;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel23;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel24;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox M04_txt_ThuaDatDK;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel25;
         private System.Windows.Forms.Label label21;
@@ -3767,5 +3716,6 @@ namespace PM_QLGTDD.MauSo4a
         private System.Windows.Forms.TextBox M04_txt_tgdenghiSDD;
         private ComponentFactory.Krypton.Toolkit.KryptonCheckBox kryptonCheckBox1;
         private ComponentFactory.Krypton.Toolkit.KryptonCheckBox kryptonCheckBox2;
+        private System.Windows.Forms.Label label1;
     }
 }
