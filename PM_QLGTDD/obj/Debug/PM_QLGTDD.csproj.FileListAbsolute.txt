@@ -20,4 +20,11 @@ E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\obj\Debug\PM_QLGTDD.csproj.CoreCompil
 E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\obj\Debug\PM_QLGTDD.csproj.CopyComplete
 E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\obj\Debug\PM_QLGTDD.exe
 E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\obj\Debug\PM_QLGTDD.pdb
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\bin\Debug\Syncfusion.Compression.Base.dll
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\bin\Debug\Syncfusion.DocIO.Base.dll
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\bin\Debug\Syncfusion.XlsIO.Base.dll
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\bin\Debug\PM_QLGTDD.exe.manifest
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\bin\Debug\PM_QLGTDD.application
 E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\obj\Debug\PM_QLGTDD.csprojAssemblyReference.cache
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\obj\Debug\PM_QLGTDD.exe.manifest
+E:\CODE\Project_QLGTDD\PM_QLGTDD\PM_QLGTDD\obj\Debug\PM_QLGTDD.application

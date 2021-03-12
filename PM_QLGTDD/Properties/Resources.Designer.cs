@@ -73,6 +73,16 @@ namespace PM_QLGTDD.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arrow_lèt {
+            get {
+                object obj = ResourceManager.GetObject("arrow_lèt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ey {
             get {
                 object obj = ResourceManager.GetObject("ey", resourceCulture);

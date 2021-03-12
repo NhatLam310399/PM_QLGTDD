@@ -719,7 +719,6 @@ namespace PM_QLGTDD.MauSo4a
                 dic.Add("RXSThoiGianSH", RXSThoiGianSH);
                 dic.Add("CLNDienTich", CLNDienTich.ToString());
                 dic.Add("CLNSHChung", CLNSHChung.ToString());
-                
                 dic.Add("CLNSHRieng", CLNSHRieng.ToString());
                 dic.Add("CLNThoiGianSH", CLNThoiGianSH);
                 dic.Add("GiayToKemTheo", GiayToKemTheo);
@@ -733,23 +732,15 @@ namespace PM_QLGTDD.MauSo4a
                 dic.Add("THDNSD", THDNSD);
                 dic.Add("Noidungsd", ndsd);
 
-                //dic.Add("ht", "Nguyễn Nhật Lâm".ToUpper());
-                string path = System.Windows.Forms.Application.StartupPath + "/template_out/MauSo4a.dotx";
-                //string pathOut = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\Mau04DK"+ So + ".docx";
+                string path = System.Windows.Forms.Application.StartupPath + "/template_out/MauSo4a.dotx"; 
                 Word w = new Word(path, true);
-                // In các Field
                 w.WriteFields(dic);
-                //wordDoc.SaveAs2(pathOut);
+
 
             }
         }
 
-        //public void ReplaceWord(string str, string text, Microsoft.Office.Interop.Word.Document wdc)
-        //{
-        //    var rag = wdc.Content;
-        //    rag.Find.ClearFormatting();
-        //    rag.Find.Execute(FindText: str, ReplaceWith: text);
-        //}
+
 
     }
 }

@@ -73,7 +73,6 @@ namespace PM_QLGTDD
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.axAcroPDF1 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
@@ -84,7 +83,6 @@ namespace PM_QLGTDD
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.axAcroPDF2 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
@@ -95,7 +93,6 @@ namespace PM_QLGTDD
             this.button21 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.axAcroPDF3 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
@@ -104,7 +101,6 @@ namespace PM_QLGTDD
             this.M04_btn_xem = new System.Windows.Forms.Button();
             this.M04_btn_xoa = new System.Windows.Forms.Button();
             this.pnl_container_M04 = new System.Windows.Forms.Panel();
-            this.filesPDF_mau04 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
@@ -115,7 +111,6 @@ namespace PM_QLGTDD
             this.button27 = new System.Windows.Forms.Button();
             this.button28 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.axAcroPDF4 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
@@ -126,7 +121,6 @@ namespace PM_QLGTDD
             this.button33 = new System.Windows.Forms.Button();
             this.button34 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.axAcroPDF5 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
@@ -137,7 +131,6 @@ namespace PM_QLGTDD
             this.button39 = new System.Windows.Forms.Button();
             this.button40 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.axAcroPDF6 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
@@ -148,7 +141,6 @@ namespace PM_QLGTDD
             this.button45 = new System.Windows.Forms.Button();
             this.button46 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.axAcroPDF7 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel10 = new System.Windows.Forms.FlowLayoutPanel();
@@ -159,7 +151,6 @@ namespace PM_QLGTDD
             this.button51 = new System.Windows.Forms.Button();
             this.button52 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.axAcroPDF8 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage11 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel11 = new System.Windows.Forms.FlowLayoutPanel();
@@ -170,7 +161,6 @@ namespace PM_QLGTDD
             this.button57 = new System.Windows.Forms.Button();
             this.button58 = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.axAcroPDF9 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage12 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel12 = new System.Windows.Forms.FlowLayoutPanel();
@@ -181,7 +171,6 @@ namespace PM_QLGTDD
             this.button63 = new System.Windows.Forms.Button();
             this.button64 = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.axAcroPDF10 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage13 = new System.Windows.Forms.TabPage();
             this.tabPage14 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
@@ -193,7 +182,6 @@ namespace PM_QLGTDD
             this.button69 = new System.Windows.Forms.Button();
             this.button70 = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.axAcroPDF11 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage15 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel14 = new System.Windows.Forms.FlowLayoutPanel();
@@ -204,7 +192,6 @@ namespace PM_QLGTDD
             this.button75 = new System.Windows.Forms.Button();
             this.button76 = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.axAcroPDF12 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage16 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel15 = new System.Windows.Forms.FlowLayoutPanel();
@@ -215,7 +202,6 @@ namespace PM_QLGTDD
             this.button81 = new System.Windows.Forms.Button();
             this.button82 = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.axAcroPDF13 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage17 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel16 = new System.Windows.Forms.FlowLayoutPanel();
@@ -226,7 +212,6 @@ namespace PM_QLGTDD
             this.button87 = new System.Windows.Forms.Button();
             this.button88 = new System.Windows.Forms.Button();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.axAcroPDF14 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage18 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel21 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel17 = new System.Windows.Forms.FlowLayoutPanel();
@@ -237,7 +222,6 @@ namespace PM_QLGTDD
             this.button93 = new System.Windows.Forms.Button();
             this.button94 = new System.Windows.Forms.Button();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.axAcroPDF15 = new AxAcroPDFLib.AxAcroPDF();
             this.tabPage19 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel18 = new System.Windows.Forms.FlowLayoutPanel();
@@ -248,6 +232,23 @@ namespace PM_QLGTDD
             this.button99 = new System.Windows.Forms.Button();
             this.button100 = new System.Windows.Forms.Button();
             this.panel16 = new System.Windows.Forms.Panel();
+            this.M04_btn_quaylai = new System.Windows.Forms.Button();
+            this.axAcroPDF1 = new AxAcroPDFLib.AxAcroPDF();
+            this.axAcroPDF2 = new AxAcroPDFLib.AxAcroPDF();
+            this.axAcroPDF3 = new AxAcroPDFLib.AxAcroPDF();
+            this.filesPDF_mau04 = new AxAcroPDFLib.AxAcroPDF();
+            this.axAcroPDF4 = new AxAcroPDFLib.AxAcroPDF();
+            this.axAcroPDF5 = new AxAcroPDFLib.AxAcroPDF();
+            this.axAcroPDF6 = new AxAcroPDFLib.AxAcroPDF();
+            this.axAcroPDF7 = new AxAcroPDFLib.AxAcroPDF();
+            this.axAcroPDF8 = new AxAcroPDFLib.AxAcroPDF();
+            this.axAcroPDF9 = new AxAcroPDFLib.AxAcroPDF();
+            this.axAcroPDF10 = new AxAcroPDFLib.AxAcroPDF();
+            this.axAcroPDF11 = new AxAcroPDFLib.AxAcroPDF();
+            this.axAcroPDF12 = new AxAcroPDFLib.AxAcroPDF();
+            this.axAcroPDF13 = new AxAcroPDFLib.AxAcroPDF();
+            this.axAcroPDF14 = new AxAcroPDFLib.AxAcroPDF();
+            this.axAcroPDF15 = new AxAcroPDFLib.AxAcroPDF();
             this.axAcroPDF16 = new AxAcroPDFLib.AxAcroPDF();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -265,86 +266,86 @@ namespace PM_QLGTDD
             this.tableLayoutPanel6.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF1)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF2)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF3)).BeginInit();
             this.tabPage5.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             this.pnl_container_M04.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.filesPDF_mau04)).BeginInit();
             this.tabPage6.SuspendLayout();
             this.tableLayoutPanel10.SuspendLayout();
             this.flowLayoutPanel6.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF4)).BeginInit();
             this.tabPage7.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
             this.flowLayoutPanel7.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF5)).BeginInit();
             this.tabPage8.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
             this.flowLayoutPanel8.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF6)).BeginInit();
             this.tabPage9.SuspendLayout();
             this.tableLayoutPanel13.SuspendLayout();
             this.flowLayoutPanel9.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF7)).BeginInit();
             this.tabPage10.SuspendLayout();
             this.tableLayoutPanel14.SuspendLayout();
             this.flowLayoutPanel10.SuspendLayout();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF8)).BeginInit();
             this.tabPage11.SuspendLayout();
             this.tableLayoutPanel15.SuspendLayout();
             this.flowLayoutPanel11.SuspendLayout();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF9)).BeginInit();
             this.tabPage12.SuspendLayout();
             this.tableLayoutPanel16.SuspendLayout();
             this.flowLayoutPanel12.SuspendLayout();
             this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF10)).BeginInit();
             this.tabPage14.SuspendLayout();
             this.tableLayoutPanel17.SuspendLayout();
             this.flowLayoutPanel13.SuspendLayout();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF11)).BeginInit();
             this.tabPage15.SuspendLayout();
             this.tableLayoutPanel18.SuspendLayout();
             this.flowLayoutPanel14.SuspendLayout();
             this.panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF12)).BeginInit();
             this.tabPage16.SuspendLayout();
             this.tableLayoutPanel19.SuspendLayout();
             this.flowLayoutPanel15.SuspendLayout();
             this.panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF13)).BeginInit();
             this.tabPage17.SuspendLayout();
             this.tableLayoutPanel20.SuspendLayout();
             this.flowLayoutPanel16.SuspendLayout();
             this.panel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF14)).BeginInit();
             this.tabPage18.SuspendLayout();
             this.tableLayoutPanel21.SuspendLayout();
             this.flowLayoutPanel17.SuspendLayout();
             this.panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF15)).BeginInit();
             this.tabPage19.SuspendLayout();
             this.tableLayoutPanel22.SuspendLayout();
             this.flowLayoutPanel18.SuspendLayout();
             this.panel16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filesPDF_mau04)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF16)).BeginInit();
             this.SuspendLayout();
             // 
@@ -1031,16 +1032,6 @@ namespace PM_QLGTDD
             this.panel1.Size = new System.Drawing.Size(931, 595);
             this.panel1.TabIndex = 1;
             // 
-            // axAcroPDF1
-            // 
-            this.axAcroPDF1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axAcroPDF1.Enabled = true;
-            this.axAcroPDF1.Location = new System.Drawing.Point(0, 0);
-            this.axAcroPDF1.Name = "axAcroPDF1";
-            this.axAcroPDF1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF1.OcxState")));
-            this.axAcroPDF1.Size = new System.Drawing.Size(931, 595);
-            this.axAcroPDF1.TabIndex = 0;
-            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.tableLayoutPanel7);
@@ -1230,16 +1221,6 @@ namespace PM_QLGTDD
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(935, 600);
             this.panel2.TabIndex = 1;
-            // 
-            // axAcroPDF2
-            // 
-            this.axAcroPDF2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axAcroPDF2.Enabled = true;
-            this.axAcroPDF2.Location = new System.Drawing.Point(0, 0);
-            this.axAcroPDF2.Name = "axAcroPDF2";
-            this.axAcroPDF2.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF2.OcxState")));
-            this.axAcroPDF2.Size = new System.Drawing.Size(935, 600);
-            this.axAcroPDF2.TabIndex = 0;
             // 
             // tabPage4
             // 
@@ -1431,16 +1412,6 @@ namespace PM_QLGTDD
             this.panel3.Size = new System.Drawing.Size(935, 600);
             this.panel3.TabIndex = 1;
             // 
-            // axAcroPDF3
-            // 
-            this.axAcroPDF3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axAcroPDF3.Enabled = true;
-            this.axAcroPDF3.Location = new System.Drawing.Point(0, 0);
-            this.axAcroPDF3.Name = "axAcroPDF3";
-            this.axAcroPDF3.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF3.OcxState")));
-            this.axAcroPDF3.Size = new System.Drawing.Size(935, 600);
-            this.axAcroPDF3.TabIndex = 0;
-            // 
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.tableLayoutPanel8);
@@ -1474,6 +1445,7 @@ namespace PM_QLGTDD
             // flowLayoutPanel3
             // 
             this.flowLayoutPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.flowLayoutPanel3.Controls.Add(this.M04_btn_quaylai);
             this.flowLayoutPanel3.Controls.Add(this.M04_btn_Nhap);
             this.flowLayoutPanel3.Controls.Add(this.M04_btn_sua);
             this.flowLayoutPanel3.Controls.Add(this.M04_btn_xem);
@@ -1496,7 +1468,7 @@ namespace PM_QLGTDD
             this.M04_btn_Nhap.ForeColor = System.Drawing.Color.White;
             this.M04_btn_Nhap.Image = global::PM_QLGTDD.Properties.Resources.icons8_pencil_24__1_;
             this.M04_btn_Nhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.M04_btn_Nhap.Location = new System.Drawing.Point(0, 0);
+            this.M04_btn_Nhap.Location = new System.Drawing.Point(142, 0);
             this.M04_btn_Nhap.Margin = new System.Windows.Forms.Padding(0);
             this.M04_btn_Nhap.MaximumSize = new System.Drawing.Size(142, 70);
             this.M04_btn_Nhap.MinimumSize = new System.Drawing.Size(142, 70);
@@ -1519,7 +1491,7 @@ namespace PM_QLGTDD
             this.M04_btn_sua.ForeColor = System.Drawing.Color.White;
             this.M04_btn_sua.Image = global::PM_QLGTDD.Properties.Resources.f;
             this.M04_btn_sua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.M04_btn_sua.Location = new System.Drawing.Point(142, 0);
+            this.M04_btn_sua.Location = new System.Drawing.Point(284, 0);
             this.M04_btn_sua.Margin = new System.Windows.Forms.Padding(0);
             this.M04_btn_sua.MaximumSize = new System.Drawing.Size(142, 70);
             this.M04_btn_sua.MinimumSize = new System.Drawing.Size(142, 70);
@@ -1529,6 +1501,7 @@ namespace PM_QLGTDD
             this.M04_btn_sua.Text = "Sửa";
             this.M04_btn_sua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.M04_btn_sua.UseVisualStyleBackColor = false;
+            this.M04_btn_sua.Click += new System.EventHandler(this.M04_btn_sua_Click);
             // 
             // M04_btn_xem
             // 
@@ -1541,7 +1514,7 @@ namespace PM_QLGTDD
             this.M04_btn_xem.ForeColor = System.Drawing.Color.White;
             this.M04_btn_xem.Image = global::PM_QLGTDD.Properties.Resources.ey;
             this.M04_btn_xem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.M04_btn_xem.Location = new System.Drawing.Point(284, 0);
+            this.M04_btn_xem.Location = new System.Drawing.Point(426, 0);
             this.M04_btn_xem.Margin = new System.Windows.Forms.Padding(0);
             this.M04_btn_xem.MaximumSize = new System.Drawing.Size(142, 70);
             this.M04_btn_xem.MinimumSize = new System.Drawing.Size(142, 70);
@@ -1564,7 +1537,7 @@ namespace PM_QLGTDD
             this.M04_btn_xoa.ForeColor = System.Drawing.Color.White;
             this.M04_btn_xoa.Image = global::PM_QLGTDD.Properties.Resources.icons8_delete_bin_24;
             this.M04_btn_xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.M04_btn_xoa.Location = new System.Drawing.Point(426, 0);
+            this.M04_btn_xoa.Location = new System.Drawing.Point(568, 0);
             this.M04_btn_xoa.Margin = new System.Windows.Forms.Padding(0);
             this.M04_btn_xoa.MaximumSize = new System.Drawing.Size(142, 70);
             this.M04_btn_xoa.MinimumSize = new System.Drawing.Size(142, 70);
@@ -1586,17 +1559,6 @@ namespace PM_QLGTDD
             this.pnl_container_M04.Name = "pnl_container_M04";
             this.pnl_container_M04.Size = new System.Drawing.Size(935, 600);
             this.pnl_container_M04.TabIndex = 1;
-            // 
-            // filesPDF_mau04
-            // 
-            this.filesPDF_mau04.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.filesPDF_mau04.Enabled = true;
-            this.filesPDF_mau04.Location = new System.Drawing.Point(0, 0);
-            this.filesPDF_mau04.Name = "filesPDF_mau04";
-            this.filesPDF_mau04.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("filesPDF_mau04.OcxState")));
-            this.filesPDF_mau04.Size = new System.Drawing.Size(935, 600);
-            this.filesPDF_mau04.TabIndex = 0;
-            this.filesPDF_mau04.UseWaitCursor = true;
             // 
             // tabPage6
             // 
@@ -1788,16 +1750,6 @@ namespace PM_QLGTDD
             this.panel4.Size = new System.Drawing.Size(935, 600);
             this.panel4.TabIndex = 1;
             // 
-            // axAcroPDF4
-            // 
-            this.axAcroPDF4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axAcroPDF4.Enabled = true;
-            this.axAcroPDF4.Location = new System.Drawing.Point(0, 0);
-            this.axAcroPDF4.Name = "axAcroPDF4";
-            this.axAcroPDF4.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF4.OcxState")));
-            this.axAcroPDF4.Size = new System.Drawing.Size(935, 600);
-            this.axAcroPDF4.TabIndex = 0;
-            // 
             // tabPage7
             // 
             this.tabPage7.Controls.Add(this.tableLayoutPanel11);
@@ -1987,16 +1939,6 @@ namespace PM_QLGTDD
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(935, 600);
             this.panel5.TabIndex = 1;
-            // 
-            // axAcroPDF5
-            // 
-            this.axAcroPDF5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axAcroPDF5.Enabled = true;
-            this.axAcroPDF5.Location = new System.Drawing.Point(0, 0);
-            this.axAcroPDF5.Name = "axAcroPDF5";
-            this.axAcroPDF5.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF5.OcxState")));
-            this.axAcroPDF5.Size = new System.Drawing.Size(935, 600);
-            this.axAcroPDF5.TabIndex = 0;
             // 
             // tabPage8
             // 
@@ -2188,16 +2130,6 @@ namespace PM_QLGTDD
             this.panel6.Size = new System.Drawing.Size(935, 600);
             this.panel6.TabIndex = 1;
             // 
-            // axAcroPDF6
-            // 
-            this.axAcroPDF6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axAcroPDF6.Enabled = true;
-            this.axAcroPDF6.Location = new System.Drawing.Point(0, 0);
-            this.axAcroPDF6.Name = "axAcroPDF6";
-            this.axAcroPDF6.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF6.OcxState")));
-            this.axAcroPDF6.Size = new System.Drawing.Size(935, 600);
-            this.axAcroPDF6.TabIndex = 0;
-            // 
             // tabPage9
             // 
             this.tabPage9.Controls.Add(this.tableLayoutPanel13);
@@ -2387,16 +2319,6 @@ namespace PM_QLGTDD
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(935, 600);
             this.panel7.TabIndex = 1;
-            // 
-            // axAcroPDF7
-            // 
-            this.axAcroPDF7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axAcroPDF7.Enabled = true;
-            this.axAcroPDF7.Location = new System.Drawing.Point(0, 0);
-            this.axAcroPDF7.Name = "axAcroPDF7";
-            this.axAcroPDF7.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF7.OcxState")));
-            this.axAcroPDF7.Size = new System.Drawing.Size(935, 600);
-            this.axAcroPDF7.TabIndex = 0;
             // 
             // tabPage10
             // 
@@ -2588,16 +2510,6 @@ namespace PM_QLGTDD
             this.panel8.Size = new System.Drawing.Size(935, 600);
             this.panel8.TabIndex = 1;
             // 
-            // axAcroPDF8
-            // 
-            this.axAcroPDF8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axAcroPDF8.Enabled = true;
-            this.axAcroPDF8.Location = new System.Drawing.Point(0, 0);
-            this.axAcroPDF8.Name = "axAcroPDF8";
-            this.axAcroPDF8.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF8.OcxState")));
-            this.axAcroPDF8.Size = new System.Drawing.Size(935, 600);
-            this.axAcroPDF8.TabIndex = 0;
-            // 
             // tabPage11
             // 
             this.tabPage11.Controls.Add(this.tableLayoutPanel15);
@@ -2788,16 +2700,6 @@ namespace PM_QLGTDD
             this.panel9.Size = new System.Drawing.Size(935, 600);
             this.panel9.TabIndex = 1;
             // 
-            // axAcroPDF9
-            // 
-            this.axAcroPDF9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axAcroPDF9.Enabled = true;
-            this.axAcroPDF9.Location = new System.Drawing.Point(0, 0);
-            this.axAcroPDF9.Name = "axAcroPDF9";
-            this.axAcroPDF9.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF9.OcxState")));
-            this.axAcroPDF9.Size = new System.Drawing.Size(935, 600);
-            this.axAcroPDF9.TabIndex = 0;
-            // 
             // tabPage12
             // 
             this.tabPage12.Controls.Add(this.tableLayoutPanel16);
@@ -2987,16 +2889,6 @@ namespace PM_QLGTDD
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(935, 600);
             this.panel10.TabIndex = 1;
-            // 
-            // axAcroPDF10
-            // 
-            this.axAcroPDF10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axAcroPDF10.Enabled = true;
-            this.axAcroPDF10.Location = new System.Drawing.Point(0, 0);
-            this.axAcroPDF10.Name = "axAcroPDF10";
-            this.axAcroPDF10.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF10.OcxState")));
-            this.axAcroPDF10.Size = new System.Drawing.Size(935, 600);
-            this.axAcroPDF10.TabIndex = 0;
             // 
             // tabPage13
             // 
@@ -3198,16 +3090,6 @@ namespace PM_QLGTDD
             this.panel11.Size = new System.Drawing.Size(935, 600);
             this.panel11.TabIndex = 1;
             // 
-            // axAcroPDF11
-            // 
-            this.axAcroPDF11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axAcroPDF11.Enabled = true;
-            this.axAcroPDF11.Location = new System.Drawing.Point(0, 0);
-            this.axAcroPDF11.Name = "axAcroPDF11";
-            this.axAcroPDF11.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF11.OcxState")));
-            this.axAcroPDF11.Size = new System.Drawing.Size(935, 600);
-            this.axAcroPDF11.TabIndex = 0;
-            // 
             // tabPage15
             // 
             this.tabPage15.Controls.Add(this.tableLayoutPanel18);
@@ -3397,16 +3279,6 @@ namespace PM_QLGTDD
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(935, 600);
             this.panel12.TabIndex = 1;
-            // 
-            // axAcroPDF12
-            // 
-            this.axAcroPDF12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axAcroPDF12.Enabled = true;
-            this.axAcroPDF12.Location = new System.Drawing.Point(0, 0);
-            this.axAcroPDF12.Name = "axAcroPDF12";
-            this.axAcroPDF12.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF12.OcxState")));
-            this.axAcroPDF12.Size = new System.Drawing.Size(935, 600);
-            this.axAcroPDF12.TabIndex = 0;
             // 
             // tabPage16
             // 
@@ -3598,16 +3470,6 @@ namespace PM_QLGTDD
             this.panel13.Size = new System.Drawing.Size(935, 600);
             this.panel13.TabIndex = 1;
             // 
-            // axAcroPDF13
-            // 
-            this.axAcroPDF13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axAcroPDF13.Enabled = true;
-            this.axAcroPDF13.Location = new System.Drawing.Point(0, 0);
-            this.axAcroPDF13.Name = "axAcroPDF13";
-            this.axAcroPDF13.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF13.OcxState")));
-            this.axAcroPDF13.Size = new System.Drawing.Size(935, 600);
-            this.axAcroPDF13.TabIndex = 0;
-            // 
             // tabPage17
             // 
             this.tabPage17.Controls.Add(this.tableLayoutPanel20);
@@ -3797,16 +3659,6 @@ namespace PM_QLGTDD
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(935, 600);
             this.panel14.TabIndex = 1;
-            // 
-            // axAcroPDF14
-            // 
-            this.axAcroPDF14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axAcroPDF14.Enabled = true;
-            this.axAcroPDF14.Location = new System.Drawing.Point(0, 0);
-            this.axAcroPDF14.Name = "axAcroPDF14";
-            this.axAcroPDF14.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF14.OcxState")));
-            this.axAcroPDF14.Size = new System.Drawing.Size(935, 600);
-            this.axAcroPDF14.TabIndex = 0;
             // 
             // tabPage18
             // 
@@ -3998,16 +3850,6 @@ namespace PM_QLGTDD
             this.panel15.Size = new System.Drawing.Size(935, 600);
             this.panel15.TabIndex = 1;
             // 
-            // axAcroPDF15
-            // 
-            this.axAcroPDF15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axAcroPDF15.Enabled = true;
-            this.axAcroPDF15.Location = new System.Drawing.Point(0, 0);
-            this.axAcroPDF15.Name = "axAcroPDF15";
-            this.axAcroPDF15.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF15.OcxState")));
-            this.axAcroPDF15.Size = new System.Drawing.Size(935, 600);
-            this.axAcroPDF15.TabIndex = 0;
-            // 
             // tabPage19
             // 
             this.tabPage19.Controls.Add(this.tableLayoutPanel22);
@@ -4198,6 +4040,189 @@ namespace PM_QLGTDD
             this.panel16.Size = new System.Drawing.Size(935, 600);
             this.panel16.TabIndex = 1;
             // 
+            // M04_btn_quaylai
+            // 
+            this.M04_btn_quaylai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.M04_btn_quaylai.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.M04_btn_quaylai.FlatAppearance.BorderSize = 0;
+            this.M04_btn_quaylai.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(118)))), ((int)(((byte)(195)))));
+            this.M04_btn_quaylai.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(173)))), ((int)(((byte)(223)))));
+            this.M04_btn_quaylai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.M04_btn_quaylai.ForeColor = System.Drawing.Color.White;
+            this.M04_btn_quaylai.Image = global::PM_QLGTDD.Properties.Resources.arrow_lèt;
+            this.M04_btn_quaylai.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.M04_btn_quaylai.Location = new System.Drawing.Point(0, 0);
+            this.M04_btn_quaylai.Margin = new System.Windows.Forms.Padding(0);
+            this.M04_btn_quaylai.MaximumSize = new System.Drawing.Size(142, 70);
+            this.M04_btn_quaylai.MinimumSize = new System.Drawing.Size(142, 70);
+            this.M04_btn_quaylai.Name = "M04_btn_quaylai";
+            this.M04_btn_quaylai.Size = new System.Drawing.Size(142, 70);
+            this.M04_btn_quaylai.TabIndex = 7;
+            this.M04_btn_quaylai.Text = "Quay lại";
+            this.M04_btn_quaylai.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.M04_btn_quaylai.UseVisualStyleBackColor = false;
+            // 
+            // axAcroPDF1
+            // 
+            this.axAcroPDF1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF1.Enabled = true;
+            this.axAcroPDF1.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF1.Name = "axAcroPDF1";
+            this.axAcroPDF1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF1.OcxState")));
+            this.axAcroPDF1.Size = new System.Drawing.Size(931, 595);
+            this.axAcroPDF1.TabIndex = 0;
+            // 
+            // axAcroPDF2
+            // 
+            this.axAcroPDF2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF2.Enabled = true;
+            this.axAcroPDF2.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF2.Name = "axAcroPDF2";
+            this.axAcroPDF2.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF2.OcxState")));
+            this.axAcroPDF2.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF2.TabIndex = 0;
+            // 
+            // axAcroPDF3
+            // 
+            this.axAcroPDF3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF3.Enabled = true;
+            this.axAcroPDF3.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF3.Name = "axAcroPDF3";
+            this.axAcroPDF3.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF3.OcxState")));
+            this.axAcroPDF3.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF3.TabIndex = 0;
+            // 
+            // filesPDF_mau04
+            // 
+            this.filesPDF_mau04.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.filesPDF_mau04.Enabled = true;
+            this.filesPDF_mau04.Location = new System.Drawing.Point(0, 0);
+            this.filesPDF_mau04.Name = "filesPDF_mau04";
+            this.filesPDF_mau04.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("filesPDF_mau04.OcxState")));
+            this.filesPDF_mau04.Size = new System.Drawing.Size(935, 600);
+            this.filesPDF_mau04.TabIndex = 0;
+            this.filesPDF_mau04.UseWaitCursor = true;
+            // 
+            // axAcroPDF4
+            // 
+            this.axAcroPDF4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF4.Enabled = true;
+            this.axAcroPDF4.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF4.Name = "axAcroPDF4";
+            this.axAcroPDF4.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF4.OcxState")));
+            this.axAcroPDF4.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF4.TabIndex = 0;
+            // 
+            // axAcroPDF5
+            // 
+            this.axAcroPDF5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF5.Enabled = true;
+            this.axAcroPDF5.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF5.Name = "axAcroPDF5";
+            this.axAcroPDF5.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF5.OcxState")));
+            this.axAcroPDF5.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF5.TabIndex = 0;
+            // 
+            // axAcroPDF6
+            // 
+            this.axAcroPDF6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF6.Enabled = true;
+            this.axAcroPDF6.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF6.Name = "axAcroPDF6";
+            this.axAcroPDF6.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF6.OcxState")));
+            this.axAcroPDF6.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF6.TabIndex = 0;
+            // 
+            // axAcroPDF7
+            // 
+            this.axAcroPDF7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF7.Enabled = true;
+            this.axAcroPDF7.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF7.Name = "axAcroPDF7";
+            this.axAcroPDF7.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF7.OcxState")));
+            this.axAcroPDF7.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF7.TabIndex = 0;
+            // 
+            // axAcroPDF8
+            // 
+            this.axAcroPDF8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF8.Enabled = true;
+            this.axAcroPDF8.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF8.Name = "axAcroPDF8";
+            this.axAcroPDF8.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF8.OcxState")));
+            this.axAcroPDF8.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF8.TabIndex = 0;
+            // 
+            // axAcroPDF9
+            // 
+            this.axAcroPDF9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF9.Enabled = true;
+            this.axAcroPDF9.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF9.Name = "axAcroPDF9";
+            this.axAcroPDF9.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF9.OcxState")));
+            this.axAcroPDF9.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF9.TabIndex = 0;
+            // 
+            // axAcroPDF10
+            // 
+            this.axAcroPDF10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF10.Enabled = true;
+            this.axAcroPDF10.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF10.Name = "axAcroPDF10";
+            this.axAcroPDF10.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF10.OcxState")));
+            this.axAcroPDF10.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF10.TabIndex = 0;
+            // 
+            // axAcroPDF11
+            // 
+            this.axAcroPDF11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF11.Enabled = true;
+            this.axAcroPDF11.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF11.Name = "axAcroPDF11";
+            this.axAcroPDF11.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF11.OcxState")));
+            this.axAcroPDF11.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF11.TabIndex = 0;
+            // 
+            // axAcroPDF12
+            // 
+            this.axAcroPDF12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF12.Enabled = true;
+            this.axAcroPDF12.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF12.Name = "axAcroPDF12";
+            this.axAcroPDF12.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF12.OcxState")));
+            this.axAcroPDF12.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF12.TabIndex = 0;
+            // 
+            // axAcroPDF13
+            // 
+            this.axAcroPDF13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF13.Enabled = true;
+            this.axAcroPDF13.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF13.Name = "axAcroPDF13";
+            this.axAcroPDF13.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF13.OcxState")));
+            this.axAcroPDF13.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF13.TabIndex = 0;
+            // 
+            // axAcroPDF14
+            // 
+            this.axAcroPDF14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF14.Enabled = true;
+            this.axAcroPDF14.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF14.Name = "axAcroPDF14";
+            this.axAcroPDF14.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF14.OcxState")));
+            this.axAcroPDF14.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF14.TabIndex = 0;
+            // 
+            // axAcroPDF15
+            // 
+            this.axAcroPDF15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axAcroPDF15.Enabled = true;
+            this.axAcroPDF15.Location = new System.Drawing.Point(0, 0);
+            this.axAcroPDF15.Name = "axAcroPDF15";
+            this.axAcroPDF15.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF15.OcxState")));
+            this.axAcroPDF15.Size = new System.Drawing.Size(935, 600);
+            this.axAcroPDF15.TabIndex = 0;
+            // 
             // axAcroPDF16
             // 
             this.axAcroPDF16.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -4238,86 +4263,86 @@ namespace PM_QLGTDD
             this.tableLayoutPanel6.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF1)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
             this.flowLayoutPanel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF2)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tableLayoutPanel9.ResumeLayout(false);
             this.flowLayoutPanel5.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF3)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tableLayoutPanel8.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
             this.pnl_container_M04.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.filesPDF_mau04)).EndInit();
             this.tabPage6.ResumeLayout(false);
             this.tableLayoutPanel10.ResumeLayout(false);
             this.flowLayoutPanel6.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF4)).EndInit();
             this.tabPage7.ResumeLayout(false);
             this.tableLayoutPanel11.ResumeLayout(false);
             this.flowLayoutPanel7.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF5)).EndInit();
             this.tabPage8.ResumeLayout(false);
             this.tableLayoutPanel12.ResumeLayout(false);
             this.flowLayoutPanel8.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF6)).EndInit();
             this.tabPage9.ResumeLayout(false);
             this.tableLayoutPanel13.ResumeLayout(false);
             this.flowLayoutPanel9.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF7)).EndInit();
             this.tabPage10.ResumeLayout(false);
             this.tableLayoutPanel14.ResumeLayout(false);
             this.flowLayoutPanel10.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF8)).EndInit();
             this.tabPage11.ResumeLayout(false);
             this.tableLayoutPanel15.ResumeLayout(false);
             this.flowLayoutPanel11.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF9)).EndInit();
             this.tabPage12.ResumeLayout(false);
             this.tableLayoutPanel16.ResumeLayout(false);
             this.flowLayoutPanel12.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF10)).EndInit();
             this.tabPage14.ResumeLayout(false);
             this.tableLayoutPanel17.ResumeLayout(false);
             this.flowLayoutPanel13.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF11)).EndInit();
             this.tabPage15.ResumeLayout(false);
             this.tableLayoutPanel18.ResumeLayout(false);
             this.flowLayoutPanel14.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF12)).EndInit();
             this.tabPage16.ResumeLayout(false);
             this.tableLayoutPanel19.ResumeLayout(false);
             this.flowLayoutPanel15.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF13)).EndInit();
             this.tabPage17.ResumeLayout(false);
             this.tableLayoutPanel20.ResumeLayout(false);
             this.flowLayoutPanel16.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF14)).EndInit();
             this.tabPage18.ResumeLayout(false);
             this.tableLayoutPanel21.ResumeLayout(false);
             this.flowLayoutPanel17.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF15)).EndInit();
             this.tabPage19.ResumeLayout(false);
             this.tableLayoutPanel22.ResumeLayout(false);
             this.flowLayoutPanel18.ResumeLayout(false);
             this.panel16.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filesPDF_mau04)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.axAcroPDF16)).EndInit();
             this.ResumeLayout(false);
 
@@ -4544,6 +4569,7 @@ namespace PM_QLGTDD
         private System.Windows.Forms.Button button100;
         private System.Windows.Forms.Panel panel16;
         private AxAcroPDFLib.AxAcroPDF axAcroPDF16;
+        private System.Windows.Forms.Button M04_btn_quaylai;
     }
 }
 
